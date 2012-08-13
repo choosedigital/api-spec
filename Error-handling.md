@@ -29,7 +29,7 @@ Connection errors are returned as standard HTTP error codes
 	</tr>
 </table>
 
-Any data or execution errors returned from the API will be found in an object named "errors". 
+Any data or execution errors returned from the API will be found in an object named &quot;errors&quot;. 
 
 For example:
 
@@ -49,4 +49,3 @@ For example:
 	]
 }
 ```
-
