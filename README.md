@@ -1,2 +1,12 @@
-api-spec
-========
+# ChooseDigital API Spec
+
+ChooseDigital’s capabilities are unique to the marketplace with patent pending approaches to Digital Media delivery, security, system and solution interoperability.
+
+The ChooseDigital API will allow for quick and effective implementation of an All-Digital Market Place. It provides full interaction with the ChooseDigital catalog from browsing and search, to complete product data, to transactions and order history. This capability can be put in place with relatively basic API calls to ChooseDigital servers. 
+
+Any reference in this document to "points" is interchangeable with "credits", "miles", etc.
+
+Follow these guidelines to ensure that you're following our best practices for application development so that you can best grow and scale along with the API and avoid future problems.
+	
+1. Always parse response data without assuming the number or order of elements in the response. For example, if a new field were to be added to the object your code should gracefully handle a change in the total number of elements, or a change where the element you are interested is now 5th instead of 4th.
+1. Always use hostnames in your code and let the DNS servers resolve the IP - don't pre-resolve the name in order to try and save time at runtime, as the IP will not always be the same.
