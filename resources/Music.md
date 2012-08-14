@@ -49,7 +49,7 @@ This is a simple way to get all the valid genres
 > GET http://apistg.choosedigital.net/music/genres
 ```js
 {
-	genres:["Pop","Classical","Rock","Christian","Metal","Dance","Gospel","World","Alternative","Jazz","Country","R&B","Children's Music","Electronic","Latin","New Age","Hip Hop/Rap","German Pop","Soundtrack","Folk","Singer/Songwriter","Comedy"]
+	"genres":["Classical","Pop","Rock","Jazz","Country","Latin","Christian","R & B","Hip Hop","Opera","Metal","Alternative","Blues","Folk","Reggae","World","Soundtrack","Dance","Hip Hop\/Rap","Latin \/ Regional Mexican","Holiday","R&B","New Age","Electronic","Gospel","Spoken Word","Bluegrass","Vocal","Comedy","Children","Gospel\/Christian","Singer\/Songwriter","Easy Listening","French Pop","Latin \/ Urban","Rap","Children's Music","URBAN\/R AND B","Soundtracks","Latin \/ Pop","Devotional","Punk","Inspirational","Ghazal","Musique Francophone","ROCK-TRADITIONAL AND CLASSIC","Reggaeton","Soul","Flamenco","Instrumental","CLASSICAL(VOCAL,EARLY,CHAMBER)","Musical","Children's","German Pop","ALTERNATIVE","Metal\/Hard Rock","Classical(Vocal,Early,Chamber)","Broadway","DANCE\/ELECTRONIC","LATIN POP INTERNATIONAL","Latin \/ Tropical","Latin Pop","TV\/Film","Country\/Sertanejo","VOCALS","Disco","J-Pop","MPB","Boleros\/Baladas","Classical - Hindustani","POP ALTERNATIVE","Funk","Regional Mexican","LATIN REGIONAL MEXICAN","TRADITIONAL JAZZ","Variété française","Dance\/Electronic","Latin Rock","Schlager\/Volksmusik","Latin Urban \/ Reggaeton","Pop\/Rock","Samba\/Carnaval","CONTEMPORARY CHRISTIAN","RAP","World Music","Soundtrack (Bollywood)","Latin Pop International","Tamil","Rancheras","Hip-Hop\/Rap","Urban","Other","Indian Classical","Latin Regional Mexican","Fado","Tropical","Latin Urban","Brasil Soul","Schlager"]
 }
 ```
 
@@ -84,7 +84,7 @@ This is a simple way to get all the valid genres
 		<td><code>albumOnly</code></td>
 		<td>Required</td>
 		<td>boolean</td>
-		<td></td>
+		<td>valid values: true, false</td>
 	</tr>
 	<tr>
 		<td><code>rows</code></td>
@@ -120,8 +120,78 @@ This is a simple way to get all the valid genres
 
 ### Example
 
-> http://apistg.choosedigital.net/music/artist/metallica/us/true
+> http://apistg.choosedigital.net/music/artist/u2/us/true?rows=2
 ```js
+{
+	"numFound":31,
+	"start":0,
+	"searchTerm":"",
+	"genres":[],
+	"releaseTypes":[],
+	"releases":[
+		{
+			"cdin":"7efeae23302636bbac85fb5a9acfa9dc91f8c406",
+			"icpn":"00602527882048",
+			"albumOnly":"false",
+			"available":"true",
+			"downloadsAvailable":"1",
+			"genre":"Rock",
+			"displayTitle":"Achtung Baby",
+			"sanitizedDisplayTitle":"Achtung Baby",
+			"albumDisplayTitle":"",
+			"sanitizedAlbumDisplayTitle":"",
+			"label":"Island\/Interscope\/UMe",
+			"copyright":"(C) 2011 Universal-Island Records Limited under exclusive licence to Mercury Records Limited in the UK, Interscope Records in the US and Universal Music Group for the rest of the world",
+			"duration":"55:26",
+			"explicit":"false",
+			"albumIcpn":"",
+			"albumCdin":"",
+			"artist":[],
+			"mainArtist":"U2",
+			"httpPreviewUrl":"http://d3qcb5osaw6g5.cloudfront.net/s/m//",
+			"streamPreviewUrl":"rtmp://s2sacn9d6arc57.cloudfront.net/cfx/st/s/m//",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/s/00602527882048.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/m/00602527882048.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/l/00602527882048.jpg",
+			"componentNumber":"0",
+			"trackNumber":"0",
+			"price":"999","startDate":"2011-11-01T00:00:00Z",
+			"bitrate":"",
+			"releaseType":"Album","originalReleaseDate":"2011-11-01T00:00:00Z",
+			"popularity":"0"
+		},{
+			"cdin":"64110f2323ef53aed7c82083e64c7b6c81f1c8c8",
+			"icpn":"00602527882246",
+			"albumOnly":"false",
+			"available":"true",
+			"downloadsAvailable":"1",
+			"genre":"Rock",
+			"displayTitle":"Achtung Baby",
+			"sanitizedDisplayTitle":"Achtung Baby",
+			"albumDisplayTitle":"",
+			"sanitizedAlbumDisplayTitle":"",
+			"label":"U2 \/Island Catalog",
+			"copyright":"(C) 2011 Universal-Island Records Limited under exclusive licence to Mercury Records Limited in the UK, Interscope Records in the US and Universal Music Group for the rest of the world",
+			"duration":"",
+			"explicit":"false",
+			"albumIcpn":"",
+			"albumCdin":"",
+			"artist":[],
+			"mainArtist":"U2",
+			"httpPreviewUrl":"http://d3qcb5osaw6g5.cloudfront.net/s/m//",
+			"streamPreviewUrl":"rtmp://s2sacn9d6arc57.cloudfront.net/cfx/st/s/m//",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/s/00602527882246.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/m/00602527882246.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/l/00602527882246.jpg",
+			"componentNumber":"0",
+			"trackNumber":"0",
+			"price":"1699","startDate":"2011-10-31T00:00:00Z",
+			"bitrate":"",
+			"releaseType":"Album","originalReleaseDate":"2011-11-01T00:00:00Z",
+			"popularity":"0"
+		}
+	]
+}
 ```
 
 ## List
@@ -142,7 +212,7 @@ This is a simple way to get all the valid genres
 		<td><code>listId</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td>listId=staffpicks</td>
+		<td>valid values: "latest", "upcoming" and curated listIds</td>
 	</tr>
 	<tr>
 		<td><code>country</code></td>
@@ -178,95 +248,77 @@ This is a simple way to get all the valid genres
 
 ### Example
 
-> GET http://apistg.choosedigital.net/music/list/staffpicks/staffpicks
+> GET http://apistg.choosedigital.net/music/list/top/us?rows=3
 ```js
 {
-	"displayTitle":"Staff Picks - Albums",
+	"displayTitle":"Top Albums",
 	"releases":[
 		{
-			"cdin":"895a24ac65b9ce5f3702d8b6bd464602a8ed3fdc",
+			"cdin":"b522785f2d4cbe56a680695d10e70dfab5d9e09d",
 			"available":"true",
-			"genre":"New Age",
-			"displayTitle":"Wine Country Dreams",
-			"label":"Green Hill Productions",
-			"copyright":"(C) 2012 Green Hill Productions",
-			"duration":"54:55",
-			"explicit":"false",
-			"icpn":"0792755582756",
-			"mainArtist":"Jack Jezzro",
-			"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/0792755582756_T-1372_Image.jpg",
-			"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/0792755582756_T-1372_Image.jpg",
-			"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/0792755582756_T-1372_Image.jpg",
+			"downloadsAvailable":"1",
+			"albumOnly":"false",
+			"releaseType":"Album",
+			"genre":"Hip Hop",
+			"displayTitle":"The Hits Collection Volume One (Explicit Version)",
+			"sanitizedDisplayTitle":"The Hits Collection Volume One (Explicit Version)",
+			"label":"Roc Nation \/ IDJ",
+			"copyright":"(C) 2010 The Island Def Jam Music Group",
+			"duration":"56:13",
+			"explicit":"true",
+			"icpn":"00602527231600",
+			"mainArtist":"JAY-Z",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/s/00602527231600.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/m/00602527231600.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/l/00602527231600.jpg",
 			"price":"999",
-			"preOrderDate":"2012-01-17T00:00:00Z","startDate":"2012-02-07T00:00:00Z","popularity":"0"
-		},
-		{
-			"cdin":"d2dcd37c6cdc649432df2b2ffa252b018d7c8d45",
-			"available":"false",
-			"genre":"Pop",
-			"displayTitle":"BBC Sessions (Saturday Club Recorded 1966)",
-			"label":"EMI Catalogue",
-			"copyright":"(C) 2012 EMI Records LtdThis label copy information is the subject of copyright protection. All rights reserved.(C) 2012 EMI Records Ltd",
-			"duration":"10:44",
-			"explicit":"false",
-			"icpn":"5099909190351",
-			"mainArtist":"Manfred Mann",
-			"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/5099909190351_T-1372_Image.jpg",
-			"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/5099909190351_T-1372_Image.jpg",
-			"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/5099909190351_T-1372_Image.jpg",
-			"price":"0",
-			"startDate":"2012-02-14T00:00:00Z","popularity":"0"
-		},
-		{
-			"cdin":"84142096ddf2bc7061acab30dfd03cdbbef3d8f3",
+			"startDate":"2010-11-22T00:00:00Z",
+			"originalReleaseDate":"2010-11-22T00:00:00Z",
+			"popularity":"0"
+		},{
+			"cdin":"ffac0f248d418aac317aba905287180d8375ab17",
 			"available":"true",
-			"genre":"Pop",
-			"displayTitle":"La Historia Completa De Carlos Gardel - Volumen 1",
-			"label":"EMI Argentina",
-			"copyright":"(C) 2001 EMI Odeon SAIC This Labelcopy information is the subject of Copyright Protection. All rights reserved. (C) 2001 EMI Odeon SAIC",
-			"duration":"48:46",
-			"explicit":"false",
-			"icpn":"0094635615050",
-			"mainArtist":"Carlos Gardel",
-			"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/0094635615050_T-1372_Image.jpg",
-			"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/0094635615050_T-1372_Image.jpg",
-			"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/0094635615050_T-1372_Image.jpg",
+			"downloadsAvailable":"1",
+			"albumOnly":"false",
+			"releaseType":"Album",
+			"genre":"Hip Hop",
+			"displayTitle":"Life Is Good (Explicit Version)",
+			"sanitizedDisplayTitle":"Life Is Good (Explicit Version)",
+			"label":"Def Jam Records",
+			"copyright":"(C) 2012 The Island Def Jam Music Group",
+			"duration":"58:17",
+			"explicit":"true",
+			"icpn":"00602537077472",
+			"mainArtist":"Nas",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/s/00602537077472.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/m/00602537077472.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/l/00602537077472.jpg",
 			"price":"1199",
-			"startDate":"2012-02-07T00:00:00Z","popularity":"0"
-		},
-		{
-			"cdin":"6298b5f47bc5b980bd7e4c5e8855198faffd1949",
+			"startDate":"2012-07-16T00:00:00Z",
+			"originalReleaseDate":"2012-07-17T00:00:00Z",
+			"popularity":"0"
+		},{
+			"cdin":"40bfcf9d8fa8ee3efb4e73f1e30beb24ab04f0c8",
 			"available":"true",
-			"genre":"Pop",
-			"displayTitle":"Les Souvenirs Sous Ma Frange",
-			"label":"Source etc",
-			"copyright":"(C) 2009 Source etc",
-			"duration":"1:00:20",
+			"downloadsAvailable":"1",
+			"albumOnly":"false",
+			"releaseType":"Album",
+			"genre":"Alternative",
+			"displayTitle":"Magic",
+			"sanitizedDisplayTitle":"Magic",
+			"label":"429 Records",
+			"copyright":"(C) 2012 SLG, LLC",
+			"duration":"3:00",
 			"explicit":"false",
-			"icpn":"5099945629556",
-			"mainArtist":"Rose",
-			"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/5099945629556_T-1372_Image.jpg",
-			"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/5099945629556_T-1372_Image.jpg",
-			"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/5099945629556_T-1372_Image.jpg",
-			"price":"999",
-			"startDate":"2012-02-07T00:00:00Z","popularity":"0"
-		},
-		{
-			"cdin":"1f337c53c7f6a947cf1adb4ef4e2ab99597bd6d6",
-			"available":"true",
-			"genre":"Pop",
-			"displayTitle":"Rose",
-			"label":"Source etc",
-			"copyright":"(C) 2006 SOURCE ETC",
-			"duration":"47:19",
-			"explicit":"false",
-			"icpn":"0094636965857",
-			"mainArtist":"Rose",
-			"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/0094636965857_T-1372_Image.jpg",
-			"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/0094636965857_T-1372_Image.jpg",
-			"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/0094636965857_T-1372_Image.jpg",
-			"price":"999",
-			"startDate":"2012-02-07T00:00:00Z","popularity":"0"
+			"icpn":"00795041790668",
+			"mainArtist":"Smash Mouth",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/s/00795041790668.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/m/00795041790668.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/l/00795041790668.jpg",
+			"price":"99",
+			"startDate":"2012-07-23T00:00:00Z",
+			"originalReleaseDate":"2012-07-24T00:00:00Z",
+			"popularity":"0"
 		}
 	]
 }
@@ -314,7 +366,7 @@ This is a simple way to get all the valid genres
 
 ### Example
 
-> None
+> POST http://apistg.choosedigital.net/music/download/[cdin]/[hashedCustomerId]/[country]
 ```js
 ```
 
@@ -588,25 +640,25 @@ This is a simple way to get all the valid genres
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>cdin</td>
+		<td><code>cdin</code></td>
 		<td>Required</td>
 		<td>string</td>
 		<td>ChooseDigital id</td>
 	</tr>
 	<tr>
-		<td>country</td>
+		<td><code>country</code></td>
 		<td>Optional</td>
 		<td>string</td>
 		<td>One of "us" or "ca"</td>
 	</tr>
 	<tr>
-		<td>hashedCustomerId</td>
+		<td><code>hashedCustomerId</code></td>
 		<td>Optional</td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>includeFutureReleases</td>
+		<td><code>includeFutureReleases</code></td>
 		<td>Optional</td>
 		<td>string</td>
 		<td></td>
@@ -718,79 +770,79 @@ This is a simple way to get all the valid genres
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>cdin</td>
+		<td><code>cdin</code></td>
 		<td>Required</td>
 		<td>string</td>
 		<td>ChooseDigital id</td>
 	</tr>
 	<tr>
-		<td>priceSold</td>
+		<td><code>priceSold</code></td>
 		<td>Required</td>
 		<td>integer</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>taxAmount</td>
+		<td><code>taxAmount</code></td>
 		<td>Required</td>
 		<td>integer</td>
 		<td>Tax amount charged</td>
 	</tr>
 	<tr>
-		<td>customerId</td>
+		<td><code>customerId</code></td>
 		<td>Required</td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>customerEmail</td>
+		<td><code>customerEmail</code></td>
 		<td>Optional</td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>customerPostalCode</td>
+		<td><code>customerPostalCode</code></td>
 		<td>Required</td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>customerCountryCode</td>
+		<td><code>customerCountryCode</code></td>
 		<td>Required</td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>promoCode</td>
+		<td><code>promoCode</code></td>
 		<td>Optional</td>
 		<td>string</td>
 		<td>Promo code</td>
 	</tr>
 	<tr>
-		<td>tenantId</td>
+		<td><code>tenantId</code></td>
 		<td>Optional</td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>transactionId</td>
+		<td><code>transactionId</code></td>
 		<td>Optional</td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>segment</td>
+		<td><code>segment</code></td>
 		<td>Optional</td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>tier</td>
+		<td><code>tier</code></td>
 		<td>Optional</td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>authentication</td>
+		<td><code>authentication</code></td>
 		<td>Required</td>
 		<td>string</td>
 		<td></td>
