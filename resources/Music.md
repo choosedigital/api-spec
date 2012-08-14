@@ -57,16 +57,143 @@ None
 ## List
 
 ### URL
-> None
+> http://apistg.choosedigital.net/music/list/[]/[]
 
 ### Parameters
 
-None
+<table>
+	<tr>
+		<th>Parameter</th>
+		<th>Description</th>
+		<th>Required</th>
+		<th>Example</th>
+	</tr>
+	<tr>
+		<td>listId</td>
+		<td>The list id</td>
+		<td>Yes</td>
+		<td>listId=staffpicks</td>
+	</tr>
+	<tr>
+		<td>genre</td>
+		<td>Genre</td>
+		<td>No</td>
+		<td>genre=staffpicks</td>
+	</tr>
+	<tr>
+		<td>country</td>
+		<td>One of "us" or "ca"</td>
+		<td>No</td>
+		<td>country=us</td>
+	</tr>
+	<tr>
+		<td>rows</td>
+		<td>Number of rows to return</td>
+		<td>No</td>
+		<td>rows=20</td>
+	</tr>
+	<tr>
+		<td>releaseType</td>
+		<td>Type of release</td>
+		<td>No</td>
+		<td>releaseType=album</td>
+	</tr>
+</table>
 
 ### Example
 
-> None
+> http://apistg.choosedigital.net/music/list/staffpicks/staffpicks
 ```js
+{
+	"displayTitle":"Staff Picks - Albums",
+	"releases":[
+		{
+			"cdin":"895a24ac65b9ce5f3702d8b6bd464602a8ed3fdc",
+			"available":"true",
+			"genre":"New Age",
+			"displayTitle":"Wine Country Dreams",
+			"label":"Green Hill Productions",
+			"copyright":"(C) 2012 Green Hill Productions",
+			"duration":"54:55",
+			"explicit":"false",
+			"icpn":"0792755582756",
+			"mainArtist":"Jack Jezzro",
+			"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/0792755582756_T-1372_Image.jpg",
+			"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/0792755582756_T-1372_Image.jpg",
+			"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/0792755582756_T-1372_Image.jpg",
+			"price":"999",
+			"preOrderDate":"2012-01-17T00:00:00Z","startDate":"2012-02-07T00:00:00Z","popularity":"0"
+		},
+		{
+			"cdin":"d2dcd37c6cdc649432df2b2ffa252b018d7c8d45",
+			"available":"false",
+			"genre":"Pop",
+			"displayTitle":"BBC Sessions (Saturday Club Recorded 1966)",
+			"label":"EMI Catalogue",
+			"copyright":"(C) 2012 EMI Records LtdThis label copy information is the subject of copyright protection. All rights reserved.(C) 2012 EMI Records Ltd",
+			"duration":"10:44",
+			"explicit":"false",
+			"icpn":"5099909190351",
+			"mainArtist":"Manfred Mann",
+			"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/5099909190351_T-1372_Image.jpg",
+			"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/5099909190351_T-1372_Image.jpg",
+			"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/5099909190351_T-1372_Image.jpg",
+			"price":"0",
+			"startDate":"2012-02-14T00:00:00Z","popularity":"0"
+		},
+		{
+			"cdin":"84142096ddf2bc7061acab30dfd03cdbbef3d8f3",
+			"available":"true",
+			"genre":"Pop",
+			"displayTitle":"La Historia Completa De Carlos Gardel - Volumen 1",
+			"label":"EMI Argentina",
+			"copyright":"(C) 2001 EMI Odeon SAIC This Labelcopy information is the subject of Copyright Protection. All rights reserved. (C) 2001 EMI Odeon SAIC",
+			"duration":"48:46",
+			"explicit":"false",
+			"icpn":"0094635615050",
+			"mainArtist":"Carlos Gardel",
+			"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/0094635615050_T-1372_Image.jpg",
+			"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/0094635615050_T-1372_Image.jpg",
+			"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/0094635615050_T-1372_Image.jpg",
+			"price":"1199",
+			"startDate":"2012-02-07T00:00:00Z","popularity":"0"
+		},
+		{
+			"cdin":"6298b5f47bc5b980bd7e4c5e8855198faffd1949",
+			"available":"true",
+			"genre":"Pop",
+			"displayTitle":"Les Souvenirs Sous Ma Frange",
+			"label":"Source etc",
+			"copyright":"(C) 2009 Source etc",
+			"duration":"1:00:20",
+			"explicit":"false",
+			"icpn":"5099945629556",
+			"mainArtist":"Rose",
+			"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/5099945629556_T-1372_Image.jpg",
+			"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/5099945629556_T-1372_Image.jpg",
+			"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/5099945629556_T-1372_Image.jpg",
+			"price":"999",
+			"startDate":"2012-02-07T00:00:00Z","popularity":"0"
+		},
+		{
+			"cdin":"1f337c53c7f6a947cf1adb4ef4e2ab99597bd6d6",
+			"available":"true",
+			"genre":"Pop",
+			"displayTitle":"Rose",
+			"label":"Source etc",
+			"copyright":"(C) 2006 SOURCE ETC",
+			"duration":"47:19",
+			"explicit":"false",
+			"icpn":"0094636965857",
+			"mainArtist":"Rose",
+			"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/0094636965857_T-1372_Image.jpg",
+			"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/0094636965857_T-1372_Image.jpg",
+			"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/0094636965857_T-1372_Image.jpg",
+			"price":"999",
+			"startDate":"2012-02-07T00:00:00Z","popularity":"0"
+		}
+	]
+}
 ```
 
 ## Download
@@ -102,96 +229,9 @@ None
 ## Search
 
 ### URL
-> None
+> http://apistg.choosedigital.net/music/search
 
 ### Parameters
-
-None
-
-### Example
-
-> None
-```js
-```
-
-## Detail
-
-### URL
-> None
-
-### Parameters
-
-None
-
-### Example
-
-> None
-```js
-```
-
-## Reset Download
-
-### URL
-> None
-
-### Parameters
-
-None
-
-### Example
-
-> None
-```js
-```
-
-## Purchase
-
-### URL
-> None
-
-### Parameters
-
-None
-
-### Example
-
-> None
-```js
-```
-
-## Update
-
-### URL
-> None
-
-### Parameters
-
-None
-
-### Example
-
-> None
-```js
-```
-
-## Cancel
-
-### URL
-> None
-
-### Parameters
-
-None
-
-### Example
-
-> None
-```js
-```
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-### Search
 
 <table>
 	<tr>
@@ -250,21 +290,9 @@ None
 	</tr>
 </table>
 
-Request URL:
+### Example
 
-```
-http://apistg.choosedigital.net/music/search
-```
-
-Sample URLs: 
-
-* http://apistg.choosedigital.net/music/search?term=dart
-* http://apistg.choosedigital.net/music/search?term=dart&country=us
-
-Request Method: GET
-
-Response
-
+> GET http://apistg.choosedigital.net/music/search?term=dart
 ```js
 {
     "numFound": 19,
@@ -412,10 +440,13 @@ Response
     }]
 }
 ```
-Note: Sanitized fields will contain asterisks as a mask
 
+## Detail
 
-### Detail
+### URL
+> http://apistg.choosedigital.net/music/detail/[cdin]
+
+### Parameters
 
 <table>
 	<tr>
@@ -437,24 +468,11 @@ Note: Sanitized fields will contain asterisks as a mask
 		<td>country=us (default is "us")</td>
 	</tr>
 </table>
-		
-		
-Request URL:
-
-```
-http://apistg.choosedigital.net/music/detail/{cdin}/{country}
-```		
-	
-Sample URLs: 
-
-* http://apistg.choosedigital.net/music/detail/7de9747835d903c57a765c43d79eb09b6f6a1eb2/us
-* http://apistg.choosedigital.net/music/detail/7de9747835d903c57a765c43d79eb09b6f6a1eb2
 
 
-Request Method: GET
+### Example
 
-Response
-
+> None
 ```js
 {
     "cdin": "7de9747835d903c57a765c43d79eb09b6f6a1eb2",
@@ -489,7 +507,27 @@ Response
 }
 ```
 
-### Purchase
+## Reset Download
+
+### URL
+> None
+
+### Parameters
+
+None
+
+### Example
+
+> None
+```js
+```
+
+## Purchase
+
+### URL
+> http://apistg.choosedigital.net/music/purchase
+
+### Parameters
 
 <table>
 	<tr>
@@ -566,225 +604,74 @@ Response
 	</tr>
 </table>		
 
+### Example
 
-Request URL: 
-
-```
-http://apistg.choosedigital.net/music/purchase
-```
-
-Request Method: POST  (Must be signed)
-
-In addition to the signig of The request an additonal signing is requiered:
-authentication parameter - is a HMAC-SHA1 hash of concatenation of cdin , customerId , customerCountryCode , priceSold  and your secret, i.e 
-
-    authentication = hashOf(cdin+customerId+customerCountryCode+priceSold, secret).
-
-Sample program of a Music/purchase call can be found at: (read the ReadMe file first)
-http://bit.ly/JL4Pby
-
-Response
-
+> POST http://apistg.choosedigital.net/music/purchase
 ```js
 {
 "orderId":"WL2-3821126-2848539",
 "downloadLink":"http://delivery-stage.choosedigital.cloudbees.net/user/music/download/146596fd82d990083609bf75c3fa4122102068af6627696113a5733c81870690/2b1220c86b1b2cb153cc54db17b7c24c07a5833b/1337626959558/c96a4e8c509e03ab8955218963f71d03b1e5cf3ec78f553ebbb2ac2a325e3e35",
 "priceSold":"100",    
 "release":
-{        
-"cdin":"2b1220c86b1b2cb153cc54db17b7c24c07a5833b",        
-"albumOnly":"false",
-"available":"",
-"genre":"Rock",
-"displayTitle":"Just",
-"sanitizedDisplayTitle":"Just",
-"icpn":"",
-"albumIcpn":"5099969361456",
-"albumCdin":"be73350559df9e2f71f1ab823d0de5b817c8aa74",
-"albumDisplayTitle":"The Bends (Collectors Edition)",
-"sanitizedAlbumDisplayTitle":"The Bends (collectors Edition)",
-"label":"EMI Catalogue",
-"copyright":"(P) 1995 The copyright in this sound recording is owned by EMI Records Ltd",
-"duration":"3:52",
-"explicit":"false",
-"mainArtist":"Radiohead",
-"artist":[],
-"mp3PreviewUrl":"http://cdn.choosedigital.net/s/m/5099969361456/5099969361456_T-20067_SoundRecording_01-007.mp3","oggPreviewUrl":"http://cdn.choosedigital.net/s/m/5099969361456/5099969361456_T-20067_SoundRecording_01-007.ogg",
-"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/5099969361456.jpg",
-"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/5099969361456.jpg",
-"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/5099969361456.jpg",
-"componentNumber":"1",
-"trackNumber":"7",
-"price":"129",
-"startDate":"2009-04-28T00:00:00Z",
-"bitrate":"",
-"releaseType":"TrackRelease",
-"popularity":"0"
+	{        
+		"cdin":"2b1220c86b1b2cb153cc54db17b7c24c07a5833b",        
+		"albumOnly":"false",
+		"available":"",
+		"genre":"Rock",
+		"displayTitle":"Just",
+		"sanitizedDisplayTitle":"Just",
+		"icpn":"",
+		"albumIcpn":"5099969361456",
+		"albumCdin":"be73350559df9e2f71f1ab823d0de5b817c8aa74",
+		"albumDisplayTitle":"The Bends (Collectors Edition)",
+		"sanitizedAlbumDisplayTitle":"The Bends (collectors Edition)",
+		"label":"EMI Catalogue",
+		"copyright":"(P) 1995 The copyright in this sound recording is owned by EMI Records Ltd",
+		"duration":"3:52",
+		"explicit":"false",
+		"mainArtist":"Radiohead",
+		"artist":[],
+		"mp3PreviewUrl":"http://cdn.choosedigital.net/s/m/5099969361456/5099969361456_T-20067_SoundRecording_01-007.mp3","oggPreviewUrl":"http://cdn.choosedigital.net/s/m/5099969361456/5099969361456_T-20067_SoundRecording_01-007.ogg",
+		"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/5099969361456.jpg",
+		"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/5099969361456.jpg",
+		"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/5099969361456.jpg",
+		"componentNumber":"1",
+		"trackNumber":"7",
+		"price":"129",
+		"startDate":"2009-04-28T00:00:00Z",
+		"bitrate":"",
+		"releaseType":"TrackRelease",
+		"popularity":"0"
+	}
 }
-}
 ```
 
-Note:  
+## Update
 
-* tenantId: allows our partners to assign and pass a corresponding Êpartner or client ID that pertains to a specific CD transaction.
-8 transactionId: allows our partners to pass an assigned TransactionID from their system to be included within the CD transaction.
+### URL
+> None
 
-### Charts
+### Parameters
 
-<table>
-	<tr>
-		<th>Parameter</th>
-		<th>Description</th>
-		<th>Required</th>
-		<th>Example</th>
-	</tr>
-	<tr>
-		<td>listId</td>
-		<td>The list id</td>
-		<td>Yes</td>
-		<td>listId=staffpicks</td>
-	</tr>
-	<tr>
-		<td>genre</td>
-		<td>Genre</td>
-		<td>No</td>
-		<td>genre=staffpicks</td>
-	</tr>
-	<tr>
-		<td>country</td>
-		<td>One of "us" or "ca"</td>
-		<td>No</td>
-		<td>country=us</td>
-	</tr>
-	<tr>
-		<td>rows</td>
-		<td>Number of rows to return</td>
-		<td>No</td>
-		<td>rows=20</td>
-	</tr>
-	<tr>
-		<td>releaseType</td>
-		<td>Type of release</td>
-		<td>No</td>
-		<td>releaseType=album</td>
-	</tr>
-</table>
+None
 
-Valid listIds:
+### Example
 
-* staffpicks
-* latest
-* top
-* upcoming
-
-Valid country codes:
-
-* us
-* ca
-
-Valid release types:
-
-* album
-* trackrelease
-
-Request URL: 
-
-```
-http://apistg.choosedigital.net/music/list/staffpicks/staffpicks
-```
-
-Request Method: GET
-
-Response
+> None
 ```js
-{
-"displayTitle":"Staff Picks - Albums",
-"releases":[
-{
-"cdin":"895a24ac65b9ce5f3702d8b6bd464602a8ed3fdc",
-"available":"true",
-"genre":"New Age",
-"displayTitle":"Wine Country Dreams",
-"label":"Green Hill Productions",
-"copyright":"(C) 2012 Green Hill Productions",
-"duration":"54:55",
-"explicit":"false",
-"icpn":"0792755582756",
-"mainArtist":"Jack Jezzro",
-"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/0792755582756_T-1372_Image.jpg",
-"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/0792755582756_T-1372_Image.jpg",
-"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/0792755582756_T-1372_Image.jpg",
-"price":"999",
-"preOrderDate":"2012-01-17T00:00:00Z","startDate":"2012-02-07T00:00:00Z","popularity":"0"
-},
-{
-"cdin":"d2dcd37c6cdc649432df2b2ffa252b018d7c8d45",
-"available":"false",
-"genre":"Pop",
-"displayTitle":"BBC Sessions (Saturday Club Recorded 1966)",
-"label":"EMI Catalogue",
-"copyright":"(C) 2012 EMI Records LtdThis label copy information is the subject of copyright protection. All rights reserved.(C) 2012 EMI Records Ltd",
-"duration":"10:44",
-"explicit":"false",
-"icpn":"5099909190351",
-"mainArtist":"Manfred Mann",
-"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/5099909190351_T-1372_Image.jpg",
-"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/5099909190351_T-1372_Image.jpg",
-"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/5099909190351_T-1372_Image.jpg",
-"price":"0",
-"startDate":"2012-02-14T00:00:00Z","popularity":"0"
-},
-{
-"cdin":"84142096ddf2bc7061acab30dfd03cdbbef3d8f3",
-"available":"true",
-"genre":"Pop",
-"displayTitle":"La Historia Completa De Carlos Gardel - Volumen 1",
-"label":"EMI Argentina",
-"copyright":"(C) 2001 EMI Odeon SAIC This Labelcopy information is the subject of Copyright Protection. All rights reserved. (C) 2001 EMI Odeon SAIC",
-"duration":"48:46",
-"explicit":"false",
-"icpn":"0094635615050",
-"mainArtist":"Carlos Gardel",
-"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/0094635615050_T-1372_Image.jpg",
-"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/0094635615050_T-1372_Image.jpg",
-"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/0094635615050_T-1372_Image.jpg",
-"price":"1199",
-"startDate":"2012-02-07T00:00:00Z","popularity":"0"
-},
-{
-"cdin":"6298b5f47bc5b980bd7e4c5e8855198faffd1949",
-"available":"true",
-"genre":"Pop",
-"displayTitle":"Les Souvenirs Sous Ma Frange",
-"label":"Source etc",
-"copyright":"(C) 2009 Source etc",
-"duration":"1:00:20",
-"explicit":"false",
-"icpn":"5099945629556",
-"mainArtist":"Rose",
-"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/5099945629556_T-1372_Image.jpg",
-"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/5099945629556_T-1372_Image.jpg",
-"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/5099945629556_T-1372_Image.jpg",
-"price":"999",
-"startDate":"2012-02-07T00:00:00Z","popularity":"0"
-},
-{
-"cdin":"1f337c53c7f6a947cf1adb4ef4e2ab99597bd6d6",
-"available":"true",
-"genre":"Pop",
-"displayTitle":"Rose",
-"label":"Source etc",
-"copyright":"(C) 2006 SOURCE ETC",
-"duration":"47:19",
-"explicit":"false",
-"icpn":"0094636965857",
-"mainArtist":"Rose",
-"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/0094636965857_T-1372_Image.jpg",
-"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/0094636965857_T-1372_Image.jpg",
-"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/0094636965857_T-1372_Image.jpg",
-"price":"999",
-"startDate":"2012-02-07T00:00:00Z","popularity":"0"
-}
-]
-}
+```
+
+## Cancel
+
+### URL
+> None
+
+### Parameters
+
+None
+
+### Example
+
+> None
+```js
 ```
