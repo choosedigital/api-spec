@@ -78,7 +78,7 @@ This is a simple way to get all the valid genres
 		<td><code>country</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td></td>
+		<td>valid values: us, ca</td>
 	</tr>
 	<tr>
 		<td><code>albumOnly</code></td>
@@ -218,7 +218,7 @@ This is a simple way to get all the valid genres
 		<td><code>country</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td>One of "us" or "ca"</td>
+		<td>valid values: us, ca</td>
 	</tr>
 	<tr>
 		<td><code>genre</code></td>
@@ -354,7 +354,7 @@ This is a simple way to get all the valid genres
 		<td><code>country</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td></td>
+		<td>valid values: us, ca</td>
 	</tr>
 	<tr>
 		<td><code>tenantId</code></td>
@@ -422,7 +422,7 @@ This is a simple way to get all the valid genres
 		<td><code>country</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td>One of "us" or "ca"</td>
+		<td>valid values: us, ca. Default value: us</td>
 	</tr>
 	<tr>
 		<td><code>artist</code></td>
@@ -476,152 +476,131 @@ This is a simple way to get all the valid genres
 
 ### Example
 
-> GET http://apistg.choosedigital.net/music/search?term=dart
+> http://apistg.choosedigital.net/music/search?term=u2&rows=3
 ```js
 {
-    "numFound": 19,
-    "start": 0,
-    "searchTerm": "dart",
-    "genres": [{
-        "name": "Classical",
-        "count": 11
-    }, {
-        "name": "Opera",
-        "count": 3
-    }, {
-        "name": "Latin",
-        "count": 2
-    }, {
-        "name": "Children's Music",
-        "count": 1
-    }, {
-        "name": "Rock",
-        "count": 1
-    }, {
-        "name": "Singer/Songwriter",
-        "count": 1
-    }],
-    "releaseTypes": [{
-        "name": "TrackRelease",
-        "count": 19
-    }],
-    "releases": [{
-        "cdin": "92497814d8f420254dd469e34d1441e9fcd0fa62",
-        "albumOnly": "false",
-        "available": "true",
-        "genre": "Children's Music",
-        "displayTitle": "Dartacan Y Los Tres Mosqueperros",
-        "sanitizedDisplayTitle": "Dartacan Y Los Tres Mosqueperros",
-        "albumDisplayTitle": "Baby Deli Series Infantiles",
-        "sanitizedAlbumDisplayTitle": "Baby Deli Series Infantiles",
-        "label": "EMI Spain",
-        "copyright": "(P) 2009 The copyright in this sound recording is owned by Baby Del Music / EMI Music Spain, S.A.",
-        "duration": "3:59",
-        "explicit": "false",
-        "albumIcpn": "5099960916259",
-        "albumCdin": "2b2157dffc57679e9a3a1f16b136a330d7392276",
-        "artist": [],
-        "mainArtist": "Baby Deli Music",
-        "mp3PreviewUrl": "http://cdn.choosedigital.net/s/m/5099960916259/5099960916259_T-20067_SoundRecording_01-002.mp3",
-        "oggPreviewUrl": "http://cdn.choosedigital.net/s/m/5099960916259/5099960916259_T-20067_SoundRecording_01-002.ogg",
-        "smallImageUrl": "http://cdn.choosedigital.net/i/m/s/5099960916259.jpg",
-        "mediumImageUrl": "http://cdn.choosedigital.net/i/m/m/5099960916259.jpg",
-        "largeImageUrl": "http://cdn.choosedigital.net/i/m/l/5099960916259.jpg",
-        "componentNumber": "1",
-        "trackNumber": "2",
-        "price": "129",
-        "startDate": "2011-11-15T00:00:00Z",
-        "bitrate": "",
-        "releaseType": "TrackRelease",
-        "popularity": "0"
-    }, {
-        "cdin": "39465c1869d7161cda71587bb8378f0c64edfdee",
-        "albumOnly": "false",
-        "available": "true",
-        "genre": "Classical",
-        "displayTitle": "III.     Darthulas Grabesesang: M�dchen von Kola, du schl�fst! (Ossian, trans. Herder)",
-        "sanitizedDisplayTitle": "Iii.     Darthulas Grabesesang: M�dchen Von Kola, Du Schl�fst! (ossian, Trans. Herder)",
-        "albumDisplayTitle": "Great Secular Choral Works",
-        "sanitizedAlbumDisplayTitle": "Great Secular Choral Works",
-        "label": "Virgin Classics",
-        "copyright": "(P) 1995 The copyright in this sound recording is owned by EMI Records Ltd./Virgin Classics",
-        "duration": "4:33",
-        "explicit": "false",
-        "albumIcpn": "5099952211256",
-        "albumCdin": "988940694a7c896536ce2c313edcdf2420f77092",
-        "artist": [],
-        "mainArtist": "Choeur Accentus",
-        "mp3PreviewUrl": "http://cdn.choosedigital.net/s/m/5099952211256/5099952211256_T-20067_SoundRecording_01-008.mp3",
-        "oggPreviewUrl": "http://cdn.choosedigital.net/s/m/5099952211256/5099952211256_T-20067_SoundRecording_01-008.ogg",
-        "smallImageUrl": "http://cdn.choosedigital.net/i/m/s/5099952211256.jpg",
-        "mediumImageUrl": "http://cdn.choosedigital.net/i/m/m/5099952211256.jpg",
-        "largeImageUrl": "http://cdn.choosedigital.net/i/m/l/5099952211256.jpg",
-        "componentNumber": "1",
-        "trackNumber": "8",
-        "price": "129",
-        "startDate": "2008-09-02T00:00:00Z",
-        "bitrate": "",
-        "releaseType": "TrackRelease",
-        "popularity": "0"
-    }, {
-        "cdin": "91d19b58668c6abf34fd1af7c86127d2c4081842",
-        "albumOnly": "false",
-        "available": "true",
-        "genre": "Classical",
-        "displayTitle": "III.     Darthulas Grabesesang: M�dchen von Kola, du schl�fst! (Ossian, trans. Herder)",
-        "sanitizedDisplayTitle": "Iii.     Darthulas Grabesesang: M�dchen Von Kola, Du Schl�fst! (ossian, Trans. Herder)",
-        "albumDisplayTitle": "Brahms-Schumann A Capella Choruses",
-        "sanitizedAlbumDisplayTitle": "Brahms-schumann A Capella Choruses",
-        "label": "Virgin Classics",
-        "copyright": "(P) 1995 The copyright in this sound recording is owned by EMI Records Ltd./Virgin Classics",
-        "duration": "4:31",
-        "explicit": "false",
-        "albumIcpn": "0094636327952",
-        "albumCdin": "8bfb909980213fbe61fdf1954b682f3d70af0b08",
-        "artist": [],
-        "mainArtist": "Choeur Accentus",
-        "mp3PreviewUrl": "http://cdn.choosedigital.net/s/m/0094636327952/0094636327952_T-20067_SoundRecording_01-003.mp3",
-        "oggPreviewUrl": "http://cdn.choosedigital.net/s/m/0094636327952/0094636327952_T-20067_SoundRecording_01-003.ogg",
-        "smallImageUrl": "http://cdn.choosedigital.net/i/m/s/0094636327952.jpg",
-        "mediumImageUrl": "http://cdn.choosedigital.net/i/m/m/0094636327952.jpg",
-        "largeImageUrl": "http://cdn.choosedigital.net/i/m/l/0094636327952.jpg",
-        "componentNumber": "1",
-        "trackNumber": "3",
-        "price": "129",
-        "startDate": "2006-09-12T00:00:00Z",
-        "bitrate": "",
-        "releaseType": "TrackRelease",
-        "popularity": "0"
-    },{
-        "cdin": "b464f4a45b39927c4cab60cf2961b93cd2741d2e",
-        "albumOnly": "false",
-        "available": "true",
-        "genre": "Latin",
-        "displayTitle": "Ya No Puedo Darte M�s",
-        "sanitizedDisplayTitle": "Ya No Puedo Darte M�s",
-        "albumDisplayTitle": "Original Masters",
-        "sanitizedAlbumDisplayTitle": "Original Masters",
-        "label": "Capitol Latin",
-        "copyright": "(P) 1983 The Copyright in this sound recording is owned by EMI Music Spain, S.A.",
-        "duration": "3:20",
-        "explicit": "false",
-        "albumIcpn": "0724357688451",
-        "albumCdin": "2acd2c5992b9a316b7831c41878dcefb48a520ff",
-        "artist": [],
-        "mainArtist": "Dyango",
-        "mp3PreviewUrl": "http://cdn.choosedigital.net/s/m/0724357688451/0724357688451_T-20067_SoundRecording_01-008.mp3",
-        "oggPreviewUrl": "http://cdn.choosedigital.net/s/m/0724357688451/0724357688451_T-20067_SoundRecording_01-008.ogg",
-        "smallImageUrl": "http://cdn.choosedigital.net/i/m/s/0724357688451.jpg",
-        "mediumImageUrl": "http://cdn.choosedigital.net/i/m/m/0724357688451.jpg",
-        "largeImageUrl": "http://cdn.choosedigital.net/i/m/l/0724357688451.jpg",
-        "componentNumber": "1",
-        "trackNumber": "8",
-        "price": "129",
-        "startDate": "2004-03-09T00:00:00Z",
-        "bitrate": "",
-        "releaseType": "TrackRelease",
-        "popularity": "0"
-    }]
+	"numFound":418,
+	"start":0,
+	"searchTerm":"u2",
+	"genres":[
+		{
+			"name":"Rock","count":381
+		},{
+			"name":"Pop","count":56
+		},{
+			"name":"Blues","count":4
+		},{
+			"name":"Country","count":4
+		},{
+			"name":"Comedy","count":1
+		},{
+			"name":"Dance","count":1
+		},{
+			"name":"Holiday","count":1
+		},{
+			"name":"R & B","count":1
+		}
+	],
+	"releaseTypes":[
+		{
+			"name":"TrackRelease","count":418
+		},{
+			"name":"Album","count":31
+		}
+	],
+	"releases":[
+		{
+			"cdin":"d0a45f9836c6c45aae6057005fb958c77b14a515",
+			"icpn":"",
+			"albumOnly":"true",
+			"available":"true",
+			"downloadsAvailable":"1",
+			"genre":"Comedy",
+			"displayTitle":"The U2 Spy Incident; Castro; de Gaulle; Nixon; The AMA; Socialized Medicine And More",
+			"sanitizedDisplayTitle":"The U2 Spy Incident; Castro; de Gaulle; Nixon; The AMA; Socialized Medicine And More",
+			"albumDisplayTitle":"At The Hungry I",
+			"sanitizedAlbumDisplayTitle":"At The Hungry I",
+			"label":"VERVE",
+			"copyright":"(P) 1960 The Verve Music Group, a Division of UMG Recordings, Inc.",
+			"duration":"18:06",
+			"explicit":"false",
+			"albumIcpn":"00602527910598",
+			"albumCdin":"9edc123998a4ffc8bf9c3d5fa967229a2d9c068b",
+			"artist":[],
+			"mainArtist":"Mort Sahl",
+			"httpPreviewUrl":"http://d3qcb5osaw6g5.cloudfront.net/s/m/00602527910598/UMG_audclp_00602527910598_01_002_164.mp3",
+			"streamPreviewUrl":"rtmp://s2sacn9d6arc57.cloudfront.net/cfx/st/s/m/00602527910598/UMG_audclp_00602527910598_01_002_164.mp3",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/s/00602527910598.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/m/00602527910598.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/l/00602527910598.jpg",
+			"componentNumber":"1",
+			"trackNumber":"2",
+			"price":"129","startDate":"2011-12-05T00:00:00Z",
+			"bitrate":"",
+			"releaseType":"TrackRelease","originalReleaseDate":"2011-12-06T00:00:00Z",
+			"popularity":"0"
+		},{
+			"cdin":"effbbdb217fdbe065fc3c1a05ab59df11883d7ac",
+			"icpn":"",
+			"albumOnly":"false",
+			"available":"true",
+			"downloadsAvailable":"1",
+			"genre":"Pop",
+			"displayTitle":"The Fly",
+			"sanitizedDisplayTitle":"The Fly",
+			"albumDisplayTitle":"Achtung Baby",
+			"sanitizedAlbumDisplayTitle":"Achtung Baby",
+			"label":"Island\/Interscope\/UMe",
+			"copyright":"(P) 2011 Universal-Island Records Ltd.",
+			"duration":"4:29",
+			"explicit":"false",
+			"albumIcpn":"00602527882048",
+			"albumCdin":"7efeae23302636bbac85fb5a9acfa9dc91f8c406",
+			"artist":[],
+			"mainArtist":"U2",
+			"httpPreviewUrl":"http://d3qcb5osaw6g5.cloudfront.net/s/m/00602527882048/UMG_audclp_00602527882048_01_007_164.mp3",
+			"streamPreviewUrl":"rtmp://s2sacn9d6arc57.cloudfront.net/cfx/st/s/m/00602527882048/UMG_audclp_00602527882048_01_007_164.mp3",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/s/00602527882048.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/m/00602527882048.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/l/00602527882048.jpg",
+			"componentNumber":"1",
+			"trackNumber":"7",
+			"price":"129","startDate":"2011-11-01T00:00:00Z",
+			"bitrate":"",
+			"releaseType":"TrackRelease","originalReleaseDate":"2011-11-01T00:00:00Z",
+			"popularity":"0"
+		},{
+			"cdin":"7c03df584d234a83648981bf7e5192565275cee8",
+			"icpn":"",
+			"albumOnly":"false",
+			"available":"true",
+			"downloadsAvailable":"1",
+			"genre":"Pop",
+			"displayTitle":"Mysterious Ways",
+			"sanitizedDisplayTitle":"Mysterious Ways",
+			"albumDisplayTitle":"Achtung Baby",
+			"sanitizedAlbumDisplayTitle":"Achtung Baby",
+			"label":"Island\/Interscope\/UMe",
+			"copyright":"(P) 2011 Universal-Island Records Ltd.",
+			"duration":"4:04",
+			"explicit":"false",
+			"albumIcpn":"00602527882048",
+			"albumCdin":"7efeae23302636bbac85fb5a9acfa9dc91f8c406",
+			"artist":[],
+			"mainArtist":"U2",
+			"httpPreviewUrl":"http://d3qcb5osaw6g5.cloudfront.net/s/m/00602527882048/UMG_audclp_00602527882048_01_008_164.mp3",
+			"streamPreviewUrl":"rtmp://s2sacn9d6arc57.cloudfront.net/cfx/st/s/m/00602527882048/UMG_audclp_00602527882048_01_008_164.mp3",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/s/00602527882048.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/m/00602527882048.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/l/00602527882048.jpg",
+			"componentNumber":"1",
+			"trackNumber":"8",
+			"price":"129","startDate":"2011-11-01T00:00:00Z",
+			"bitrate":"",
+			"releaseType":"TrackRelease","originalReleaseDate":"2011-11-01T00:00:00Z",
+			"popularity":"0"
+		}
+	]
 }
 ```
 
@@ -649,7 +628,7 @@ This is a simple way to get all the valid genres
 		<td><code>country</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td>One of "us" or "ca"</td>
+		<td>valid values: us, ca. Default value = us</td>
 	</tr>
 	<tr>
 		<td><code>hashedCustomerId</code></td>
@@ -674,7 +653,7 @@ This is a simple way to get all the valid genres
 
 ### Example
 
-> None
+> GET http://apistg.choosedigital.net/music/detail/7de9747835d903c57a765c43d79eb09b6f6a1eb2
 ```js
 {
     "cdin": "7de9747835d903c57a765c43d79eb09b6f6a1eb2",
@@ -894,7 +873,7 @@ This is a simple way to get all the valid genres
 ## Update
 
 ### URL
-> None
+> http://apistg.choosedigital.net/music/update
 
 ### Parameters
 
@@ -939,14 +918,14 @@ This is a simple way to get all the valid genres
 
 ### Example
 
-> None
+> PUT http://apistg.choosedigital.net/music/update
 ```js
 ```
 
 ## Cancel
 
 ### URL
-> None
+> http://apistg.choosedigital.net/music/cancel
 
 ### Parameters
 
@@ -991,6 +970,6 @@ This is a simple way to get all the valid genres
 
 ### Example
 
-> None
+> PUT http://apistg.choosedigital.net/music/cancel
 ```js
 ```
