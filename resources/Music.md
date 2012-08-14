@@ -15,7 +15,9 @@ None
 
 > GET http://apistg.choosedigital.net/music
 ```js
-{"ping":"pong"}
+{
+	"ping":"pong"
+}
 ```
 
 ## Genres
@@ -27,7 +29,20 @@ This is a simple way to get all the valid genres
 
 ### Parameters
 
-None
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Required</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>tenantId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>The tenant id</td>
+	</tr>
+</table>
 
 ### Example
 
@@ -42,15 +57,70 @@ None
 ## Retrieve Artist Detail
 
 ### URL
-> None
+> http://apistg.choosedigital.net/music/artist/[artist]/[country]/[albumOnly]
 
 ### Parameters
 
-None
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Required</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>artist</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td>Artist name</td>
+	</tr>
+	<tr>
+		<td><code>country</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>albumOnly</code></td>
+		<td>Required</td>
+		<td>boolean</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>rows</code></td>
+		<td>Optional</td>
+		<td>integer</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>start</code></td>
+		<td>Optional</td>
+		<td>integer</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>cdin</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>sort</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>tenantId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>The tenant id</td>
+	</tr>
+</table>
 
 ### Example
 
-> None
+> http://apistg.choosedigital.net/music/artist/metallica/us/true
 ```js
 ```
 
@@ -63,40 +133,46 @@ None
 
 <table>
 	<tr>
-		<th>Parameter</th>
-		<th>Description</th>
+		<th>Name</th>
 		<th>Required</th>
-		<th>Example</th>
+		<th>Type</th>
+		<th>Description</th>
 	</tr>
 	<tr>
-		<td>listId</td>
-		<td>The list id</td>
-		<td>Yes</td>
+		<td><code>listId</code></td>
+		<td>Required</td>
+		<td>string</td>
 		<td>listId=staffpicks</td>
 	</tr>
 	<tr>
-		<td>country</td>
+		<td><code>country</code></td>
+		<td>Required</td>
+		<td>string</td>
 		<td>One of "us" or "ca"</td>
-		<td>Yes</td>
-		<td>country=us</td>
 	</tr>
 	<tr>
-		<td>genre</td>
-		<td>Genre</td>
-		<td>No</td>
-		<td>genre=staffpicks</td>
+		<td><code>genre</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td></td>
 	</tr>
 	<tr>
-		<td>rows</td>
+		<td><code>rows</code></td>
+		<td>Optional</td>
+		<td>integer</td>
 		<td>Number of rows to return</td>
-		<td>No</td>
-		<td>rows=20</td>
 	</tr>
 	<tr>
-		<td>releaseType</td>
-		<td>Type of release</td>
-		<td>No</td>
+		<td><code>releaseType</code></td>
+		<td>Optional</td>
+		<td>string</td>
 		<td>releaseType=album</td>
+	</tr>
+	<tr>
+		<td><code>tenantId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>The tenant id</td>
 	</tr>
 </table>
 
@@ -199,11 +275,42 @@ None
 ## Download
 
 ### URL
-> None
+> http://apistg.choosedigital.net/music/download/[cdin]/[hashedCustomerId]/[country]
 
 ### Parameters
 
-None
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Required</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>cdin</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>hashedCustomerId</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>country</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>tenantId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>The tenant id</td>
+	</tr>
+</table>
 
 ### Example
 
@@ -218,7 +325,20 @@ None
 
 ### Parameters
 
-None
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Required</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>tenantId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>The tenant id</td>
+	</tr>
+</table>
 
 ### Example
 
@@ -235,58 +355,70 @@ None
 
 <table>
 	<tr>
-		<th>Parameter</th>
-		<th>Description</th>
+		<th>Name</th>
 		<th>Required</th>
-		<th>Example</th>
+		<th>Type</th>
+		<th>Description</th>
 	</tr>
 	<tr>
-		<td>term</td>
+		<td><code>term</code></td>
+		<td>Required</td>
+		<td>string</td>
 		<td>Query keyword(s)</td>
-		<td>Yes</td>
-		<td>term=love</td>
 	</tr>
 	<tr>
-		<td>country</td>
+		<td><code>country</code></td>
+		<td>Optional</td>
+		<td>string</td>
 		<td>One of "us" or "ca"</td>
-		<td>No</td>
-		<td>country=us (default is "us")</td>
 	</tr>
 	<tr>
-		<td>artist</td>
+		<td><code>artist</code></td>
+		<td>Optional</td>
+		<td>string</td>
 		<td>Artist name</td>
-		<td>No</td>
-		<td>artist=metallica</td>
 	</tr>
 	<tr>
-		<td>genre</td>
+		<td><code>genre</code></td>
+		<td>Optional</td>
+		<td>string</td>
 		<td>Genre</td>
-		<td>No</td>
-		<td>genre=metal</td>
 	</tr>
 	<tr>
-		<td>releaseType</td>
-		<td>Show Albums or Tracks (trackrelease, album)</td>
-		<td>No</td>
-		<td>releaseType=album (default is trackrelease)</td>
-	</tr>
-	<tr>
-		<td>sortedBy</td>
+		<td><code>sortedBy</code></td>
+		<td>Optional</td>
+		<td>string</td>
 		<td>Sort by any field in the Release (add :a or :d Ascending/Descending)</td>
-		<td>No</td>
-		<td>sortedBy=displayTitle:a</td>
 	</tr>
 	<tr>
-		<td>rows</td>
+		<td><code>rows</code></td>
+		<td>Optional</td>
+		<td>integer</td>
 		<td>Number of rows to return</td>
-		<td>No</td>
-		<td>rows=30</td>
 	</tr>
 	<tr>
-		<td>start</td>
+		<td><code>start</code></td>
+		<td>Optional</td>
+		<td>integer</td>
 		<td>Where to start in the results (for pagination)</td>
-		<td>No</td>
-		<td>start=20</td>
+	</tr>
+	<tr>
+		<td><code>releaseType</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>Show Albums or Tracks (trackrelease, album)</td>
+	</tr>
+	<tr>
+		<td><code>includeFutureReleases</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>tenantId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>The tenant id</td>
 	</tr>
 </table>
 
@@ -450,22 +582,40 @@ None
 
 <table>
 	<tr>
-		<th>Parameter</th>
-		<th>Description</th>
+		<th>Name</th>
 		<th>Required</th>
-		<th>Example</th>
+		<th>Type</th>
+		<th>Description</th>
 	</tr>
 	<tr>
 		<td>cdin</td>
+		<td>Required</td>
+		<td>string</td>
 		<td>ChooseDigital id</td>
-		<td>Yes</td>
-		<td>cdin=89b4d797f3c34fd12699a3dc81259da756b1123e</td>
 	</tr>
 	<tr>
 		<td>country</td>
+		<td>Optional</td>
+		<td>string</td>
 		<td>One of "us" or "ca"</td>
-		<td>No</td>
-		<td>country=us (default is "us")</td>
+	</tr>
+	<tr>
+		<td>hashedCustomerId</td>
+		<td>Optional</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>includeFutureReleases</td>
+		<td>Optional</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>tenantId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>The tenant id</td>
 	</tr>
 </table>
 
@@ -514,7 +664,38 @@ None
 
 ### Parameters
 
-None
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Required</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>customerId</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>orderId</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>authentication</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>tenantId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>The tenant id</td>
+	</tr>
+</table>
 
 ### Example
 
@@ -531,76 +712,88 @@ None
 
 <table>
 	<tr>
-		<th>Parameter</th>
-		<th>Description</th>
+		<th>Name</th>
 		<th>Required</th>
-		<th>Example</th>
+		<th>Type</th>
+		<th>Description</th>
 	</tr>
 	<tr>
 		<td>cdin</td>
+		<td>Required</td>
+		<td>string</td>
 		<td>ChooseDigital id</td>
-		<td>Yes</td>
-		<td>cdin=89b4d797f3c34fd12699a3dc81259da756b1123e</td>
-	</tr>
-	<tr>
-		<td>customerId</td>
-		<td>consumer id</td>
-		<td>Yes</td>
-		<td>consumerId=ABCDEF</td>
-	</tr>
-	<tr>
-		<td>customerCountryCode</td>
-		<td>One of "us" or "ca"</td>
-		<td>Yes</td>
-		<td>customerCountryCode=us</td>
 	</tr>
 	<tr>
 		<td>priceSold</td>
-		<td>price media was sold for</td>
-		<td>Yes</td>
-		<td>priceSold=208</td>
-	</tr>
-	<tr>
-		<td>customerPostalCode</td>
-		<td>Postal code</td>
-		<td>Yes</td>
-		<td>customerPostalCode=30155</td>
+		<td>Required</td>
+		<td>integer</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>taxAmount</td>
+		<td>Required</td>
+		<td>integer</td>
 		<td>Tax amount charged</td>
-		<td>Yes</td>
-		<td>taxAmount=7</td>
 	</tr>
 	<tr>
-		<td>authentication</td>
-		<td>Authentication</td>
-		<td>Yes</td>
-		<td>authentication=dkfjlweiFeie</td>
+		<td>customerId</td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>customerEmail</td>
-		<td>customer Email</td>
-		<td>No</td>
-		<td>customerEmail=bob@Bob.com</td>
+		<td>Optional</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>customerPostalCode</td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>customerCountryCode</td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>promoCode</td>
+		<td>Optional</td>
+		<td>string</td>
 		<td>Promo code</td>
-		<td>No</td>
-		<td>promoCode=friday</td>
 	</tr>
 	<tr>
 		<td>tenantId</td>
-		<td>Tenant id</td>
-		<td>No</td>
-		<td>tenantId=partner1</td>
+		<td>Optional</td>
+		<td>string</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>transactionId</td>
-		<td>Partner transaction id</td>
-		<td>No</td>
-		<td>transactionId=123456</td>
+		<td>Optional</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>segment</td>
+		<td>Optional</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>tier</td>
+		<td>Optional</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>authentication</td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
 	</tr>
 </table>		
 
@@ -609,39 +802,39 @@ None
 > POST http://apistg.choosedigital.net/music/purchase
 ```js
 {
-"orderId":"WL2-3821126-2848539",
-"downloadLink":"http://delivery-stage.choosedigital.cloudbees.net/user/music/download/146596fd82d990083609bf75c3fa4122102068af6627696113a5733c81870690/2b1220c86b1b2cb153cc54db17b7c24c07a5833b/1337626959558/c96a4e8c509e03ab8955218963f71d03b1e5cf3ec78f553ebbb2ac2a325e3e35",
-"priceSold":"100",    
-"release":
-	{        
-		"cdin":"2b1220c86b1b2cb153cc54db17b7c24c07a5833b",        
-		"albumOnly":"false",
-		"available":"",
-		"genre":"Rock",
-		"displayTitle":"Just",
-		"sanitizedDisplayTitle":"Just",
-		"icpn":"",
-		"albumIcpn":"5099969361456",
-		"albumCdin":"be73350559df9e2f71f1ab823d0de5b817c8aa74",
-		"albumDisplayTitle":"The Bends (Collectors Edition)",
-		"sanitizedAlbumDisplayTitle":"The Bends (collectors Edition)",
-		"label":"EMI Catalogue",
-		"copyright":"(P) 1995 The copyright in this sound recording is owned by EMI Records Ltd",
-		"duration":"3:52",
-		"explicit":"false",
-		"mainArtist":"Radiohead",
-		"artist":[],
-		"mp3PreviewUrl":"http://cdn.choosedigital.net/s/m/5099969361456/5099969361456_T-20067_SoundRecording_01-007.mp3","oggPreviewUrl":"http://cdn.choosedigital.net/s/m/5099969361456/5099969361456_T-20067_SoundRecording_01-007.ogg",
-		"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/5099969361456.jpg",
-		"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/5099969361456.jpg",
-		"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/5099969361456.jpg",
-		"componentNumber":"1",
-		"trackNumber":"7",
-		"price":"129",
-		"startDate":"2009-04-28T00:00:00Z",
-		"bitrate":"",
-		"releaseType":"TrackRelease",
-		"popularity":"0"
+	"orderId":"WL2-3821126-2848539",
+	"downloadLink":"http://delivery-stage.choosedigital.cloudbees.net/user/music/download/146596fd82d990083609bf75c3fa4122102068af6627696113a5733c81870690/2b1220c86b1b2cb153cc54db17b7c24c07a5833b/1337626959558/c96a4e8c509e03ab8955218963f71d03b1e5cf3ec78f553ebbb2ac2a325e3e35",
+	"priceSold":"100",    
+	"release": {        
+			"cdin":"2b1220c86b1b2cb153cc54db17b7c24c07a5833b",        
+			"albumOnly":"false",
+			"available":"",
+			"genre":"Rock",
+			"displayTitle":"Just",
+			"sanitizedDisplayTitle":"Just",
+			"icpn":"",
+			"albumIcpn":"5099969361456",
+			"albumCdin":"be73350559df9e2f71f1ab823d0de5b817c8aa74",
+			"albumDisplayTitle":"The Bends (Collectors Edition)",
+			"sanitizedAlbumDisplayTitle":"The Bends (collectors Edition)",
+			"label":"EMI Catalogue",
+			"copyright":"(P) 1995 The copyright in this sound recording is owned by EMI Records Ltd",
+			"duration":"3:52",
+			"explicit":"false",
+			"mainArtist":"Radiohead",
+			"artist":[],
+			"mp3PreviewUrl":"http://cdn.choosedigital.net/s/m/5099969361456/5099969361456_T-20067_SoundRecording_01-007.mp3",
+			"oggPreviewUrl":"http://cdn.choosedigital.net/s/m/5099969361456/5099969361456_T-20067_SoundRecording_01-007.ogg",
+			"smallImageUrl":"http://cdn.choosedigital.net/i/m/s/5099969361456.jpg",
+			"mediumImageUrl":"http://cdn.choosedigital.net/i/m/m/5099969361456.jpg",
+			"largeImageUrl":"http://cdn.choosedigital.net/i/m/l/5099969361456.jpg",
+			"componentNumber":"1",
+			"trackNumber":"7",
+			"price":"129",
+			"startDate":"2009-04-28T00:00:00Z",
+			"bitrate":"",
+			"releaseType":"TrackRelease",
+			"popularity":"0"
 	}
 }
 ```
@@ -653,7 +846,44 @@ None
 
 ### Parameters
 
-None
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Required</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>orderId</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>customerId</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>tenantId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>The tenant id</td>
+	</tr>
+	<tr>
+		<td><code>transactionId</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>authentication</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+</table>
 
 ### Example
 
@@ -668,7 +898,44 @@ None
 
 ### Parameters
 
-None
+<table>
+	<tr>
+		<th>Parameter</th>
+		<th>Description</th>
+		<th>Required</th>
+		<th>Example</th>
+	</tr>
+	<tr>
+		<td><code>orderId</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>customerId</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>tenantId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>The tenant id</td>
+	</tr>
+	<tr>
+		<td><code>cancelTransactionId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>authentication</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+</table>
 
 ### Example
 
