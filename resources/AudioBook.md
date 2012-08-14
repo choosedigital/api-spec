@@ -1,11 +1,11 @@
-# EBook
+# AudioBook
 
 ## Service Check
 
 This is a simple sanity check to make sure your header authentication is working properly. Can also be used to check that the service is up.
 
 ### URL 
-> http://apistg.choosedigital.net/ebook
+> http://apistg.choosedigital.net/audiobook
 
 ### Parameters
 
@@ -26,7 +26,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://apistg.choosedigital.net/ebook
+> GET http://apistg.choosedigital.net/audiobook
 ```js
 [
 	"ping":"pong"
@@ -36,7 +36,7 @@ This is a simple sanity check to make sure your header authentication is working
 ## List
 
 ### URL 
-> http://apistg.choosedigital.net/ebook/list/[listId]/[country]
+> http://apistg.choosedigital.net/audiobook/list/[listId]/[country]
 
 ### Parameters
 
@@ -81,7 +81,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://apistg.choosedigital.net/ebook/list/top/us
+> GET http://apistg.choosedigital.net/audiobook/list/top/us
 ```js
 ```
 
@@ -89,7 +89,7 @@ This is a simple sanity check to make sure your header authentication is working
 ## Download
 
 ### URL 
-> http://apistg.choosedigital.net/ebook/download/[cdin]/[hashedCustomerId]/[country]
+> http://apistg.choosedigital.net/audiobook/download/[cdin]/[hashedCustomerId]/[country]
 
 ### Parameters
 
@@ -128,14 +128,14 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://apistg.choosedigital.net/ebook/download/[cdin]/[hashedCustomerId]/[country]
+> GET http://apistg.choosedigital.net/audiobook/download/[cdin]/[hashedCustomerId]/[country]
 ```js
 ```
 
 ## Search
 
 ### URL 
-> http://apistg.choosedigital.net/ebook/search
+> http://apistg.choosedigital.net/audiobook/search
 
 ### Parameters
 
@@ -234,7 +234,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://apistg.choosedigital.net/ebook/search
+> GET http://apistg.choosedigital.net/audiobook/search
 ```js
 ```
 
@@ -242,7 +242,7 @@ This is a simple sanity check to make sure your header authentication is working
 ## Detail
 
 ### URL 
-> http://apistg.choosedigital.net/ebook/detail/[cdin]
+> http://apistg.choosedigital.net/audiobook/detail/[cdin]
 
 ### Parameters
 
@@ -281,7 +281,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://apistg.choosedigital.net/ebook/detail/[cdin]
+> GET http://apistg.choosedigital.net/audiobook/detail/[cdin]
 ```js
 ```
 
@@ -289,7 +289,7 @@ This is a simple sanity check to make sure your header authentication is working
 ## Curated Charts
 
 ### URL 
-> http://apistg.choosedigital.net/ebook/curatedcharts/[country]
+> http://apistg.choosedigital.net/audiobook/curatedcharts/[country]
 
 ### Parameters
 
@@ -316,7 +316,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://apistg.choosedigital.net/ebook/curatedcharts/us
+> GET http://apistg.choosedigital.net/audiobook/curatedcharts/us
 ```js
 ```
 
@@ -324,7 +324,7 @@ This is a simple sanity check to make sure your header authentication is working
 ## Purchase
 
 ### URL 
-> http://apistg.choosedigital.net/ebook/purchase
+> http://apistg.choosedigital.net/audiobook/purchase
 
 ### Parameters
 
@@ -447,7 +447,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://apistg.choosedigital.net/ebook/purchase
+> GET http://apistg.choosedigital.net/audiobook/purchase
 ```js
 ```
 
@@ -455,7 +455,7 @@ This is a simple sanity check to make sure your header authentication is working
 ## Update
 
 ### URL 
-> http://apistg.choosedigital.net/ebook/update
+> http://apistg.choosedigital.net/audiobook/update
 
 ### Parameters
 
@@ -500,7 +500,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://apistg.choosedigital.net/ebook/update
+> GET http://apistg.choosedigital.net/audiobook/update
 ```js
 ```
 
@@ -508,7 +508,7 @@ This is a simple sanity check to make sure your header authentication is working
 ## Cancel
 
 ### URL 
-> http://apistg.choosedigital.net/ebook/cancel
+> http://apistg.choosedigital.net/audiobook/cancel
 
 ### Parameters
 
@@ -553,6 +553,6 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://apistg.choosedigital.net/ebook/cancel
+> GET http://apistg.choosedigital.net/audiobook/cancel
 ```js
 ```
