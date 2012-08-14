@@ -13,9 +13,9 @@ The ChooseDigital API is a JSON API.
     </thead>
     <tbody>
 	    <tr>
-            <td></td>
-            <td></td>
-            <td><a href="#"></a></td>
+            <td>Artist</td>
+            <td>GET</td>
+            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#artist">Retrieve Artist Detail</a></td>
         </tr>
 	    <tr>
             <td></td>
