@@ -13,7 +13,7 @@ The ChooseDigital API is a JSON API.
     </thead>
     <tbody>
 	    <tr>
-            <td>/music/artist/[artist]/[country]/[albumOnly]?rows=[rows]&start=[start]&cdin=[cdin]&sort=[sort]</td>
+            <td>/music/artist/[artist]/[country]/[albumOnly]</td>
             <td>GET</td>
             <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#artist">Retrieve Artist Detail</a></td>
         </tr>
