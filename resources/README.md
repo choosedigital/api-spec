@@ -15,17 +15,62 @@ The ChooseDigital API is a JSON API.
 	    <tr>
             <td>/music/artist/[artist]/[country]/[albumOnly]</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#artist">Retrieve Artist Detail</a></td>
+            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#retrieve-artist-detail">Retrieve Artist Detail</a></td>
         </tr>
 	    <tr>
-            <td></td>
-            <td></td>
-            <td><a href="#"></a></td>
+            <td>/music/list/{listId}/{country}</td>
+            <td>GET</td>
+            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#">List</a></td>
         </tr>
 	    <tr>
-            <td></td>
-            <td></td>
-            <td><a href="#"></a></td>
+            <td>/music/download/{cdin}/{hashedCustomerId}/{country}</td>
+            <td>GET</td>
+            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#">Download</a></td>
+        </tr>
+	    <tr>
+            <td>/music/genres</td>
+            <td>GET</td>
+            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#">Genres</a></td>
+        </tr>
+	    <tr>
+            <td>/music/curatedcharts/{country}</td>
+            <td>GET</td>
+            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#">Curated Charts</a></td>
+        </tr>
+	    <tr>
+            <td>/music/search</td>
+            <td>GET</td>
+            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#">Search</a></td>
+        </tr>
+	    <tr>
+            <td>/music/detail/[cdin]</td>
+            <td>GET</td>
+            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#">Detail</a></td>
+        </tr>
+	    <tr>
+            <td>/music/resetdownload</td>
+            <td>PUT</td>
+            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#">Reset Download</a></td>
+        </tr>
+	    <tr>
+            <td>/music/purchase</td>
+            <td>POST</td>
+            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#">Purchase</a></td>
+        </tr>
+	    <tr>
+            <td>/music/update</td>
+            <td>PUT</td>
+            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#">Update</a></td>
+        </tr>
+	    <tr>
+            <td>/music/cancel</td>
+            <td>PUT</td>
+            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#">Cancel</a></td>
+        </tr>
+	    <tr>
+            <td>/music</td>
+            <td>GET</td>
+            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#"></a></td>
         </tr>
     </tbody>
 </table>
