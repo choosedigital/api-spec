@@ -4,54 +4,192 @@
 
 This is a simple sanity check to make sure your authentication is working properly. Can also be used to check that the service is up.
 
-Request URL: 
+### URL 
 > http://apistg.choosedigital.net/music
 
-Request Method: GET
+### Parameters
 
-Response (always the same)
+None
 
+### Example
+
+> GET http://apistg.choosedigital.net/music
 ```js
 {"ping":"pong"}
 ```
 
-### Genres
+## Genres
 
-This is a simple way to get all the Valid Genres 
+This is a simple way to get all the valid genres
 
-Request URL: http://apistg.choosedigital.net/music/genres
+### URL
+>http://apistg.choosedigital.net/music/genres
 
-Request Method: GET
+### Parameters
 
-Response (always the same)
+None
 
+### Example
+
+> GET http://apistg.choosedigital.net/music/genres
 ```js
 {
-genres:["Pop","Classical","Rock","Christian","Metal","Dance","Gospel","World","Alternative","Jazz","Country","R&B","Children's Music","Electronic","Latin","New Age","Hip Hop/Rap","German Pop","Soundtrack","Folk","Singer/Songwriter","Comedy"]
+	genres:["Pop","Classical","Rock","Christian","Metal","Dance","Gospel","World","Alternative","Jazz","Country","R&B","Children's Music","Electronic","Latin","New Age","Hip Hop/Rap","German Pop","Soundtrack","Folk","Singer/Songwriter","Comedy"]
 }
 ```
 
 
 ## Retrieve Artist Detail
 
+### URL
+> None
+
+### Parameters
+
+None
+
+### Example
+
+> None
+```js
+```
+
 ## List
+
+### URL
+> None
+
+### Parameters
+
+None
+
+### Example
+
+> None
+```js
+```
 
 ## Download
 
+### URL
+> None
+
+### Parameters
+
+None
+
+### Example
+
+> None
+```js
+```
+
 ## Curated Charts
+
+### URL
+> None
+
+### Parameters
+
+None
+
+### Example
+
+> None
+```js
+```
 
 ## Search
 
+### URL
+> None
+
+### Parameters
+
+None
+
+### Example
+
+> None
+```js
+```
+
 ## Detail
+
+### URL
+> None
+
+### Parameters
+
+None
+
+### Example
+
+> None
+```js
+```
 
 ## Reset Download
 
+### URL
+> None
+
+### Parameters
+
+None
+
+### Example
+
+> None
+```js
+```
+
 ## Purchase
+
+### URL
+> None
+
+### Parameters
+
+None
+
+### Example
+
+> None
+```js
+```
 
 ## Update
 
+### URL
+> None
+
+### Parameters
+
+None
+
+### Example
+
+> None
+```js
+```
+
 ## Cancel
 
+### URL
+> None
+
+### Parameters
+
+None
+
+### Example
+
+> None
+```js
+```
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ### Search
 
