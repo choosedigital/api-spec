@@ -200,6 +200,169 @@
 	</tr>
 </table>
 
+## Music
+
+### Example MusicChart Object
+
+### MusicChart fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>displayTitle</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>releases</td>
+		<td>list</td>
+		<td></td>
+	</tr>
+</table>
+		
+		
+## Errors
+
+### Example Errors Object
+
+### Errors fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>errors</td>
+		<td>list</td>
+		<td></td>
+	</tr>
+</table>
+
+## Error
+
+### Example Error Object
+
+### Error fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>parameter</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>message</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+</table>
+
+## Genre
+
+### Example Genre Object
+
+### Genre fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>count</td>
+		<td>long</td>
+		<td></td>
+	</tr>
+</table>
+
+## ReleaseType
+
+### Example ReleaseType Object
+
+### ReleaseType fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>count</td>
+		<td>long</td>
+		<td></td>
+	</tr>
+</table>
+
+
+## MusicSearchResult
+
+### Example MusicSearchResult Object
+
+### MusicSearchResult fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>numFound</td>
+		<td>long</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>start</td>
+		<td>long</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>searchTerm</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>genres</td>
+		<td>list of Genre</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>releaseTypes</td>
+		<td>list of ReleaseType</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>releases</td>
+		<td>list of Music</td>
+		<td></td>
+	</tr>
+</table>
+
+		
+
 ## Notes on data formats
 
 ### Dates
