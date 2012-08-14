@@ -9,7 +9,20 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Parameters
 
-None
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Required</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>tenantId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>The tenant id</td>
+	</tr>
+</table>
 
 ### Example
 
