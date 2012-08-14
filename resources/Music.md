@@ -2,7 +2,7 @@
 
 ## Service Check
 
-This is a simple sanity check to make sure your authentication is working properly. Can also be used to check that the service is up.
+This is a simple sanity check to make sure your header authentication is working properly. Can also be used to check that the service is up.
 
 ### URL 
 > http://apistg.choosedigital.net/music
@@ -355,8 +355,8 @@ None
         "albumOnly": "false",
         "available": "true",
         "genre": "Classical",
-        "displayTitle": "III.     Darthulas Grabesesang: MŠdchen von Kola, du schlŠfst! (Ossian, trans. Herder)",
-        "sanitizedDisplayTitle": "Iii.     Darthulas Grabesesang: MŠdchen Von Kola, Du SchlŠfst! (ossian, Trans. Herder)",
+        "displayTitle": "III.     Darthulas Grabesesang: Mï¿½dchen von Kola, du schlï¿½fst! (Ossian, trans. Herder)",
+        "sanitizedDisplayTitle": "Iii.     Darthulas Grabesesang: Mï¿½dchen Von Kola, Du Schlï¿½fst! (ossian, Trans. Herder)",
         "albumDisplayTitle": "Great Secular Choral Works",
         "sanitizedAlbumDisplayTitle": "Great Secular Choral Works",
         "label": "Virgin Classics",
@@ -384,8 +384,8 @@ None
         "albumOnly": "false",
         "available": "true",
         "genre": "Classical",
-        "displayTitle": "III.     Darthulas Grabesesang: MŠdchen von Kola, du schlŠfst! (Ossian, trans. Herder)",
-        "sanitizedDisplayTitle": "Iii.     Darthulas Grabesesang: MŠdchen Von Kola, Du SchlŠfst! (ossian, Trans. Herder)",
+        "displayTitle": "III.     Darthulas Grabesesang: Mï¿½dchen von Kola, du schlï¿½fst! (Ossian, trans. Herder)",
+        "sanitizedDisplayTitle": "Iii.     Darthulas Grabesesang: Mï¿½dchen Von Kola, Du Schlï¿½fst! (ossian, Trans. Herder)",
         "albumDisplayTitle": "Brahms-Schumann A Capella Choruses",
         "sanitizedAlbumDisplayTitle": "Brahms-schumann A Capella Choruses",
         "label": "Virgin Classics",
@@ -413,8 +413,8 @@ None
         "albumOnly": "false",
         "available": "true",
         "genre": "Latin",
-        "displayTitle": "Ya No Puedo Darte M‡s",
-        "sanitizedDisplayTitle": "Ya No Puedo Darte M‡s",
+        "displayTitle": "Ya No Puedo Darte Mï¿½s",
+        "sanitizedDisplayTitle": "Ya No Puedo Darte Mï¿½s",
         "albumDisplayTitle": "Original Masters",
         "sanitizedAlbumDisplayTitle": "Original Masters",
         "label": "Capitol Latin",
