@@ -102,7 +102,7 @@ None
 
 ### Example
 
-> http://apistg.choosedigital.net/music/list/staffpicks/staffpicks
+> GET http://apistg.choosedigital.net/music/list/staffpicks/staffpicks
 ```js
 {
 	"displayTitle":"Staff Picks - Albums",
@@ -525,7 +525,7 @@ None
 ## Purchase
 
 ### URL
-> http://apistg.choosedigital.net/music/purchase
+> POST http://apistg.choosedigital.net/music/purchase
 
 ### Parameters
 
