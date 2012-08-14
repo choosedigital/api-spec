@@ -1,11 +1,6 @@
-# Music API
+# Music
 
-## Music
-
-Contents
-
-
-### Ping
+## Service Check
 
 This is a simple sanity check to make sure your authentication is working properly. Can also be used to check that the service is up.
 
@@ -20,9 +15,9 @@ Response (always the same)
 {"ping":"pong"}
 ```
 
-### Genre
+### Genres
 
-This is a simple way to get all the Vailid Genres 
+This is a simple way to get all the Valid Genres 
 
 Request URL: http://apistg.choosedigital.net/music/genres
 
@@ -35,6 +30,28 @@ Response (always the same)
 genres:["Pop","Classical","Rock","Christian","Metal","Dance","Gospel","World","Alternative","Jazz","Country","R&B","Children's Music","Electronic","Latin","New Age","Hip Hop/Rap","German Pop","Soundtrack","Folk","Singer/Songwriter","Comedy"]
 }
 ```
+
+
+## Retrieve Artist Detail
+
+## List
+
+## Download
+
+## Curated Charts
+
+## Search
+
+## Detail
+
+## Reset Download
+
+## Purchase
+
+## Update
+
+## Cancel
+
 
 ### Search
 
