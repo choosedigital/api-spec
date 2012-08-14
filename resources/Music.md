@@ -69,7 +69,7 @@ This is a simple way to get all the valid genres
 
 ## Retrieve Artist Detail
 
-Returns a MusicSearchResult object
+Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#musicsearchresult) object
 
 ### URL
 > http://apistg.choosedigital.net/music/artist/[artist]/[country]/[albumOnly]
