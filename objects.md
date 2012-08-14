@@ -99,7 +99,7 @@
 	</tr>
 	<tr>
 		<td><code>artist</code></td>
-		<td>list</td>
+		<td>list fo String</td>
 		<td></td>
 	</tr>
 	<tr>
@@ -219,7 +219,7 @@
 	</tr>
 	<tr>
 		<td>releases</td>
-		<td>list</td>
+		<td>list of Music</td>
 		<td></td>
 	</tr>
 </table>
@@ -239,7 +239,7 @@
 	</tr>
 	<tr>
 		<td>errors</td>
-		<td>list</td>
+		<td>list of Error</td>
 		<td></td>
 	</tr>
 </table>
