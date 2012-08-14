@@ -57,7 +57,7 @@ None
 ## List
 
 ### URL
-> http://apistg.choosedigital.net/music/list/[]/[]
+> http://apistg.choosedigital.net/music/list/[listId]/[country]
 
 ### Parameters
 
@@ -75,16 +75,16 @@ None
 		<td>listId=staffpicks</td>
 	</tr>
 	<tr>
+		<td>country</td>
+		<td>One of "us" or "ca"</td>
+		<td>Yes</td>
+		<td>country=us</td>
+	</tr>
+	<tr>
 		<td>genre</td>
 		<td>Genre</td>
 		<td>No</td>
 		<td>genre=staffpicks</td>
-	</tr>
-	<tr>
-		<td>country</td>
-		<td>One of "us" or "ca"</td>
-		<td>No</td>
-		<td>country=us</td>
 	</tr>
 	<tr>
 		<td>rows</td>
