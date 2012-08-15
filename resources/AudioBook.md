@@ -502,6 +502,10 @@ This is a simple sanity check to make sure your header authentication is working
 
 > GET http://apistg.choosedigital.net/audiobook/update
 ```js
+{
+	"orderId":"WL3-3359944-6701838",
+	"transactionId":"123456"
+}
 ```
 
 

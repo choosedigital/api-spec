@@ -935,6 +935,10 @@ Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#mus
 
 > PUT http://apistg.choosedigital.net/music/update
 ```js
+{
+	"orderId":"WL3-3359944-6701838",
+	"transactionId":"123456"
+}
 ```
 
 ## Cancel
