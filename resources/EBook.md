@@ -447,7 +447,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://apistg.choosedigital.net/ebook/purchase
+> POST http://apistg.choosedigital.net/ebook/purchase
 ```js
 ```
 

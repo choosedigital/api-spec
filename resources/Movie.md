@@ -564,6 +564,10 @@
 
 > PUT http://apistg.choosedigital.net/movie/update
 ```js
+{
+	"orderId":"WL3-3359944-6701838",
+	"transactionId":"123456"
+}
 ```
 
 ## Cancel
