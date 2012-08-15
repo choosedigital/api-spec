@@ -26,12 +26,15 @@
 
 > GET http://apistg.choosedigital.net/movie
 ```js
+{
+	"ping":"pong"
+}
 ```
 
 ## List
 
 ### URL 
-> http://apistg.choosedigital.net/movie
+> http://apistg.choosedigital.net/movie/list/[listId]/[country]
 
 ### Parameters
 
@@ -43,6 +46,36 @@
 		<th>Description</th>
 	</tr>
 	<tr>
+		<td><code>listId</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>country</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td>valid values: us, ca</td>
+	</tr>
+	<tr>
+		<td><code>rights</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>valid values: buy, rent</td>
+	</tr>
+	<tr>
+		<td><code>genre</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>rows</code></td>
+		<td>Optional</td>
+		<td>integer</td>
+		<td>valid values: 1 to 100</td>
+	</tr>
+	<tr>
 		<td><code>tenantId</code></td>
 		<td>Optional</td>
 		<td>string</td>
@@ -52,8 +85,124 @@
 
 ### Example
 
-> GET http://apistg.choosedigital.net/movie
+> GET http://apistg.choosedigital.net/movie/list/top/us
 ```js
+{
+	"displayTitle":"New and Noteworthy",
+	"movies":[
+		{
+			"cdin":"b98801fa5b6372b088dfbd922a7c7544a270d184",
+			"title":"Project X",
+			"sanitizedTitle":"Project X",
+			"actors":["Thomas Mann","Jonathan Daniel Brown","Oliver Cooper","Dax Flame","Kirby Bliss Blanton","Alexis Knapp","Miles Teller"],
+			"genres":["Comedy"],
+			"rating":"R",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/s/6000068608.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000068608.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000068608.jpg","originalReleaseYear":"2012","salesStartDate":"2012-06-19T00:00:00Z","theatricalReleaseDate":"2012-03-02T00:00:00Z",
+			"available":""
+		},{
+			"cdin":"0e0022de5d5ff8cb7a9e4496227076d584a662ea",
+			"title":"Joyful Noise",
+			"sanitizedTitle":"Joyful Noise",
+			"actors":["Queen Latifah, Dolly Parton, Keke Palmer, Jeremy Jordan"],
+			"genres":["Comedy","Romance","Musical"],
+			"rating":"PG-13",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/s/6000071848.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000071848.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000071848.jpg","originalReleaseYear":"2011","salesStartDate":"2012-05-01T00:00:00Z","theatricalReleaseDate":"2011-07-29T00:00:00Z",
+			"available":""
+		},{
+			"cdin":"6663d278ba376da116783a1f6c954ddf0ac046fb",
+			"title":"Sherlock Holmes: A Game of Shadows",
+			"sanitizedTitle":"Sherlock Holmes: A Game of Shadows",
+			"actors":["Robert Downey Jr.","Jude Law","Noomi Rapace","Jared Harris","Eddie Marsan","Rachel McAdams"],
+			"genres":["Action","Adventure","Suspense","Thriller","Mystery","Crime"],
+			"rating":"PG-13",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/s/6000068672.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000068672.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000068672.jpg","originalReleaseYear":"2011","salesStartDate":"2012-06-12T00:00:00Z","theatricalReleaseDate":"2011-12-16T00:00:00Z",
+			"available":""
+		},{
+			"cdin":"de0f830518421a3ca6a6712b0619b89e863819f8",
+			"title":"Wrath of the Titans",
+			"sanitizedTitle":"Wrath of the Titans",
+			"actors":["Sam Worthington","Rosamund Pike","Bill Nighy","Edgar Ramirez","Toby Kebbell","Danny Huston","Ralph Fiennes","Liam Neeson"],
+			"genres":["Action","Fantasy Adventure"],
+			"rating":"PG-13",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/s/6000071579.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000071579.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000071579.jpg","originalReleaseYear":"2012","salesStartDate":"2012-06-26T00:00:00Z","theatricalReleaseDate":"2012-03-30T00:00:00Z",
+			"available":""
+		},{
+			"cdin":"f6cc0edf4b6ed58e0ac2511e1953250bfd33945a",
+			"title":"Drunkboat",
+			"sanitizedTitle":"Drunkboat",
+			"actors":["John Malkovich","John Goodman","Dana Delaney"],
+			"genres":["Drama","Independent"],
+			"rating":"PG-13",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/s/6000077166.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000077166.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000077166.jpg","originalReleaseYear":"2012","salesStartDate":"2012-07-17T00:00:00Z","theatricalReleaseDate":"2012-07-17T00:00:00Z",
+			"available":""
+		},{
+			"cdin":"f0775e4ea16fc890ad36a72654feed8e38f3af52",
+			"title":"Journey 2: The Mysterious Island",
+			"sanitizedTitle":"Journey 2: The Mysterious Island",
+			"actors":["Dwayne Johnson","Michael Caine","Josh Hutcherson","Vanessa Hudgens","Luis Guzm‡n","Kristin Davis"],
+			"genres":["Family","Action"],
+			"rating":"PG",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/s/6000064147.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000064147.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000064147.jpg","originalReleaseYear":"2011","salesStartDate":"2012-06-05T00:00:00Z","theatricalReleaseDate":"2011-07-29T00:00:00Z",
+			"available":""
+		},{
+			"cdin":"cad61e10c0366f3c1dd26abfc89c4d1eeb59a381",
+			"title":"New Year's Eve",
+			"sanitizedTitle":"New Year's Eve",
+			"actors":["Halle Berry","Jessica Biel","Jon Bon Jovi","Abigail Breslin","Chris \"Ludacris\" Bridges","Robert De Niro","Josh Duhamel","Zac Efron","Hector Elizondo","Katherine Heigl","Ashton Kutche","Seth Meyers","Lea Michele","Sarah Jessica Parker","Michelle Pfeiffer","Til Schweiger","Hilary Swank","Sofia Vergara"],
+			"genres":["Romance","Drama","Comedy"],
+			"rating":"PG-13",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/s/6000070256.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000070256.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000070256.jpg","originalReleaseYear":"2011","salesStartDate":"2012-05-01T00:00:00Z","theatricalReleaseDate":"2011-12-09T00:00:00Z",
+			"available":""
+		},{
+			"cdin":"af3bbc862afc4c313984b660f9225a37f40a9aee",
+			"title":"Philly Kid",
+			"sanitizedTitle":"Philly Kid",
+			"actors":["Wes Chatham","Devon Sawa","Neal Mcdonough","Sarah Butler","Chris Browning"],
+			"genres":["Action","Drama"],
+			"rating":"R",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/s/6000065668.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000065668.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000065668.jpg","originalReleaseYear":"2012","salesStartDate":"2012-05-11T00:00:00Z","theatricalReleaseDate":"2012-05-11T00:00:00Z",
+			"available":""
+		},{
+			"cdin":"697799e42b037cae3f433955d25a371e4f3a4fff",
+			"title":"First Love",
+			"sanitizedTitle":"First Love",
+			"actors":[],
+			"genres":["Documentary","Independent","Sport"],
+			"rating":"NR",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/s/6000076743.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000076743.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000076743.jpg","originalReleaseYear":"2012","salesStartDate":"2012-06-12T00:00:00Z","theatricalReleaseDate":"2012-06-12T00:00:00Z",
+			"available":""
+		},{
+			"cdin":"d7cf53197be88d7d7fd73bc4e2a6465b4afec7bd",
+			"title":"Pray For Japan",
+			"sanitizedTitle":"Pray For Japan",
+			"actors":[],
+			"genres":["Documentary","Foreign","Independent"],
+			"rating":"TV-PG",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/s/6000077395.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000077395.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000077395.jpg","originalReleaseYear":"2012","salesStartDate":"2012-07-24T00:00:00Z","theatricalReleaseDate":"2012-07-24T00:00:00Z",
+			"available":""
+		}
+	]
+}
 ```
 
 ## Player Info
