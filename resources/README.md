@@ -288,11 +288,6 @@ The ChooseDigital API is a JSON API.
     </thead>
     <tbody>
 	    <tr>
-            <td>/videoplayer</td>
-            <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/VideoPlayer.md#view">View</a></td>
-        </tr>
-	    <tr>
             <td>/videoplayer/start</td>
             <td>POST</td>
             <td><a href="/choosedigital/api-spec/blob/master/resources/VideoPlayer.md#start">Start</a></td>
@@ -300,7 +295,7 @@ The ChooseDigital API is a JSON API.
     </tbody>
 </table>
 
-##[Television](/choosedigital/api-spec/blob/master/resources/Television.md) -- coming soon
+##[Television](/choosedigital/api-spec/blob/master/resources/Television.md) -- coming soon	
 <table>
     <thead>
         <tr>
