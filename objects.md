@@ -200,7 +200,7 @@
 	</tr>
 </table>
 
-## Music
+## MusicChart
 
 ### Example MusicChart Object
 
