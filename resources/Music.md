@@ -706,7 +706,7 @@ Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#mus
 ## Reset Download
 
 ### URL
-> None
+> http://apistg.choosedigital.net/music/resetdownload
 
 ### Parameters
 
@@ -745,7 +745,7 @@ Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#mus
 
 ### Example
 
-> None
+> PUT http://apistg.choosedigital.net/music/resetdownload
 ```js
 ```
 
@@ -987,4 +987,11 @@ Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#mus
 
 > PUT http://apistg.choosedigital.net/music/cancel
 ```js
+{
+	"orderId":"WL3-3359944-6701838",
+	"cancelOrderId":"WL3-2873051-1679841",
+	"cancelTransactionDateUTC":"2012-08-15T00:00:00Z",
+	"priceSold":"135",
+	"cancelTransactionId":""
+}
 ```

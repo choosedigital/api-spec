@@ -28,9 +28,9 @@ This is a simple sanity check to make sure your header authentication is working
 
 > GET http://apistg.choosedigital.net/ebook
 ```js
-[
+{
 	"ping":"pong"
-]
+}
 ```
 
 ## List
@@ -555,4 +555,11 @@ This is a simple sanity check to make sure your header authentication is working
 
 > GET http://apistg.choosedigital.net/ebook/cancel
 ```js
+{
+	"orderId":"WL3-3359944-6701838",
+	"cancelOrderId":"WL3-2873051-1679841",
+	"cancelTransactionDateUTC":"2012-08-15T00:00:00Z",
+	"priceSold":"135",
+	"cancelTransactionId":""
+}
 ```
