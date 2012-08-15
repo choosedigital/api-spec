@@ -33,7 +33,7 @@ This is a simple sanity check to make sure your header authentication is working
 }
 ```
 
-## Genres
+## List All Genres
 
 This is a simple way to get all the valid genres
 
