@@ -361,7 +361,227 @@
 	</tr>
 </table>
 
-		
+## Movie
+
+### Example Movie Object
+
+### Movie fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>cdin</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>title</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>sanitizedTitle</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>actors</td>
+		<td>list of String</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>copyrightInfo</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>genres</td>
+		<td>list of String</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>rating</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>director</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>runningTime</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>shortSynopsis</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>synopsis</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>originalReleaseYear</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>theatricalReleaseDate</td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>httpTrailerUrl</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>rtmpTrailerUrl</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>smallImageUrl</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>mediumImageUrl</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>largeImageUrl</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>available</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>watchNow</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>offerings</td>
+		<td>list of MovieOffering</td>
+		<td></td>
+	</tr>
+</table>
+
+## MovieOffering
+
+### Example MovieOffering Object
+
+### MovieOffering fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>cdin</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>price</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>rights</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>rentalHours</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>rentalExpiresDate</td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>currencyCode</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>watchNow</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>purchaseDate</td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>orderId</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>definition</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+</table>
+
+## MovieSearchResult
+
+### Example MovieSearchResult Object
+
+### MovieSearchResult fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>numFound</td>
+		<td>long</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>start</td>
+		<td>long</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>searchTerm</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>genres</td>
+		<td>list of Genre</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>movies</td>
+		<td>list of Movie</td>
+		<td></td>
+	</tr>
+</table>
 
 ## Notes on data formats
 

@@ -475,6 +475,9 @@
 
 > GET http://apistg.choosedigital.net/movie/genres
 ```js
+{
+	"genres":["Action","Adventure","Animation","Comedy","Crime","Documentary","Drama","Family","Fantasy Adventure","Foreign","Horror","Independent","Music","Musical","Mystery","Romance","Romantic Comedy","Science Fiction","Sport","Suspense","Thriller","War","Western"]
+}
 ```
 
 ## Curated Charts
@@ -514,7 +517,7 @@
 ## Update
 
 ### URL 
-> http://apistg.choosedigital.net/movie
+> http://apistg.choosedigital.net/movie/update
 
 ### Parameters
 
