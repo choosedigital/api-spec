@@ -400,6 +400,12 @@ The authentication parameter is calculated by <code>cdin + userId + countryCode 
 		<td></td>
 	</tr>
 	<tr>
+		<td><code>externalMemberId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
 		<td><code>customerEmail</code></td>
 		<td>Optional</td>
 		<td>string</td>
