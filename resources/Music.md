@@ -763,7 +763,7 @@ The authentication parameter is calculated by <code>userId + orderId</code>
 
 Returns either a [MusicContainerPurchase](/choosedigital/api-spec/blob/master/objects.md#musiccontainerpurchase) object or a [MusicTrackPurchase](/choosedigital/api-spec/blob/master/objects.md#musictrackpurchase) object, depending on what was purchased
 
-The authentication parameter is calculated by <code>cdin + userId + countryCode +price</code>
+The authentication parameter is calculated by <code>cdin + userId + countryCode + price</code>
 
 ### URL
 > POST http://apistg.choosedigital.net/music/purchase

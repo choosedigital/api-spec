@@ -9,11 +9,11 @@ http://docs.amazonwebservices.com/AmazonS3/latest/dev/RESTAuthentication.html
 
 There are 3 required headers to add to every request:
 
-* cdaccesskeyid
-* x-cd-date - time of request in one of the following formats
+* <code>cdaccesskeyid</code> - your ChooseDigital client id
+* <code>x-cd-date</code> - time of request in one of the following formats
     * ISO8601 + timezone - yyyy-MM-dd'T'HH:mm:ss'Z'
     * ISO8601 - yyyy-MM-dd'T'HH:mm:ss
-* authorization - HMAC-SHA1 hash of x-cd-date and your secret
+* <code>authorization</code> - HMAC-SHA1 hash of x-cd-date and your secret
 
 ## Time Stamp Requirement
 
