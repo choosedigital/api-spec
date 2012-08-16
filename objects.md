@@ -324,12 +324,12 @@
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>name</td>
+		<td><code>name</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>count</td>
+		<td><code>count</code></td>
 		<td>long</td>
 		<td></td>
 	</tr>
@@ -348,12 +348,12 @@
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>name</td>
+		<td><code>name</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>count</td>
+		<td><code>count</code></td>
 		<td>long</td>
 		<td></td>
 	</tr>
@@ -373,32 +373,32 @@
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>numFound</td>
+		<td><code>numFound</code></td>
 		<td>long</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>start</td>
+		<td><code>start</code></td>
 		<td>long</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>searchTerm</td>
+		<td><code>searchTerm</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>genres</td>
+		<td><code>genres</code></td>
 		<td>list of Genre</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>releaseTypes</td>
+		<td><code>releaseTypes</code></td>
 		<td>list of ReleaseType</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>releases</td>
+		<td><code>releases</code></td>
 		<td>list of Music</td>
 		<td></td>
 	</tr>
