@@ -361,6 +361,8 @@ Returns a [Movie](/choosedigital/api-spec/blob/master/objects.md#movie) object
 
 Returns a [MovieRental](/choosedigital/api-spec/blob/master/objects.md#movierental) object or a [MoviePurchase](/choosedigital/api-spec/blob/master/objects.md#moviepurchase) 
 
+The authentication parameter is calculated by <code>cdin + userId + countryCode + price</code>
+
 ### URL 
 > http://apistg.choosedigital.net/movie/purchase
 
@@ -528,6 +530,8 @@ Returns a [MovieRental](/choosedigital/api-spec/blob/master/objects.md#movierent
 
 Returns an [UpdateOrder](/choosedigital/api-spec/blob/master/objects.md#updateorder) object
 
+The authentication parameter is calculated by <code>orderId + userId</code>
+
 ### URL 
 > http://apistg.choosedigital.net/movie/update
 
@@ -585,6 +589,8 @@ Returns an [UpdateOrder](/choosedigital/api-spec/blob/master/objects.md#updateor
 ## Cancel
 
 Returns an [CancelOrder](/choosedigital/api-spec/blob/master/objects.md#cancelorder) object
+
+The authentication parameter is calculated by <code>orderId + userId</code>
 
 ### URL 
 > http://apistg.choosedigital.net/movie/cancel

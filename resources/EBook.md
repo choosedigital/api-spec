@@ -323,6 +323,8 @@ This is a simple sanity check to make sure your header authentication is working
 
 ## Purchase
 
+The authentication parameter is calculated by <code>cdin + userId + countryCode + price</code>
+
 ### URL 
 > http://apistg.choosedigital.net/ebook/purchase
 
@@ -454,6 +456,8 @@ This is a simple sanity check to make sure your header authentication is working
 
 ## Update
 
+The authentication parameter is calculated by <code>orderId + userId</code>
+
 ### URL 
 > http://apistg.choosedigital.net/ebook/update
 
@@ -510,6 +514,8 @@ This is a simple sanity check to make sure your header authentication is working
 
 
 ## Cancel
+
+The authentication parameter is calculated by <code>orderId + userId</code>
 
 ### URL 
 > http://apistg.choosedigital.net/ebook/cancel

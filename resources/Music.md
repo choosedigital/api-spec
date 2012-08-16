@@ -2,7 +2,9 @@
 
 ## Service Check
 
-This is a simple sanity check to make sure your header authentication is working properly. Can also be used to check that the service is up.
+This is a simple sanity check to make sure your header authentication is working properly. 
+
+Can also be used to check that the service is up.
 
 ### URL 
 > http://apistg.choosedigital.net/music
@@ -711,6 +713,8 @@ Returns a [Music](/choosedigital/api-spec/blob/master/objects.md#music) object
 
 ## Reset Download
 
+The authentication parameter is calculated by <code>userId + orderId</code>
+
 ### URL
 > http://apistg.choosedigital.net/music/resetdownload
 
@@ -758,6 +762,8 @@ Returns a [Music](/choosedigital/api-spec/blob/master/objects.md#music) object
 ## Purchase
 
 Returns either a [MusicContainerPurchase](/choosedigital/api-spec/blob/master/objects.md#musiccontainerpurchase) object or a [MusicTrackPurchase](/choosedigital/api-spec/blob/master/objects.md#musictrackpurchase) object, depending on what was purchased
+
+The authentication parameter is calculated by <code>cdin + userId + countryCode +price</code>
 
 ### URL
 > POST http://apistg.choosedigital.net/music/purchase
@@ -897,6 +903,8 @@ Returns either a [MusicContainerPurchase](/choosedigital/api-spec/blob/master/ob
 
 Returns an [UpdateOrder](/choosedigital/api-spec/blob/master/objects.md#updateorder) object
 
+The authentication parameter is calculated by <code>orderId + userId</code>
+
 ### URL
 > http://apistg.choosedigital.net/music/update
 
@@ -954,6 +962,8 @@ Returns an [UpdateOrder](/choosedigital/api-spec/blob/master/objects.md#updateor
 ## Cancel
 
 Returns an [CancelOrder](/choosedigital/api-spec/blob/master/objects.md#cancelorder) object
+
+The authentication parameter is calculated by <code>orderId + userId</code>
 
 ### URL
 > http://apistg.choosedigital.net/music/cancel
