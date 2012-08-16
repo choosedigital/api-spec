@@ -4,7 +4,7 @@
 
 For a few methods, an ```authentication``` parameter is required. To calculate this parameter, concat the variables as noted for the method (we'll call that ```data``` for now) and do a HMAC-SHA1 hash with your secret key. Here's a Java sample:
 
-```
+```java
     public static String calculateRFC2104HMAC(String data, String secretKey) throws SignatureException {
         String result;
         try {
