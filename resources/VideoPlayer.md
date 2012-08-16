@@ -25,20 +25,20 @@ Update the playerFirstStartDate
 	<tr>
 		<td><code>orderId</code></td>
 		<td>Required</td>
-		<td>videoReferenceId</td>
+		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
 		<td><code>videoReferenceId</code></td>
 		<td>Required</td>
-		<td>videoReferenceId</td>
+		<td>string</td>
 		<td></td>
 	</tr>
 </table>
 
 ### Example
 
-> POST http://apistg.choosedigital.net/videoplayer/start
+> PUT http://apistg.choosedigital.net/videoplayer/start
 ```js
 {
 }
