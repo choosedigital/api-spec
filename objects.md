@@ -583,6 +583,257 @@
 	</tr>
 </table>
 
+## Book
+
+### Example Book Object
+
+### Book fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>cdin</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>creators</td>
+		<td>list of String</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>formatType</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>isbn</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>title</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>sanitizedTitle</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>coverImage</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>thumbnailImage</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>shortDescription</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>fullDescription</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>publisher</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>imprint</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>languages</td>
+		<td>list of String</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>series</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>edition</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>subjects</td>
+		<td>list of String</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>fileSize</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>retailPrice</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>availableDate</td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>subtitle</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>digitalRights</td>
+		<td>list of String</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>contentDuration</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>numberOfParts</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>digitalExcerpt</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>available</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>purchaseDate</td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>orderId</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+</table>
+
+## BookChart
+
+### Example BookChart Object
+
+### BookChart fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>displayTitle</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>books</td>
+		<td>list of Book</td>
+		<td></td>
+	</tr>
+</table>
+
+## BookPurchase
+
+### Example BookPurchase Object
+
+### BookPurchase fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>orderId</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>downloadLink</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>priceSold</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>book</td>
+		<td>book</td>
+		<td></td>
+	</tr>
+</table>
+
+## BookSearchResult
+
+### Example BookSearchResult Object
+
+### BookSearchResult fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>numFound</td>
+		<td>integer</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>start</td>
+		<td>integer</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>searchTerm</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>subjects</td>
+		<td>list of Genre</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>formatTypes</td>
+		<td>list of Genre</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>books</td>
+		<td>list of Book</td>
+		<td></td>
+	</tr>
+</table>
+
 ## Notes on data formats
 
 ### Dates
