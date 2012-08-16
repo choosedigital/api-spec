@@ -530,7 +530,7 @@ The authentication parameter is calculated by <code>cdin + userId + countryCode 
 
 Returns an [UpdateOrder](/choosedigital/api-spec/blob/master/objects.md#updateorder) object
 
-The [authentication parameter]((/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
+The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL 
 > http://apistg.choosedigital.net/movie/update
@@ -590,7 +590,7 @@ The [authentication parameter]((/choosedigital/api-spec/blob/master/resources/Ge
 
 Returns an [CancelOrder](/choosedigital/api-spec/blob/master/objects.md#cancelorder) object
 
-The [authentication parameter]((/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
+The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL 
 > http://apistg.choosedigital.net/movie/cancel
