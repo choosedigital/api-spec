@@ -417,6 +417,8 @@ Returns a [MusicChart](/choosedigital/api-spec/blob/master/objects.md#musichart)
 
 ## Search
 
+Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#musicsearchresult) object
+
 ### URL
 > http://apistg.choosedigital.net/music/search
 
@@ -623,6 +625,8 @@ Returns a [MusicChart](/choosedigital/api-spec/blob/master/objects.md#musichart)
 
 ## Detail
 
+Returns a [Music](/choosedigital/api-spec/blob/master/objects.md#music) object
+
 ### URL
 > http://apistg.choosedigital.net/music/detail/[cdin]
 
@@ -752,6 +756,8 @@ Returns a [MusicChart](/choosedigital/api-spec/blob/master/objects.md#musichart)
 ```
 
 ## Purchase
+
+Returns either a [MusicContainerPurchase](/choosedigital/api-spec/blob/master/objects.md#musiccontainerpurchase) object or a [MusicTrackPurchase](/choosedigital/api-spec/blob/master/objects.md#musictrackpurchase) object, depending on what was purchased
 
 ### URL
 > POST http://apistg.choosedigital.net/music/purchase
@@ -889,6 +895,8 @@ Returns a [MusicChart](/choosedigital/api-spec/blob/master/objects.md#musichart)
 
 ## Update
 
+Returns an [UpdateOrder](/choosedigital/api-spec/blob/master/objects.md#updateorder) object
+
 ### URL
 > http://apistg.choosedigital.net/music/update
 
@@ -944,6 +952,8 @@ Returns a [MusicChart](/choosedigital/api-spec/blob/master/objects.md#musichart)
 ```
 
 ## Cancel
+
+Returns an [CancelOrder](/choosedigital/api-spec/blob/master/objects.md#cancelorder) object
 
 ### URL
 > http://apistg.choosedigital.net/music/cancel

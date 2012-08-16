@@ -33,6 +33,8 @@
 
 ## List
 
+Returns a [MovieChart](/choosedigital/api-spec/blob/master/objects.md#moviechart) object
+
 ### URL 
 > http://apistg.choosedigital.net/movie/list/[listId]/[country]
 
@@ -207,6 +209,8 @@
 
 ## Player Info
 
+Returns a [PlayerInfo](/choosedigital/api-spec/blob/master/objects.md#playerinfo) object
+
 ### URL 
 > http://apistg.choosedigital.net/movie/playerinfo/[cdin]/[hashedCustomerId]
 
@@ -246,6 +250,8 @@
 ```
 
 ## Search
+
+Returns a [MovieSearchResult](/choosedigital/api-spec/blob/master/objects.md#moviesearchresult) object
 
 ### URL 
 > http://apistg.choosedigital.net/movie/search
@@ -305,6 +311,8 @@
 
 ## Detail
 
+Returns a [Movie](/choosedigital/api-spec/blob/master/objects.md#movie) object
+
 ### URL 
 > http://apistg.choosedigital.net/movie/detail/[cdin]
 
@@ -350,6 +358,8 @@
 ```
 
 ## Purchase
+
+Returns a [MovieRental](/choosedigital/api-spec/blob/master/objects.md#movierental) object or a [MoviePurchase](/choosedigital/api-spec/blob/master/objects.md#moviepurchase) 
 
 ### URL 
 > http://apistg.choosedigital.net/movie/purchase
@@ -516,6 +526,8 @@
 
 ## Update
 
+Returns an [UpdateOrder](/choosedigital/api-spec/blob/master/objects.md#updateorder) object
+
 ### URL 
 > http://apistg.choosedigital.net/movie/update
 
@@ -571,6 +583,8 @@
 ```
 
 ## Cancel
+
+Returns an [CancelOrder](/choosedigital/api-spec/blob/master/objects.md#cancelorder) object
 
 ### URL 
 > http://apistg.choosedigital.net/movie/cancel
