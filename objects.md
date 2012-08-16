@@ -1,5 +1,30 @@
 # Objects
 
+<ul>
+<li><a href="#music">Music</a></li>
+<li><a href="#musicchart">MusicChart</a></li>
+<li><a href="#errors">Errors</a></li>
+<li><a href="#error">Error</a></li>
+<li><a href="#genre">Genre</a></li>
+<li><a href="#releaseType">ReleaseType</a></li>
+<li><a href="#musicsearchresult">MusicSearchResult</a></li>
+<li><a href="#movie">Movie</a></li>
+<li><a href="#movieoffering">MovieOffering</a></li>
+<li><a href="#moviesearchresult">MovieSearchResult</a></li>
+<li><a href="#book">Book</a></li>
+<li><a href="#bookchart">BookChart</a></li>
+<li><a href="#bookpurchase">BookPurchase</a></li>
+<li><a href="#booksearchresult">BookSearchResult</a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+</ul>
+
 ## Music
 
 ### Example Music Object
@@ -579,6 +604,109 @@
 	<tr>
 		<td>movies</td>
 		<td>list of Movie</td>
+		<td></td>
+	</tr>
+</table>
+
+## MovieRental
+
+### Example MovieRental Object
+
+### MovieRental fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>orderId</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>transactionDate</td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>transactionType</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>downloadLink</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>streamLink</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>priceSold</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>rentalHours</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>movie</td>
+		<td>movie</td>
+		<td></td>
+	</tr>
+</table>
+
+## MoviePurchase
+
+### Example MoviePurchase Object
+
+### MoviePurchase fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>orderId</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>transactionDate</td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>transactionType</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>downloadLink</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>streamLink</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>priceSold</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>movie</td>
+		<td>movie</td>
 		<td></td>
 	</tr>
 </table>
