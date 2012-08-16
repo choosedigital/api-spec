@@ -38,7 +38,7 @@ Update the playerFirstStartDate
 
 ### Example
 
-> GET http://apistg.choosedigital.net/music/genres
+> POST http://apistg.choosedigital.net/videoplayer/start
 ```js
 {
 }

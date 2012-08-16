@@ -295,31 +295,4 @@ The ChooseDigital API is a JSON API.
     </tbody>
 </table>
 
-##[Television](/choosedigital/api-spec/blob/master/resources/Television.md) -- coming soon	
-<table>
-    <thead>
-        <tr>
-            <th>Path</th>
-            <th>HTTP Method</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-	    <tr>
-            <td></td>
-            <td></td>
-            <td><a href="#"></a></td>
-        </tr>
-	    <tr>
-            <td></td>
-            <td></td>
-            <td><a href="#"></a></td>
-        </tr>
-	    <tr>
-            <td></td>
-            <td></td>
-            <td><a href="#"></a></td>
-        </tr>
-    </tbody>
-</table>
-
+##[Television](/choosedigital/api-spec/blob/master/resources/Television.md) -- coming soon
