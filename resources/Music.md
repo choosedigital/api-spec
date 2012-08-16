@@ -35,7 +35,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ## List All Genres
 
-This is a simple way to get all the valid genres
+This is a simple way to get all the valid music genres
 
 ### URL
 >http://apistg.choosedigital.net/music/genres
@@ -210,6 +210,8 @@ Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#mus
 ```
 
 ## List
+
+Returns a [MusicChart](/choosedigital/api-spec/blob/master/objects.md#musichart) object
 
 ### URL
 > http://apistg.choosedigital.net/music/list/[listId]/[country]
