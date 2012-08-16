@@ -5,8 +5,10 @@
 <ul>
 <li><a href="#music">Music</a></li>
 <li><a href="#musicchart">MusicChart</a></li>
-<li><a href="#releaseType">ReleaseType</a></li>
 <li><a href="#musicsearchresult">MusicSearchResult</a></li>
+<li><a href="#musiccontainerpurchase">MusicContainerPurchase</a></li>
+<li><a href="#musictrackpurchase">MusicTrackPurchase</a></li>
+<li><a href="#releasetype">ReleaseType</a></li>
 </ul>
 
 ## Movie objects
@@ -14,9 +16,11 @@
 <ul>
 <li><a href="#movie">Movie</a></li>
 <li><a href="#movieoffering">MovieOffering</a></li>
+<li><a href="#moviechart">MovieChart</a></li>
 <li><a href="#moviesearchresult">MovieSearchResult</a></li>
 <li><a href="#movierental">MovieRental</a></li>
 <li><a href="#moviepurchase">MoviePurchase</a></li>
+<li><a href="#playerinfo">PlayerInfo</a></li>
 </ul>
 
 ## Book objects
@@ -24,13 +28,8 @@
 <ul>
 <li><a href="#book">Book</a></li>
 <li><a href="#bookchart">BookChart</a></li>
-<li><a href="#bookpurchase">BookPurchase</a></li>
 <li><a href="#booksearchresult">BookSearchResult</a></li>
-</ul>
-
-## Television objects
-
-<ul>
+<li><a href="#bookpurchase">BookPurchase</a></li>
 </ul>
 
 ## General objects
@@ -39,6 +38,8 @@
 <li><a href="#errors">Errors</a></li>
 <li><a href="#error">Error</a></li>
 <li><a href="#genre">Genre</a></li>
+<li><a href="#cancelorder">CancelOrder</a></li>
+<li><a href="#updateorder">UpdateOrder</a></li>
 </ul>
 
 
@@ -141,7 +142,7 @@
 	</tr>
 	<tr>
 		<td><code>artist</code></td>
-		<td>list fo String</td>
+		<td>list of String</td>
 		<td></td>
 	</tr>
 	<tr>
@@ -255,12 +256,12 @@
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>displayTitle</td>
+		<td><code>displayTitle</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>releases</td>
+		<td><code>releases</code></td>
 		<td>list of Music</td>
 		<td></td>
 	</tr>
@@ -280,7 +281,7 @@
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>errors</td>
+		<td><code>errors</code></td>
 		<td>list of Error</td>
 		<td></td>
 	</tr>
@@ -299,12 +300,12 @@
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>parameter</td>
+		<td><code>parameter</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>message</td>
+		<td><code>message</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
@@ -416,107 +417,107 @@
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>cdin</td>
+		<td><code>cdin</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>title</td>
+		<td><code>title</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>sanitizedTitle</td>
+		<td><code>sanitizedTitle</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>actors</td>
+		<td><code>actors</code></td>
 		<td>list of String</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>copyrightInfo</td>
+		<td><code>copyrightInfo</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>genres</td>
+		<td><code>genres</code></td>
 		<td>list of String</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>rating</td>
+		<td><code>rating</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>director</td>
+		<td><code>director</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>runningTime</td>
+		<td><code>runningTime</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>shortSynopsis</td>
+		<td><code>shortSynopsis</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>synopsis</td>
+		<td><code>synopsis</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>originalReleaseYear</td>
+		<td><code>originalReleaseYear</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>theatricalReleaseDate</td>
+		<td><code>theatricalReleaseDate</code></td>
 		<td>date</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>httpTrailerUrl</td>
+		<td><code>httpTrailerUrl</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>rtmpTrailerUrl</td>
+		<td><code>rtmpTrailerUrl</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>smallImageUrl</td>
+		<td><code>smallImageUrl</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>mediumImageUrl</td>
+		<td><code>mediumImageUrl</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>largeImageUrl</td>
+		<td><code>largeImageUrl</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>available</td>
+		<td><code>available</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>watchNow</td>
+		<td><code>watchNow</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>offerings</td>
+		<td><code>offerings</code></td>
 		<td>list of MovieOffering</td>
 		<td></td>
 	</tr>
@@ -535,56 +536,81 @@
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>cdin</td>
+		<td><code>cdin</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>price</td>
+		<td><code>price</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>rights</td>
+		<td><code>rights</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>rentalHours</td>
+		<td><code>rentalHours</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>rentalExpiresDate</td>
+		<td><code>rentalExpiresDate</code></td>
 		<td>date</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>currencyCode</td>
+		<td><code>currencyCode</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>watchNow</td>
+		<td><code>watchNow</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>purchaseDate</td>
+		<td><code>purchaseDate</code></td>
 		<td>date</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>orderId</td>
+		<td><code>orderId</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>definition</td>
+		<td><code>definition</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 </table>
+
+## MovieChart
+
+### Example MovieChart Object
+
+### MovieChart fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>displayTitle</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>movies</code></td>
+		<td>list of Movie</td>
+		<td></td>
+	</tr>
+</table>
+
 
 ## MovieSearchResult
 
@@ -599,27 +625,27 @@
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>numFound</td>
+		<td><code>numFound</code></td>
 		<td>long</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>start</td>
+		<td><code>start</code></td>
 		<td>long</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>searchTerm</td>
+		<td><code>searchTerm</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>genres</td>
+		<td><code>genres</code></td>
 		<td>list of Genre</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>movies</td>
+		<td><code>movies</code></td>
 		<td>list of Movie</td>
 		<td></td>
 	</tr>
@@ -638,42 +664,42 @@
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>orderId</td>
+		<td><code>orderId</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>transactionDate</td>
+		<td><code>transactionDate</code></td>
 		<td>date</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>transactionType</td>
+		<td><code>transactionType</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>downloadLink</td>
+		<td><code>downloadLink</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>streamLink</td>
+		<td><code>streamLink</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>priceSold</td>
+		<td><code>priceSold</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>rentalHours</td>
+		<td><code>rentalHours</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>movie</td>
+		<td><code>movie</code></td>
 		<td>movie</td>
 		<td></td>
 	</tr>
@@ -692,38 +718,87 @@
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>orderId</td>
+		<td><code>orderId</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>transactionDate</td>
+		<td><code>transactionDate</code></td>
 		<td>date</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>transactionType</td>
+		<td><code>transactionType</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>downloadLink</td>
+		<td><code>downloadLink</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>streamLink</td>
+		<td><code>streamLink</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>priceSold</td>
+		<td><code>priceSold</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
+		<td><code>movie</code></td>
 		<td>movie</td>
-		<td>movie</td>
+		<td></td>
+	</tr>
+</table>
+
+## PlayerInfo
+
+### Example PlayerInfo Object
+
+### PlayerInfo fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>purchaseType</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>rentalExpiresDate</code></td>
+		<td>ddate</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>videoReferenceId</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>title</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>rating</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>ratingReason</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>orderId</code></td>
+		<td>string</td>
 		<td></td>
 	</tr>
 </table>
@@ -741,137 +816,137 @@
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>cdin</td>
+		<td><code>cdin</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>creators</td>
+		<td><code>creators</code></td>
 		<td>list of String</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>formatType</td>
+		<td><code>formatType</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>isbn</td>
+		<td><code>isbn</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>title</td>
+		<td><code>title</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>sanitizedTitle</td>
+		<td><code>sanitizedTitle</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>coverImage</td>
+		<td><code>coverImage</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>thumbnailImage</td>
+		<td><code>thumbnailImage</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>shortDescription</td>
+		<td><code>shortDescription</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>fullDescription</td>
+		<td><code>fullDescription</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>publisher</td>
+		<td><code>publisher</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>imprint</td>
+		<td><code>imprint</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>languages</td>
+		<td><code>languages</code></td>
 		<td>list of String</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>series</td>
+		<td><code>series</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>edition</td>
+		<td><code>edition</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>subjects</td>
+		<td><code>subjects</code></td>
 		<td>list of String</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>fileSize</td>
+		<td><code>fileSize</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>retailPrice</td>
+		<td><code>retailPrice</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>availableDate</td>
+		<td><code>availableDate</code></td>
 		<td>date</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>subtitle</td>
+		<td><code>subtitle</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>digitalRights</td>
+		<td><code>digitalRights</code></td>
 		<td>list of String</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>contentDuration</td>
+		<td><code>contentDuration</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>numberOfParts</td>
+		<td><code>numberOfParts</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>digitalExcerpt</td>
+		<td><code>digitalExcerpt</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>available</td>
+		<td><code>available</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>purchaseDate</td>
+		<td><code>purchaseDate</code></td>
 		<td>date</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>orderId</td>
+		<td><code>orderId</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
@@ -890,12 +965,12 @@
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>displayTitle</td>
+		<td><code>displayTitle</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>books</td>
+		<td><code>books</code></td>
 		<td>list of Book</td>
 		<td></td>
 	</tr>
@@ -914,22 +989,22 @@
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>orderId</td>
+		<td><code>orderId</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>downloadLink</td>
+		<td><code>downloadLink</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>priceSold</td>
+		<td><code>priceSold</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>book</td>
+		<td><code>book</code></td>
 		<td>book</td>
 		<td></td>
 	</tr>
@@ -948,33 +1023,96 @@
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>numFound</td>
-		<td>integer</td>
+		<td><code>numFound</code></td>
+		<td>long</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>start</td>
-		<td>integer</td>
+		<td><code>start</code></td>
+		<td>long</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>searchTerm</td>
+		<td><code>searchTerm</code></td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>subjects</td>
+		<td><code>subjects</code></td>
 		<td>list of Genre</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>formatTypes</td>
+		<td><code>formatTypes</code></td>
 		<td>list of Genre</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>books</td>
+		<td><code>books</code></td>
 		<td>list of Book</td>
+		<td></td>
+	</tr>
+</table>
+
+## CancelOrder
+
+### Example CancelOrder Object
+
+### CancelOrder fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>orderId</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>cancelOrderId</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>cancelTransactionDateUTC</code></td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>priceSold</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>cancelTransactionId</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+</table>
+
+## UpdateOrder
+
+### Example UpdateOrder Object
+
+### UpdateOrder fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>orderId</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>transactionId</code></td>
+		<td>string</td>
 		<td></td>
 	</tr>
 </table>
