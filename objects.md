@@ -1,29 +1,46 @@
 # Objects
 
+## Music objects
+
 <ul>
 <li><a href="#music">Music</a></li>
 <li><a href="#musicchart">MusicChart</a></li>
-<li><a href="#errors">Errors</a></li>
-<li><a href="#error">Error</a></li>
-<li><a href="#genre">Genre</a></li>
 <li><a href="#releaseType">ReleaseType</a></li>
 <li><a href="#musicsearchresult">MusicSearchResult</a></li>
+</ul>
+
+## Movie objects
+
+<ul>
 <li><a href="#movie">Movie</a></li>
 <li><a href="#movieoffering">MovieOffering</a></li>
 <li><a href="#moviesearchresult">MovieSearchResult</a></li>
+<li><a href="#movierental">MovieRental</a></li>
+<li><a href="#moviepurchase">MoviePurchase</a></li>
+</ul>
+
+## Book objects
+
+<ul>
 <li><a href="#book">Book</a></li>
 <li><a href="#bookchart">BookChart</a></li>
 <li><a href="#bookpurchase">BookPurchase</a></li>
 <li><a href="#booksearchresult">BookSearchResult</a></li>
-<li><a href="#"></a></li>
-<li><a href="#"></a></li>
-<li><a href="#"></a></li>
-<li><a href="#"></a></li>
-<li><a href="#"></a></li>
-<li><a href="#"></a></li>
-<li><a href="#"></a></li>
-<li><a href="#"></a></li>
 </ul>
+
+## Television objects
+
+<ul>
+</ul>
+
+## General objects
+
+<ul>
+<li><a href="#errors">Errors</a></li>
+<li><a href="#error">Error</a></li>
+<li><a href="#genre">Genre</a></li>
+</ul>
+
 
 ## Music
 
