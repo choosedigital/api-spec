@@ -5,7 +5,7 @@
 Update the playerFirstStartDate
 
 ### URL
-> http://apistg.choosedigital.net/video/start
+> http://<apidomain>/video/start
 
 ### Parameters
 
@@ -38,7 +38,7 @@ Update the playerFirstStartDate
 
 ### Example
 
-> PUT http://apistg.choosedigital.net/videoplayer/start
+> PUT http://<apidomain>/videoplayer/start
 ```js
 {
 }
