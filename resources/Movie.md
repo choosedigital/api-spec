@@ -3,7 +3,7 @@
 ## Service Check
 
 ### URL 
-> http://<apidomain>/movie
+> http://&lt;apidomain&gt;/movie
 
 ### Parameters
 
@@ -24,7 +24,7 @@
 
 ### Example
 
-> GET http://<apidomain>/movie
+> GET http://&lt;apidomain&gt;/movie
 ```js
 {
 	"ping":"pong"
@@ -36,7 +36,7 @@
 Returns a [MovieChart](/choosedigital/api-spec/blob/master/objects.md#moviechart) object
 
 ### URL 
-> http://<apidomain>/movie/list/[listId]/[country]
+> http://&lt;apidomain&gt;/movie/list/[listId]/[country]
 
 ### Parameters
 
@@ -87,7 +87,7 @@ Returns a [MovieChart](/choosedigital/api-spec/blob/master/objects.md#moviechart
 
 ### Example
 
-> GET http://<apidomain>/movie/list/top/us
+> GET http://&lt;apidomain&gt;/movie/list/top/us
 ```js
 {
 	"displayTitle":"New and Noteworthy",
@@ -212,7 +212,7 @@ Returns a [MovieChart](/choosedigital/api-spec/blob/master/objects.md#moviechart
 Returns a [PlayerInfo](/choosedigital/api-spec/blob/master/objects.md#playerinfo) object
 
 ### URL 
-> http://<apidomain>/movie/playerinfo/[cdin]/[hashedCustomerId]
+> http://&lt;apidomain&gt;/movie/playerinfo/[cdin]/[hashedCustomerId]
 
 ### Parameters
 
@@ -245,7 +245,7 @@ Returns a [PlayerInfo](/choosedigital/api-spec/blob/master/objects.md#playerinfo
 
 ### Example
 
-> GET http://<apidomain>/movie
+> GET http://&lt;apidomain&gt;/movie
 ```js
 ```
 
@@ -254,7 +254,7 @@ Returns a [PlayerInfo](/choosedigital/api-spec/blob/master/objects.md#playerinfo
 Returns a [MovieSearchResult](/choosedigital/api-spec/blob/master/objects.md#moviesearchresult) object
 
 ### URL 
-> http://<apidomain>/movie/search
+> http://&lt;apidomain&gt;/movie/search
 
 ### Parameters
 
@@ -305,7 +305,7 @@ Returns a [MovieSearchResult](/choosedigital/api-spec/blob/master/objects.md#mov
 
 ### Example
 
-> GET http://<apidomain>/movie/search
+> GET http://&lt;apidomain&gt;/movie/search
 ```js
 ```
 
@@ -314,7 +314,7 @@ Returns a [MovieSearchResult](/choosedigital/api-spec/blob/master/objects.md#mov
 Returns a [Movie](/choosedigital/api-spec/blob/master/objects.md#movie) object
 
 ### URL 
-> http://<apidomain>/movie/detail/[cdin]
+> http://&lt;apidomain&gt;/movie/detail/[cdin]
 
 ### Parameters
 
@@ -353,7 +353,7 @@ Returns a [Movie](/choosedigital/api-spec/blob/master/objects.md#movie) object
 
 ### Example
 
-> GET http://<apidomain>/movie/detail
+> GET http://&lt;apidomain&gt;/movie/detail
 ```js
 ```
 
@@ -364,7 +364,7 @@ Returns a [MovieRental](/choosedigital/api-spec/blob/master/objects.md#movierent
 The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>cdin + userId + countryCode + price</code>
 
 ### URL 
-> http://<apidomain>/movie/purchase
+> http://&lt;apidomain&gt;/movie/purchase
 
 ### Parameters
 
@@ -463,14 +463,14 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ### Example
 
-> POST http://<apidomain>/movie/purchase
+> POST http://&lt;apidomain&gt;/movie/purchase
 ```js
 ```
 
 ## Genres
 
 ### URL 
-> http://<apidomain>/movie/genres
+> http://&lt;apidomain&gt;/movie/genres
 
 ### Parameters
 
@@ -491,7 +491,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ### Example
 
-> GET http://<apidomain>/movie/genres
+> GET http://&lt;apidomain&gt;/movie/genres
 ```js
 {
 	"genres":["Action","Adventure","Animation","Comedy","Crime","Documentary","Drama","Family","Fantasy Adventure","Foreign","Horror","Independent","Music","Musical","Mystery","Romance","Romantic Comedy","Science Fiction","Sport","Suspense","Thriller","War","Western"]
@@ -501,7 +501,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 ## Curated Charts
 
 ### URL 
-> http://<apidomain>/movie/curatedcharts/[country]
+> http://&lt;apidomain&gt;/movie/curatedcharts/[country]
 
 ### Parameters
 
@@ -528,7 +528,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ### Example
 
-> GET http://<apidomain>/movie/curatedcharts/us
+> GET http://&lt;apidomain&gt;/movie/curatedcharts/us
 ```js
 ```
 
@@ -539,7 +539,7 @@ Returns an [UpdateOrder](/choosedigital/api-spec/blob/master/objects.md#updateor
 The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL 
-> http://<apidomain>/movie/update
+> http://&lt;apidomain&gt;/movie/update
 
 ### Parameters
 
@@ -584,7 +584,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ### Example
 
-> PUT http://<apidomain>/movie/update
+> PUT http://&lt;apidomain&gt;/movie/update
 ```js
 {
 	"orderId":"WL3-3359944-6701838",
@@ -599,7 +599,7 @@ Returns an [CancelOrder](/choosedigital/api-spec/blob/master/objects.md#cancelor
 The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL 
-> http://<apidomain>/movie/cancel
+> http://&lt;apidomain&gt;/movie/cancel
 
 ### Parameters
 
@@ -644,7 +644,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ### Example
 
-> PUT http://<apidomain>/movie/cancel
+> PUT http://&lt;apidomain&gt;/movie/cancel
 ```js
 {
 	"orderId":"WL3-3359944-6701838",

@@ -5,7 +5,7 @@
 This is a simple sanity check to make sure your header authentication is working properly. Can also be used to check that the service is up.
 
 ### URL 
-> http://<apidomain>/audiobook
+> http://&lt;apidomain&gt;/audiobook
 
 ### Parameters
 
@@ -26,7 +26,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://<apidomain>/audiobook
+> GET http://&lt;apidomain&gt;/audiobook
 ```js
 [
 	"ping":"pong"
@@ -36,7 +36,7 @@ This is a simple sanity check to make sure your header authentication is working
 ## List
 
 ### URL 
-> http://<apidomain>/audiobook/list/[listId]/[country]
+> http://&lt;apidomain&gt;/audiobook/list/[listId]/[country]
 
 ### Parameters
 
@@ -81,7 +81,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://<apidomain>/audiobook/list/top/us
+> GET http://&lt;apidomain&gt;/audiobook/list/top/us
 ```js
 ```
 
@@ -89,7 +89,7 @@ This is a simple sanity check to make sure your header authentication is working
 ## Download
 
 ### URL 
-> http://<apidomain>/audiobook/download/[cdin]/[hashedCustomerId]/[country]
+> http://&lt;apidomain&gt;/audiobook/download/[cdin]/[hashedCustomerId]/[country]
 
 ### Parameters
 
@@ -128,14 +128,14 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://<apidomain>/audiobook/download/[cdin]/[hashedCustomerId]/[country]
+> GET http://&lt;apidomain&gt;/audiobook/download/[cdin]/[hashedCustomerId]/[country]
 ```js
 ```
 
 ## Search
 
 ### URL 
-> http://<apidomain>/audiobook/search
+> http://&lt;apidomain&gt;/audiobook/search
 
 ### Parameters
 
@@ -234,7 +234,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://<apidomain>/audiobook/search
+> GET http://&lt;apidomain&gt;/audiobook/search
 ```js
 ```
 
@@ -242,7 +242,7 @@ This is a simple sanity check to make sure your header authentication is working
 ## Detail
 
 ### URL 
-> http://<apidomain>/audiobook/detail/[cdin]
+> http://&lt;apidomain&gt;/audiobook/detail/[cdin]
 
 ### Parameters
 
@@ -281,7 +281,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://<apidomain>/audiobook/detail/[cdin]
+> GET http://&lt;apidomain&gt;/audiobook/detail/[cdin]
 ```js
 ```
 
@@ -289,7 +289,7 @@ This is a simple sanity check to make sure your header authentication is working
 ## Curated Charts
 
 ### URL 
-> http://<apidomain>/audiobook/curatedcharts/[country]
+> http://&lt;apidomain&gt;/audiobook/curatedcharts/[country]
 
 ### Parameters
 
@@ -316,7 +316,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://<apidomain>/audiobook/curatedcharts/us
+> GET http://&lt;apidomain&gt;/audiobook/curatedcharts/us
 ```js
 ```
 
@@ -326,7 +326,7 @@ This is a simple sanity check to make sure your header authentication is working
 The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>cdin + userId + countryCode + price</code>
 
 ### URL 
-> http://<apidomain>/audiobook/purchase
+> http://&lt;apidomain&gt;/audiobook/purchase
 
 ### Parameters
 
@@ -455,7 +455,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ### Example
 
-> GET http://<apidomain>/audiobook/purchase
+> GET http://&lt;apidomain&gt;/audiobook/purchase
 ```js
 ```
 
@@ -465,7 +465,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL 
-> http://<apidomain>/audiobook/update
+> http://&lt;apidomain&gt;/audiobook/update
 
 ### Parameters
 
@@ -510,7 +510,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ### Example
 
-> GET http://<apidomain>/audiobook/update
+> GET http://&lt;apidomain&gt;/audiobook/update
 ```js
 {
 	"orderId":"WL3-3359944-6701838",
@@ -524,7 +524,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL 
-> http://<apidomain>/audiobook/cancel
+> http://&lt;apidomain&gt;/audiobook/cancel
 
 ### Parameters
 
@@ -569,7 +569,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ### Example
 
-> GET http://<apidomain>/audiobook/cancel
+> GET http://&lt;apidomain&gt;/audiobook/cancel
 ```js
 {
 	"orderId":"WL3-3359944-6701838",

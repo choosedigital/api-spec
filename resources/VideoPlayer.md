@@ -5,7 +5,7 @@
 Update the playerFirstStartDate
 
 ### URL
-> http://<apidomain>/video/start
+> http://&lt;apidomain&gt;/video/start
 
 ### Parameters
 
@@ -38,7 +38,7 @@ Update the playerFirstStartDate
 
 ### Example
 
-> PUT http://<apidomain>/videoplayer/start
+> PUT http://&lt;apidomain&gt;/videoplayer/start
 ```js
 {
 }

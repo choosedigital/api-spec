@@ -5,7 +5,7 @@
 This is a simple sanity check to make sure your header authentication is working properly. Can also be used to check that the service is up.
 
 ### URL 
-> http://<apidomain>/ebook
+> http://&lt;apidomain&gt;/ebook
 
 ### Parameters
 
@@ -26,7 +26,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://<apidomain>/ebook
+> GET http://&lt;apidomain&gt;/ebook
 ```js
 {
 	"ping":"pong"
@@ -36,7 +36,7 @@ This is a simple sanity check to make sure your header authentication is working
 ## List
 
 ### URL 
-> http://<apidomain>/ebook/list/[listId]/[country]
+> http://&lt;apidomain&gt;/ebook/list/[listId]/[country]
 
 ### Parameters
 
@@ -81,7 +81,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://<apidomain>/ebook/list/top/us
+> GET http://&lt;apidomain&gt;/ebook/list/top/us
 ```js
 ```
 
@@ -89,7 +89,7 @@ This is a simple sanity check to make sure your header authentication is working
 ## Download
 
 ### URL 
-> http://<apidomain>/ebook/download/[cdin]/[hashedCustomerId]/[country]
+> http://&lt;apidomain&gt;/ebook/download/[cdin]/[hashedCustomerId]/[country]
 
 ### Parameters
 
@@ -128,14 +128,14 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://<apidomain>/ebook/download/[cdin]/[hashedCustomerId]/[country]
+> GET http://&lt;apidomain&gt;/ebook/download/[cdin]/[hashedCustomerId]/[country]
 ```js
 ```
 
 ## Search
 
 ### URL 
-> http://<apidomain>/ebook/search
+> http://&lt;apidomain&gt;/ebook/search
 
 ### Parameters
 
@@ -234,7 +234,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://<apidomain>/ebook/search
+> GET http://&lt;apidomain&gt;/ebook/search
 ```js
 ```
 
@@ -242,7 +242,7 @@ This is a simple sanity check to make sure your header authentication is working
 ## Detail
 
 ### URL 
-> http://<apidomain>/ebook/detail/[cdin]
+> http://&lt;apidomain&gt;/ebook/detail/[cdin]
 
 ### Parameters
 
@@ -281,7 +281,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://<apidomain>/ebook/detail/[cdin]
+> GET http://&lt;apidomain&gt;/ebook/detail/[cdin]
 ```js
 ```
 
@@ -289,7 +289,7 @@ This is a simple sanity check to make sure your header authentication is working
 ## Curated Charts
 
 ### URL 
-> http://<apidomain>/ebook/curatedcharts/[country]
+> http://&lt;apidomain&gt;/ebook/curatedcharts/[country]
 
 ### Parameters
 
@@ -316,7 +316,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ### Example
 
-> GET http://<apidomain>/ebook/curatedcharts/us
+> GET http://&lt;apidomain&gt;/ebook/curatedcharts/us
 ```js
 ```
 
@@ -326,7 +326,7 @@ This is a simple sanity check to make sure your header authentication is working
 The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>cdin + userId + countryCode + price</code>
 
 ### URL 
-> http://<apidomain>/ebook/purchase
+> http://&lt;apidomain&gt;/ebook/purchase
 
 ### Parameters
 
@@ -455,7 +455,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ### Example
 
-> POST http://<apidomain>/ebook/purchase
+> POST http://&lt;apidomain&gt;/ebook/purchase
 ```js
 ```
 
@@ -465,7 +465,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL 
-> http://<apidomain>/ebook/update
+> http://&lt;apidomain&gt;/ebook/update
 
 ### Parameters
 
@@ -510,7 +510,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ### Example
 
-> GET http://<apidomain>/ebook/update
+> GET http://&lt;apidomain&gt;/ebook/update
 ```js
 {
 	"orderId":"WL3-3359944-6701838",
@@ -524,7 +524,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL 
-> http://<apidomain>/ebook/cancel
+> http://&lt;apidomain&gt;/ebook/cancel
 
 ### Parameters
 
@@ -569,7 +569,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ### Example
 
-> GET http://<apidomain>/ebook/cancel
+> GET http://&lt;apidomain&gt;/ebook/cancel
 ```js
 {
 	"orderId":"WL3-3359944-6701838",
