@@ -3,7 +3,7 @@
 ## All
 
 ### URL 
-> http://&lt;apidomain&gt;/history/all
+> http://[apidomain]/history/all
 
 ### Parameters
 
@@ -36,14 +36,14 @@
 
 ### Example
 
-> POST http://&lt;apidomain&gt;/history/all
+> POST http://[apidomain]/history/all
 ```js
 ```
 
 ## Count
 
 ### URL 
-> http://&lt;apidomain&gt;/history/count
+> http://[apidomain]/history/count
 
 ### Parameters
 
@@ -76,6 +76,6 @@
 
 ### Example
 
-> POST http://&lt;apidomain&gt;/history/count
+> POST http://[apidomain]/history/count
 ```js
 ```

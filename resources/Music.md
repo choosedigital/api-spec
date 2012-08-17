@@ -7,7 +7,7 @@ This is a simple sanity check to make sure your header authentication is working
 Can also be used to check that the service is up.
 
 ### URL 
-> http://&lt;apidomain&gt;/music
+> http://[apidomain]/music
 
 ### Parameters
 
@@ -28,7 +28,7 @@ Can also be used to check that the service is up.
 
 ### Example
 
-> GET http://&lt;apidomain&gt;/music
+> GET http://[apidomain]/music
 ```js
 {
 	"ping":"pong"
@@ -40,7 +40,7 @@ Can also be used to check that the service is up.
 This is a simple way to get all the valid music genres
 
 ### URL
->http://&lt;apidomain&gt;/music/genres
+>http://[apidomain]/music/genres
 
 ### Parameters
 
@@ -61,7 +61,7 @@ This is a simple way to get all the valid music genres
 
 ### Example
 
-> GET http://&lt;apidomain&gt;/music/genres
+> GET http://[apidomain]/music/genres
 ```js
 {
 	"genres":["Classical","Pop","Rock","Jazz","Country","Latin","Christian","R & B","Hip Hop","Opera","Metal","Alternative","Blues","Folk","Reggae","World","Soundtrack","Dance","Hip Hop\/Rap","Latin \/ Regional Mexican","Holiday","R&B","New Age","Electronic","Gospel","Spoken Word","Bluegrass","Vocal","Comedy","Children","Gospel\/Christian","Singer\/Songwriter","Easy Listening","French Pop","Latin \/ Urban","Rap","Children's Music","URBAN\/R AND B","Soundtracks","Latin \/ Pop","Devotional","Punk","Inspirational","Ghazal","Musique Francophone","ROCK-TRADITIONAL AND CLASSIC","Reggaeton","Soul","Flamenco","Instrumental","CLASSICAL(VOCAL,EARLY,CHAMBER)","Musical","Children's","German Pop","ALTERNATIVE","Metal\/Hard Rock","Classical(Vocal,Early,Chamber)","Broadway","DANCE\/ELECTRONIC","LATIN POP INTERNATIONAL","Latin \/ Tropical","Latin Pop","TV\/Film","Country\/Sertanejo","VOCALS","Disco","J-Pop","MPB","Boleros\/Baladas","Classical - Hindustani","POP ALTERNATIVE","Funk","Regional Mexican","LATIN REGIONAL MEXICAN","TRADITIONAL JAZZ","Variété française","Dance\/Electronic","Latin Rock","Schlager\/Volksmusik","Latin Urban \/ Reggaeton","Pop\/Rock","Samba\/Carnaval","CONTEMPORARY CHRISTIAN","RAP","World Music","Soundtrack (Bollywood)","Latin Pop International","Tamil","Rancheras","Hip-Hop\/Rap","Urban","Other","Indian Classical","Latin Regional Mexican","Fado","Tropical","Latin Urban","Brasil Soul","Schlager"]
@@ -74,7 +74,7 @@ This is a simple way to get all the valid music genres
 Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#musicsearchresult) object
 
 ### URL
-> http://&lt;apidomain&gt;/music/artist/[artist]/[country]/[albumOnly]
+> http://[apidomain]/music/artist/[artist]/[country]/[albumOnly]
 
 ### Parameters
 
@@ -137,7 +137,7 @@ Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#mus
 
 ### Example
 
-> http://&lt;apidomain&gt;/music/artist/u2/us/true?rows=2
+> http://[apidomain]/music/artist/u2/us/true?rows=2
 ```js
 {
 	"numFound":31,
@@ -216,7 +216,7 @@ Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#mus
 Returns a [MusicChart](/choosedigital/api-spec/blob/master/objects.md#musichart) object
 
 ### URL
-> http://&lt;apidomain&gt;/music/list/[listId]/[country]
+> http://[apidomain]/music/list/[listId]/[country]
 
 ### Parameters
 
@@ -267,7 +267,7 @@ Returns a [MusicChart](/choosedigital/api-spec/blob/master/objects.md#musichart)
 
 ### Example
 
-> GET http://&lt;apidomain&gt;/music/list/top/us?rows=3
+> GET http://[apidomain]/music/list/top/us?rows=3
 ```js
 {
 	"displayTitle":"Top Albums",
@@ -346,7 +346,7 @@ Returns a [MusicChart](/choosedigital/api-spec/blob/master/objects.md#musichart)
 ## Download
 
 ### URL
-> http://&lt;apidomain&gt;/music/download/[cdin]/[hashedCustomerId]/[country]
+> http://[apidomain]/music/download/[cdin]/[hashedCustomerId]/[country]
 
 ### Parameters
 
@@ -385,7 +385,7 @@ Returns a [MusicChart](/choosedigital/api-spec/blob/master/objects.md#musichart)
 
 ### Example
 
-> POST http://&lt;apidomain&gt;/music/download/[cdin]/[hashedCustomerId]/[country]
+> POST http://[apidomain]/music/download/[cdin]/[hashedCustomerId]/[country]
 ```js
 ```
 
@@ -422,7 +422,7 @@ Returns a [MusicChart](/choosedigital/api-spec/blob/master/objects.md#musichart)
 Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#musicsearchresult) object
 
 ### URL
-> http://&lt;apidomain&gt;/music/search
+> http://[apidomain]/music/search
 
 ### Parameters
 
@@ -497,7 +497,7 @@ Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#mus
 
 ### Example
 
-> http://&lt;apidomain&gt;/music/search?term=u2&rows=3
+> http://[apidomain]/music/search?term=u2&rows=3
 ```js
 {
 	"numFound":418,
@@ -630,7 +630,7 @@ Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#mus
 Returns a [Music](/choosedigital/api-spec/blob/master/objects.md#music) object
 
 ### URL
-> http://&lt;apidomain&gt;/music/detail/[cdin]
+> http://[apidomain]/music/detail/[cdin]
 
 ### Parameters
 
@@ -676,7 +676,7 @@ Returns a [Music](/choosedigital/api-spec/blob/master/objects.md#music) object
 
 ### Example
 
-> GET http://&lt;apidomain&gt;/music/detail/7de9747835d903c57a765c43d79eb09b6f6a1eb2
+> GET http://[apidomain]/music/detail/7de9747835d903c57a765c43d79eb09b6f6a1eb2
 ```js
 {
     "cdin": "7de9747835d903c57a765c43d79eb09b6f6a1eb2",
@@ -716,7 +716,7 @@ Returns a [Music](/choosedigital/api-spec/blob/master/objects.md#music) object
 The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>userId + orderId</code>
 
 ### URL
-> http://&lt;apidomain&gt;/music/resetdownload
+> http://[apidomain]/music/resetdownload
 
 ### Parameters
 
@@ -755,7 +755,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ### Example
 
-> PUT http://&lt;apidomain&gt;/music/resetdownload
+> PUT http://[apidomain]/music/resetdownload
 ```js
 ```
 
@@ -766,7 +766,7 @@ Returns either a [MusicContainerPurchase](/choosedigital/api-spec/blob/master/ob
 The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>cdin + userId + countryCode + price</code>
 
 ### URL
-> POST http://&lt;apidomain&gt;/music/purchase
+> POST http://[apidomain]/music/purchase
 
 ### Parameters
 
@@ -865,7 +865,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ### Example
 
-> POST http://&lt;apidomain&gt;/music/purchase
+> POST http://[apidomain]/music/purchase
 ```js
 {
 	"orderId":"WL2-3821126-2848539",
@@ -912,7 +912,7 @@ Returns an [UpdateOrder](/choosedigital/api-spec/blob/master/objects.md#updateor
 The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL
-> http://&lt;apidomain&gt;/music/update
+> http://[apidomain]/music/update
 
 ### Parameters
 
@@ -957,7 +957,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ### Example
 
-> PUT http://&lt;apidomain&gt;/music/update
+> PUT http://[apidomain]/music/update
 ```js
 {
 	"orderId":"WL3-3359944-6701838",
@@ -972,7 +972,7 @@ Returns an [CancelOrder](/choosedigital/api-spec/blob/master/objects.md#cancelor
 The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL
-> http://&lt;apidomain&gt;/music/cancel
+> http://[apidomain]/music/cancel
 
 ### Parameters
 
@@ -1017,7 +1017,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ### Example
 
-> PUT http://&lt;apidomain&gt;/music/cancel
+> PUT http://[apidomain]/music/cancel
 ```js
 {
 	"orderId":"WL3-3359944-6701838",
