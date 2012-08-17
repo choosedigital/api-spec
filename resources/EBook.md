@@ -323,7 +323,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ## Purchase
 
-The authentication parameter is calculated by <code>cdin + userId + countryCode + price</code>
+The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>cdin + userId + countryCode + price</code>
 
 ### URL 
 > http://apistg.choosedigital.net/ebook/purchase
@@ -462,7 +462,7 @@ The authentication parameter is calculated by <code>cdin + userId + countryCode 
 
 ## Update
 
-The authentication parameter is calculated by <code>orderId + userId</code>
+The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL 
 > http://apistg.choosedigital.net/ebook/update
@@ -521,7 +521,7 @@ The authentication parameter is calculated by <code>orderId + userId</code>
 
 ## Cancel
 
-The authentication parameter is calculated by <code>orderId + userId</code>
+The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL 
 > http://apistg.choosedigital.net/ebook/cancel

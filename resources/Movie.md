@@ -361,7 +361,7 @@ Returns a [Movie](/choosedigital/api-spec/blob/master/objects.md#movie) object
 
 Returns a [MovieRental](/choosedigital/api-spec/blob/master/objects.md#movierental) object or a [MoviePurchase](/choosedigital/api-spec/blob/master/objects.md#moviepurchase) 
 
-The authentication parameter is calculated by <code>cdin + userId + countryCode + price</code>
+The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>cdin + userId + countryCode + price</code>
 
 ### URL 
 > http://apistg.choosedigital.net/movie/purchase

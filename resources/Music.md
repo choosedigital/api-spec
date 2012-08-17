@@ -713,7 +713,7 @@ Returns a [Music](/choosedigital/api-spec/blob/master/objects.md#music) object
 
 ## Reset Download
 
-The authentication parameter is calculated by <code>userId + orderId</code>
+The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>userId + orderId</code>
 
 ### URL
 > http://apistg.choosedigital.net/music/resetdownload
@@ -763,7 +763,7 @@ The authentication parameter is calculated by <code>userId + orderId</code>
 
 Returns either a [MusicContainerPurchase](/choosedigital/api-spec/blob/master/objects.md#musiccontainerpurchase) object or a [MusicTrackPurchase](/choosedigital/api-spec/blob/master/objects.md#musictrackpurchase) object, depending on what was purchased
 
-The authentication parameter is calculated by <code>cdin + userId + countryCode + price</code>
+The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>cdin + userId + countryCode + price</code>
 
 ### URL
 > POST http://apistg.choosedigital.net/music/purchase
@@ -909,7 +909,7 @@ The authentication parameter is calculated by <code>cdin + userId + countryCode 
 
 Returns an [UpdateOrder](/choosedigital/api-spec/blob/master/objects.md#updateorder) object
 
-The authentication parameter is calculated by <code>orderId + userId</code>
+The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL
 > http://apistg.choosedigital.net/music/update
@@ -969,7 +969,7 @@ The authentication parameter is calculated by <code>orderId + userId</code>
 
 Returns an [CancelOrder](/choosedigital/api-spec/blob/master/objects.md#cancelorder) object
 
-The authentication parameter is calculated by <code>orderId + userId</code>
+The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL
 > http://apistg.choosedigital.net/music/cancel
