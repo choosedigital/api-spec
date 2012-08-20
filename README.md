@@ -1,8 +1,8 @@
-# ChooseDigital API Spec
+# Choose Digital API Spec
 
-ChooseDigital’s capabilities are unique to the marketplace with patent pending approaches to Digital Media delivery, security, system and solution interoperability.
+Choose Digital’s capabilities are unique to the marketplace with patent pending approaches to Digital Media delivery, security, system and solution interoperability.
 
-The ChooseDigital API will allow for quick and effective implementation of an All-Digital Market Place. It provides full interaction with the ChooseDigital catalog from browsing and search, to complete product data, to transactions and order history. This capability can be put in place with relatively basic API calls to ChooseDigital servers. 
+The Choose Digital API will allow for quick and effective implementation of an All-Digital Market Place. It provides full interaction with the Choose Digital catalog from browsing and search, to complete product data, to transactions and order history. This capability can be put in place with relatively basic API calls to Choose Digital servers. 
 
 Any reference in this document to "points" is interchangeable with "credits", "miles", etc.
 
@@ -13,29 +13,29 @@ Follow these guidelines to ensure that you're following our best practices for a
 
 ## Table of Content
 
-* [Object definitions](/choosedigital/api-spec/blob/master/objects.md)
-* [Resource definitions](/choosedigital/api-spec/blob/master/resources/README.md)
-* [Signing and Authenticating REST Requests](/choosedigital/api-spec/blob/master/Authentication.md)
+* [Object definitions](/Choose Digital/api-spec/blob/master/objects.md)
+* [Resource definitions](/Choose Digital/api-spec/blob/master/resources/README.md)
+* [Signing and Authenticating REST Requests](/Choose Digital/api-spec/blob/master/Authentication.md)
 
 ## To Developers
 
-This document is a reference for development of a rewards e-commerce website, or other type of site or application, that interacts with the ChooseDigital API.
+This document is a reference for development of a rewards e-commerce website, or other type of site or application, that interacts with the Choose Digital API.
 
-The API provides a mechanism for developers to query and purchase digital content. The API will allow for direct integration between client software, web-based applications, 3rd party software and the ChooseDigital Gateway.
+The API provides a mechanism for developers to query and purchase digital content. The API will allow for direct integration between client software, web-based applications, 3rd party software and the Choose Digital Gateway.
  
 ### Developer Support
 
-If you have any problems, please open a ticket with the ChooseDigital API help desk by sending an email to 
+If you have any problems, please open a ticket with the Choose Digital API help desk by sending an email to 
 
 ```
-api@choosedigital.zendesk.com
+api@ChooseDigital.zendesk.com
 ```
 
 Please speak with your account representative for your API login information.
 
 ### Authentication
 
-Every request to the API must contain authentication information to establish the identity of the principal making the request. In REST, this is done by first putting the headers in a canonical format, then signing the headers using your ChooseDigital Secret Access Key.
+Every request to the API must contain authentication information to establish the identity of the principal making the request. In REST, this is done by first putting the headers in a canonical format, then signing the headers using your Choose Digital Secret Access Key.
 
 Refer to the Authentication chapter for more information and examples.
 
