@@ -343,6 +343,68 @@ Returns a [MusicChart](/choosedigital/api-spec/blob/master/objects.md#musichart)
 }
 ```
 
+
+## Curated Top Charts
+
+"Top 25" charts for the following genres: Alternative, Country, Electronic, Hip/Hop, Pop, Rock,  and Soundtracks.  
+Plus: Top Albums and Top Songs (all genres).  
+Music charts are updated weekly on Tuesday morning.  
+
+To retrieve curated charts, use the [List](#list) api and set the listId to "top".
+
+### URL
+> http://[apidomain]/music/list/top/[country]
+
+### Example
+
+> GET http://[apidomain]/music/list/top/us?genre=rock
+```js
+{
+	"displayTitle":"Top Rock Albums",
+	"releases":[{
+	"cdin":"fd01b6fe1a335ddf96a9cc5568ffb75cd264bb14",
+	"available":"true",
+	"downloadsAvailable":"1",
+	"albumOnly":"false",
+	"releaseType":"Album",
+	"genre":"Alternative",
+	"displayTitle":"Strangeland (Deluxe Version)",
+	"sanitizedDisplayTitle":"Strangeland (Deluxe Version)",
+	"label":"Interscope",
+	"copyright":"(C) 2012 Universal Island Records, a division of Universal Music Operations Limited under exclusive license to Interscope Records in the U.S.A.",
+	"duration":"",
+	"explicit":"false",
+	"icpn":"00602527947969",
+	"mainArtist":"Keane",
+	"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/s/00602527947969.jpg",
+	"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/m/00602527947969.jpg",
+	"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/l/00602527947969.jpg",
+	"price":"1399","startDate":"2012-05-07T00:00:00Z","originalReleaseDate":"2012-05-08T00:00:00Z",
+	"popularity":"0"},{
+	"cdin":"81e444ce8bb2af68aa706f557a034384047d9c98",
+	"available":"true",
+	"downloadsAvailable":"1",
+	"albumOnly":"false",
+	"releaseType":"Album",
+	"genre":"Metal",
+	"displayTitle":"American Capitalist",
+	"sanitizedDisplayTitle":"American Capitalist",
+	"label":"Prospect Park",
+	"copyright":"(C) 2011 Prospect Park",
+	"duration":"55:42",
+	"explicit":"true",
+	"icpn":"0813985010625",
+	"mainArtist":"Five Finger Death Punch",
+	"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/s/0813985010625.jpg",
+	"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/m/0813985010625.jpg",
+	"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/l/0813985010625.jpg",
+	"price":"1399","startDate":"2011-10-10T00:00:00Z","originalReleaseDate":"2011-10-11T00:00:00Z",
+	"popularity":"0"
+},
+...
+```
+
+
 ## Download
 
 ### URL
@@ -386,34 +448,6 @@ Returns a [MusicChart](/choosedigital/api-spec/blob/master/objects.md#musichart)
 ### Example
 
 > POST http://[apidomain]/music/download/[cdin]/[hashedCustomerId]/[country]
-```js
-```
-
-## Curated Charts
-
-### URL
-> None
-
-### Parameters
-
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Required</th>
-		<th>Type</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td><code>tenantId</code></td>
-		<td>Optional</td>
-		<td>string</td>
-		<td>The tenant id</td>
-	</tr>
-</table>
-
-### Example
-
-> None
 ```js
 ```
 
@@ -645,7 +679,7 @@ Returns a [Music](/choosedigital/api-spec/blob/master/objects.md#music) object
 		<td><code>cdin</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td>ChooseDigital id</td>
+		<td>Choose Digital id</td>
 	</tr>
 	<tr>
 		<td><code>country</code></td>
@@ -781,7 +815,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 		<td><code>cdin</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td>ChooseDigital id</td>
+		<td>Choose Digital id</td>
 	</tr>
 	<tr>
 		<td><code>priceSold</code></td>
