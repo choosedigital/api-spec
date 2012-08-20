@@ -27,4 +27,10 @@ public static String calculateRFC2104HMAC(String data, String secretKey) throws 
 }
 ```
 
-## Using a Tenant Id
+## Tenants
+
+As a Choose Digital client, it is possible to have separate "Tenants" using your API login and Secret Access Key. Tenants are your sub-clients. Contact us if you need to support Tenants.
+
+```
+contact@ChooseDigital.com
+```
