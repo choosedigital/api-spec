@@ -4,7 +4,7 @@
 * The API returns JSON data (UTF-8)
 * All calls to the API are stateless
 * All interaction is client-server
-* As of this writing, the API only includes music and video media
+* As of this writing, the API only includes music, movie, ebook, and audiobook media
 
 ### Every request consists of the same basic parts:
 
