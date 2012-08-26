@@ -52,7 +52,7 @@ Dates are in short format:
 2012-02-14T14:17:59.440-05:00
 ```
 
-CONFIDENTIALITY
+#### CONFIDENTIALITY
 
 This document is the sole and confidential property of Choose Digital, and is being shared with the partner for the purposes of collaboration, or for evaluating a possible collaboration, to provide users of the partner website(s) with access to a Digital Media Music Store, as provided by Choose Digital. 
 
