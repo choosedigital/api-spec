@@ -20,3 +20,12 @@ There are 3 required headers to add to every request:
 A valid time stamp, using ```x-cd-date``` header, is mandatory for all authenticated requests. Furthermore, the client time-stamp included with an authenticated request must be within 15 minutes of the Choose Digital system time when the request is received. If not, the request will fail with the ```validation.invalid.outofrange``` error status code. The intention of these restrictions is to limit the possibility that intercepted requests could be replayed.
 
 The value of the ```x-cd-date``` header must be in one of the RFC 2616 formats ( http://www.ietf.org/rfc/rfc2616.txt ).
+
+
+#### CONFIDENTIALITY
+
+This document is the sole and confidential property of Choose Digital, and is being shared with the partner for the purposes of collaboration, or for evaluating a possible collaboration, to provide users of the partner website(s) with access to a Digital Media Music Store, as provided by Choose Digital. 
+
+The partner agrees to treat any and all information contained or referenced in this document as confidential, to use it solely for the purpose of the evaluation and definition of a collaboration, to make it accessible only to such employees who have a need to know, not to disclose it to any third party, and not to make it publicly available or accessible in any way, except with the prior written consent of Choose Digital.
+
+All information contained or referenced in this document shall remain the exclusive property of Choose Digital as well as all patent, copyright, trade secret, trademark and other intellectual property rights therein. No license or conveyance of any such rights to the partner is granted or implied under this agreement.
