@@ -32,6 +32,38 @@ This is a simple sanity check to make sure your header authentication is working
 	"ping":"pong"
 }
 ```
+## List All Subjects
+
+This is a simple way to get all the valid ebook subjects
+
+### URL
+>http://[apidomain]/ebook/subjects
+
+### Parameters
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Required</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>tenantId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>The tenant id</td>
+	</tr>
+</table>
+
+### Example
+
+> GET http://[apidomain]/ebook/subjects
+```js
+{
+"subjects":["Nonfiction","Fiction","Romance","Business","History","Science","Religion & Spirituality","Literature","Classic Literature","Education","Sociology","Technology","Politics","Medical","Juvenile Nonfiction","Computer Technology","Biography & Autobiography","Juvenile Fiction","Historical Fiction","Finance","Reference","Philosophy","Erotic Literature","Mystery","Psychology","Health & Fitness","Self-Improvement","Literary Criticism","Fantasy","Suspense","Sports & Recreations","Engineering","Study Aids & Workbooks","Language Arts","Law","Mathematics","Cooking & Food","Family & Relationships","Travel","Careers","Nature","Young Adult Fiction","New Age","Chemistry","Short Stories","Military","Thriller","Performing Arts","Science Fiction","Management","Crafts","Art","Science Fiction & Fantasy","Music","Poetry","Drama","Young Adult Nonfiction","Horror","Children","Scholarly","Humor (Nonfiction)","Entertainment","Pets","Humor (Fiction)","Comic and Graphic Books","Media Studies","Juvenile Literature","Research","Architecture","Western","Photography","Essays","Geography","Ethics","Transportation","Foreign Language Study","Games","True Crime","Professional","Current Events","Report","Physics","Home Design & Décor","Antiques","Gardening","Women's Studies","Folklore","Multi-Cultural","Psychiatry & Psychology","Grammar & Language Usage","Crime","Non-English Nonfiction","Non-English Fiction","Mythology","Text Book","Literary Anthologies","Psychiatry","Outdoor Recreation","Gender Studies","Young Adult Literature"]
+}
+```
 
 ## List
 

@@ -33,6 +33,39 @@ This is a simple sanity check to make sure your header authentication is working
 ]
 ```
 
+## List All Subjects
+
+This is a simple way to get all the valid audiobook subjects
+
+### URL
+>http://[apidomain]/audiobook/subjects
+
+### Parameters
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Required</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>tenantId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>The tenant id</td>
+	</tr>
+</table>
+
+### Example
+
+> GET http://[apidomain]/audiobook/subjects
+```js
+{
+"subjects":["Fiction","Nonfiction","Mystery","Classic Literature","Literature","Juvenile Fiction","Religion & Spirituality","Self-Improvement","Biography & Autobiography","Business","History","Humor (Fiction)","Drama","Science Fiction","Historical Fiction","Romance","Fantasy","Suspense","Thriller","Young Adult Fiction","Short Stories","Western","Humor (Nonfiction)","Science Fiction & Fantasy","Music","Foreign Language Study","Politics","New Age","Juvenile Literature","Juvenile Nonfiction","Health & Fitness","Poetry","Family & Relationships","Erotic Literature","Horror","Travel","Science","Philosophy","Finance","Children","Sports & Recreations","Current Events","Military","Education","Psychology","Careers","Folklore","Non-English Fiction","Entertainment","Sociology","Language Arts","Reference","Grammar & Language Usage","Management","Performing Arts","Medical","True Crime","Nature","Young Adult Literature","Non-English Nonfiction","Art","Literary Criticism","Study Aids & Workbooks","Law","Mythology","Essays","Young Adult Nonfiction","Geography","Pets","Cooking & Food","Women's Studies","Technology","Ethics","Travel Literature","Computer Technology","Literary Anthologies","Journalism","Multi-Cultural","Foreign Language Study - Spanish","Scholarly","Games","Mathematics","Psychiatry & Psychology","Professional","Recovery","Crime","Human Rights","Outdoor Recreation","Physics","Psychiatry","Comic and Graphic Books","Gay/Lesbian","Home Design & Décor","Judaica","Media Studies","Analysis","Antiquarian","Architecture","Crafts","Feminist"]
+}
+```
+
 ## List
 
 ### URL 
