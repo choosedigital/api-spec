@@ -12,7 +12,7 @@ public static String calculateRFC2104HMAC(String data, String secretKey) throws 
         SecretKeySpec signingKey = new SecretKeySpec(secretKey.getBytes(), "HmacSHA1");
 
         // get an hmac_sha1 Mac instance and initialize with the signing key
-        Mac mac = Mac.getInstance(HMAC_SHA1_ALGORITHM);
+        Mac mac = Mac.getInstance("HmacSHA1");
         mac.init(signingKey);
 
         // compute the hmac on input data bytes
