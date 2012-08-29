@@ -27,6 +27,16 @@ public static String calculateRFC2104HMAC(String data, String secretKey) throws 
 }
 ```
 
+## Hashed Customer Id
+
+For a few methods, we require a hashed customer id. To calculate this parameter, do a SHA-256 of the customer id that you previously sent over in the purchases that you made.
+
+```java
+public String generateHashedCustomerId(String customerId) {
+    return DigestUtils.sha256Hex(customerId);
+}
+```
+
 ## Tenants
 
 As a Choose Digital client, it is possible to have separate "Tenants" using your API login and Secret Access Key. Tenants are your sub-clients. Contact us if you need to support Tenants.

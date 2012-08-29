@@ -170,7 +170,7 @@ Returns a [PlayerInfo](/choosedigital/api-spec/blob/master/objects.md#playerinfo
 		<td><code>hashedCustomerId</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td></td>
+		<td>[hashedCustomerId definition](/choosedigital/api-spec/blob/master/resources/General.md#hashed-customer-id)</td>
 	</tr>
 	<tr>
 		<td><code>tenantId</code></td>
@@ -278,7 +278,7 @@ Returns a [Movie](/choosedigital/api-spec/blob/master/objects.md#movie) object
 		<td><code>hashedCustomerId</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td></td>
+		<td>[hashedCustomerId definition](/choosedigital/api-spec/blob/master/resources/General.md#hashed-customer-id)</td>
 	</tr>
 	<tr>
 		<td><code>tenantId</code></td>
