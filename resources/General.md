@@ -29,7 +29,7 @@ public static String calculateRFC2104HMAC(String data, String secretKey) throws 
 
 ## Hashed Customer Id
 
-For a few methods, we require a hashed customer id. To calculate this parameter, do a SHA-256 of the customer id that you previously sent over in the purchases that you made.
+For a few methods, we require a hashed customer id. To calculate this parameter, do a SHA-256 of the customer id that you previously sent over in the purchases that you made. Here's a Java sample:
 
 ```java
 public String generateHashedCustomerId(String customerId) {
