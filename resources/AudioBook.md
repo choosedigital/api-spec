@@ -143,7 +143,7 @@ This is a simple way to get all the valid audiobook subjects
 		<td><code>hashedCustomerId</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td>[hashedCustomerId definition](/choosedigital/api-spec/blob/master/resources/General.md#hashed-customer-id)</td>
+		<td><a href="/choosedigital/api-spec/blob/master/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
 	</tr>
 	<tr>
 		<td><code>country</code></td>
@@ -302,7 +302,7 @@ This is a simple way to get all the valid audiobook subjects
 		<td><code>hashedCustomerId</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td>[hashedCustomerId definition](/choosedigital/api-spec/blob/master/resources/General.md#hashed-customer-id)</td>
+		<td<a href="/choosedigital/api-spec/blob/master/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
 	</tr>
 	<tr>
 		<td><code>tenantId</code></td>

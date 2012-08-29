@@ -429,7 +429,7 @@ To retrieve curated charts, use the [List](#list) api and set the listId to "top
 		<td><code>hashedCustomerId</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td>[hashedCustomerId definition](/choosedigital/api-spec/blob/master/resources/General.md#hashed-customer-id)</td>
+		<td><a href="/choosedigital/api-spec/blob/master/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
 	</tr>
 	<tr>
 		<td><code>country</code></td>
@@ -691,7 +691,7 @@ Returns a [Music](/choosedigital/api-spec/blob/master/objects.md#music) object
 		<td><code>hashedCustomerId</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td>[hashedCustomerId definition](/choosedigital/api-spec/blob/master/resources/General.md#hashed-customer-id)</td>
+		<td><a href="/choosedigital/api-spec/blob/master/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
 	</tr>
 	<tr>
 		<td><code>includeFutureReleases</code></td>
