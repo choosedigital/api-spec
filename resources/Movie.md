@@ -209,6 +209,12 @@ Returns a [MovieSearchResult](/choosedigital/api-spec/blob/master/objects.md#mov
 		<td></td>
 	</tr>
 	<tr>
+		<td><code>genre</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
 		<td><code>country</code></td>
 		<td>Optional</td>
 		<td>string</td>
