@@ -248,7 +248,7 @@ Returns a [MovieSearchResult](/choosedigital/api-spec/blob/master/objects.md#mov
 
 ### Example
 
-> GET http://[apidomain]/movie/search
+> GET http://[apidomain]/movie/search?term=super
 ```js
 {
 	"numFound":2,
@@ -269,6 +269,8 @@ Returns a [MovieSearchResult](/choosedigital/api-spec/blob/master/objects.md#mov
 			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000008301.jpg",
 			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000008301.jpg",
 			"originalReleaseYear":"2006",
+			"director":"Bryan Singer",
+			"language":"English",
 			"available":"true"
 		},{
 			"cdin":"5db77177c7de135f2009f34050bcef03d459e02c",
@@ -283,8 +285,11 @@ Returns a [MovieSearchResult](/choosedigital/api-spec/blob/master/objects.md#mov
 			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000066434.jpg",
 			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000066434.jpg",
 			"originalReleaseYear":"2012",
+			"director":"Michael Chang",
+			"language":"English",
 			"available":"true"
-		}]
+		}
+	]
 }
 ```
 
@@ -332,8 +337,44 @@ Returns a [Movie](/choosedigital/api-spec/blob/master/objects.md#movie) object
 
 ### Example
 
-> GET http://[apidomain]/movie/detail
+> GET http://[apidomain]/movie/detail/4124e7ac0b2d0ef17a5ce5ffbaf41b1897ec9471
 ```js
+{
+	"watchNow":"false",
+	"cdin":"4124e7ac0b2d0ef17a5ce5ffbaf41b1897ec9471",
+	"title":"Superman Returns",
+	"sanitizedTitle":"Superman Returns",
+	"actors":["Brandon Routh","Kevin Spacey","Kate Bosworth","Parker Posey"],
+	"copyrightInfo":"SUPERMAN and all related characters and elements are trademarks of and (c) DC Comics. (c) 2006 Warner Bros. Entertainment Inc. All r ights reserved.",
+	"genres":["Action"],
+	"rating":"PG-13",
+	"director":"Bryan Singer",
+	"language":"English",
+	"runningTime":"2 hours 34 minutes",
+	"shortSynopsis":"Following a mysterious absence of several years, the Man of Steel comes back to Earth, a soaring new chapter in the saga of one of the world's most beloved superheroes.",
+	"synopsis":"He's back. A hero for our millennium. And not a moment too soon, because during the five years (much longer in movie-fan years!) Superman sought his home planet, things changed on his adopted planet. Nations moved on without him. Lois Lane now has a son, a fiance and a Pulitzer for \"Why the World Doesn't Need Superman.\" And Lex Luthor has a plan that will destroy millions - no, billions - of lives.  Filmmaker Bryan Singer (X-Men) gives the world the Superman it needs, honoring the legend everyone loves while taking it in a powerful new direction. Brandon Routh proves a perfect choice to wear the hero's cape, leading a top cast that includes Kate Bosworth as Lois and Kevin Spacey as Lex. And the thrills - from a sky-grapple with a tumbling jumbo jet to a continent-convulsing showdown - redefine Wow. \"I'm always around,\" Superman tells Lois. You'll be glad he is.",
+	"originalReleaseYear":"2006","theatricalReleaseDate":"2006-06-28T00:00:00Z",
+	"httpTrailerUrl":"http://d3qcb5osaw6g5.cloudfront.net/s/v/Content_Chopper_SUPERMAN_RETURNS_16x9_STEREO_TRAILER_E0082749_3116465.mp4",
+	"rtmpTrailerUrl":"rtmp://s2sacn9d6arc57.cloudfront.net/cfx/st/s/v/Content_Chopper_SUPERMAN_RETURNS_16x9_STEREO_TRAILER_E0082749_3116465.mp4",
+	"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/s/6000008301.jpg",
+	"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000008301.jpg",
+	"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000008301.jpg",
+	"available":"false",
+	"offerings":[
+		{
+			"cdin":"347c3830cc36ed07ba539316f669d5f6f2f32c79",
+			"price":"999",
+			"rights":"buy",
+			"definition":"SD"
+		},{
+			"cdin":"62d08ab2ec6c41020c906e30b5462a6796d10dae",
+			"price":"299",
+			"rights":"rent",
+			"rentalHours":"24",
+			"definition":"SD"
+		}
+	]
+}
 ```
 
 ## Purchase
