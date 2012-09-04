@@ -250,6 +250,42 @@ Returns a [MovieSearchResult](/choosedigital/api-spec/blob/master/objects.md#mov
 
 > GET http://[apidomain]/movie/search
 ```js
+{
+	"numFound":2,
+	"start":0,
+	"searchTerm":"super",
+	"genres":[{"name":"Action","count":2},{"name":"Animation","count":1}],
+	"movies":[
+		{
+			"cdin":"4124e7ac0b2d0ef17a5ce5ffbaf41b1897ec9471",
+			"title":"Superman Returns",
+			"sanitizedTitle":"Superman Returns",
+			"actors":["Brandon Routh","Kevin Spacey","Kate Bosworth","Parker Posey"],
+			"genres":["Action"],
+			"rating":"PG-13",
+			"httpTrailerUrl":"http://d3qcb5osaw6g5.cloudfront.net/s/v/Content_Chopper_SUPERMAN_RETURNS_16x9_STEREO_TRAILER_E0082749_3116465.mp4",
+			"rtmpTrailerUrl":"rtmp://s2sacn9d6arc57.cloudfront.net/cfx/st/s/v/Content_Chopper_SUPERMAN_RETURNS_16x9_STEREO_TRAILER_E0082749_3116465.mp4",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/s/6000008301.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000008301.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000008301.jpg",
+			"originalReleaseYear":"2006",
+			"available":"true"
+		},{
+			"cdin":"5db77177c7de135f2009f34050bcef03d459e02c",
+			"title":"Superman vs. The Elite",
+			"sanitizedTitle":"Superman vs. The Elite",
+			"actors":[],
+			"genres":["Action","Animation"],
+			"rating":"PG-13",
+			"httpTrailerUrl":"http://d3qcb5osaw6g5.cloudfront.net/s/v/Content_Chopper_SUPERMAN_VS_THE_ELITE_16x9_STEREO_TRAILER_E0282070_3352108.mp4",
+			"rtmpTrailerUrl":"rtmp://s2sacn9d6arc57.cloudfront.net/cfx/st/s/v/Content_Chopper_SUPERMAN_VS_THE_ELITE_16x9_STEREO_TRAILER_E0282070_3352108.mp4",
+			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/s/6000066434.jpg",
+			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000066434.jpg",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000066434.jpg",
+			"originalReleaseYear":"2012",
+			"available":"true"
+		}]
+}
 ```
 
 ## Detail
