@@ -77,20 +77,7 @@ This is a simple way to get all the valid genres associated with curated lists
 
 ### Parameters
 
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Required</th>
-		<th>Type</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td><code>tenantId</code></td>
-		<td>Optional</td>
-		<td>string</td>
-		<td>The tenant id</td>
-	</tr>
-</table>
+No optional or required parameters
 
 ### Example
 

@@ -33,6 +33,16 @@ The ChooseDigital API is a JSON API.
             <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#list-all-genres">List All Genres</a></td>
         </tr>
 	    <tr>
+            <td>/music/genres</td>
+            <td>GET</td>
+            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#list-all-genres">List All Genres</a></td>
+        </tr>
+	    <tr>
+            <td>/music/curatedgenres</td>
+            <td>GET</td>
+            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#list-curated-genres">List Curated Genres</a></td>
+        </tr>
+	    <tr>
             <td>/music/curatedcharts/[country]</td>
             <td>GET</td>
             <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#curated-charts">Curated Charts</a></td>
