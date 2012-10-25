@@ -68,6 +68,38 @@ This is a simple way to get all the valid music genres
 }
 ```
 
+## List Curated Genres
+
+This is a simple way to get all the valid genres associated with curated lists
+
+### URL
+>http://[apidomain]/music/curatedgenres
+
+### Parameters
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Required</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>tenantId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>The tenant id</td>
+	</tr>
+</table>
+
+### Example
+
+> GET http://[apidomain]/music/curatedgenres
+```js
+{
+    "genres":["all","alternative","christian","classical","country","electronic","hip hop","jazz","latin","pop","r&b","rock","soundtrack"]
+}
+```
 
 ## Retrieve Artist Detail
 
