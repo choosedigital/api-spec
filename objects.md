@@ -801,6 +801,16 @@
 		<td>string</td>
 		<td></td>
 	</tr>
+	<tr>
+		<td><code>playerId</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>playerKey</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
 </table>
 
 ## Book
