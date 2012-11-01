@@ -7,7 +7,7 @@ http://docs.amazonwebservices.com/AmazonS3/latest/dev/RESTAuthentication.html
 
 ## The Authentication Header
 
-There are 3 required headers to add to every request:
+There are 5 required headers to add to every request:
 
 * <code>cdaccesskeyid</code> - your Choose Digital client id
 * <code>x-cd-date</code> - time of request in one of the following formats
@@ -16,6 +16,9 @@ There are 3 required headers to add to every request:
 * <code>authorization</code> - HMAC-SHA1 hash of x-cd-date and your secret
 * <code>Content-type:application/json</code>
 * <code>Accept:application/json</code>
+
+Optionally, you can also include a gzip/deflate header
+
 * <code>Accept-Encoding:gzip,deflate,sdch</code>
 
 ## Time Stamp Requirement
