@@ -14,6 +14,9 @@ There are 3 required headers to add to every request:
     * ISO8601 + timezone - yyyy-MM-dd'T'HH:mm:ss'Z'
     * ISO8601 - yyyy-MM-dd'T'HH:mm:ss
 * <code>authorization</code> - HMAC-SHA1 hash of x-cd-date and your secret
+* <code>Content-type:application/json</code>
+* <code>Accept:application/json</code>
+* <code>Accept-Encoding","gzip,deflate,sdch</code>
 
 ## Time Stamp Requirement
 
