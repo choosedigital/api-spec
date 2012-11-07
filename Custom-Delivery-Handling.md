@@ -45,7 +45,7 @@ Below are the error codes and their related descriptions.
 	</tr>
 	<tr>
 		<td>music.020</td>
-		<td>unable to retrive content</td>
+		<td>unable to retrieve content</td>
 	</tr>
 	<tr>
 		<td>music.021</td>
@@ -88,10 +88,6 @@ Below are the error codes and their related descriptions.
 ### Books
 
 <table>
-	<tr>
-		<th>Code</th>
-		<th>Description</th>
-	</tr>
 	<tr>
 		<th>Code</th>
 		<th>Description</th>
