@@ -16,6 +16,7 @@ Follow these guidelines to ensure that you're following our best practices for a
 * [Object definitions](/choosedigital/api-spec/blob/master/objects.md)
 * [Resource definitions](/choosedigital/api-spec/blob/master/resources/README.md)
 * [Signing and Authenticating REST Requests](/choosedigital/api-spec/blob/master/Authentication.md)
+* [Custom Delivery Handling](/choosedigital/api-spec/blob/master/Custom-Delivery-Handling.md)
 
 ## To Developers
 
