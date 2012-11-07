@@ -15,10 +15,11 @@
 * The Response Status Code - The HTTP status code from the response.
 * Other Response Info - We'll also have some other interesting info in the response.
 
-You'll need to set the following header in order to receive responses:
+You'll need to set the following headers in order to receive responses:
 
 ```
 Accept: application/json
+Content-type: application/json
 ```
 
 
