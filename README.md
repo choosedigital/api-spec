@@ -40,6 +40,20 @@ Every request to the API must contain authentication information to establish th
 
 Refer to the Authentication chapter for more information and examples.
 
+### <span id="redemption-links"></span>Redemption Links (download or streaming)
+
+When an api request is made for a purchase, the response will include a redemption link.
+All redemption links expire in just a few minutes. 
+If a link expires without being used, a new one can be requested. 
+Just as a user must be logged in to make a purchase, they must also be logged in to request a new redemption link. See further documentation under specific media types.
+
+__*Don't* save redemption links to be used later__
+
+__*Don't* send redemption links via email or any other transmission__ 
+
+__*Do* provide redemption links only to logged-in users__ 
+
+
 ### General info
 
 #### UTF-8 encoding 
