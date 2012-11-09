@@ -47,11 +47,11 @@ All redemption links expire in just a few minutes.
 If a link expires without being used, a new one can be requested. 
 Just as a user must be logged in to make a purchase, they must also be logged in to request a new redemption link. See further documentation under specific media types.
 
-__*Don't* save redemption links to be used later__
+__*Don't*__ save redemption links to be used later
 
-__*Don't* send redemption links via email or any other transmission__ 
+__*Don't*__ send redemption links via email or any other transmission 
 
-__*Do* provide redemption links only to logged-in users__ 
+__*Do*__ provide redemption links only to logged-in users 
 
 
 ### General info

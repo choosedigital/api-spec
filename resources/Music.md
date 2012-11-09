@@ -467,8 +467,11 @@ To retrieve curated charts, use the [List](#list) api and set the listId to "top
 ### Example
 
 > GET http://[apidomain]/music/download/[cdin]/[hashedCustomerId]/[country]
-```js
-```
+
+Remember: this response will include a redemption link which expires in minutes and must not be sent via email. [Redemption Link handling](/choosedigital/api-spec/blob/master/README.md#redemption-links)
+
+
+
 
 ## Search
 

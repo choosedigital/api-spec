@@ -115,10 +115,42 @@ This is a simple way to get all the valid ebook subjects
 
 > GET http://[apidomain]/ebook/list/top/us
 ```js
+{
+	"displayTitle":"Top eBooks (all)",
+	"books":[
+		{
+			"cdin":"e508cae4104e650e66102c2e8fd1992b1b885f95",
+			"available":"true",
+			"formatType":"Adobe EPUB eBook",
+			"subjects":["Cooking & Food","Nonfiction"],
+			"title":"The Intolerant Gourmet",
+			"sanitizedTitle":"The Intolerant Gourmet",
+			"creators":["Barbara Kafka"],
+			"thumbnailImage":"http://images.contentreserve.com/ImageType-200/1953-1/{1E6949DF-08EC-466D-91DB-3A0650DA7475}Img200.jpg",
+			"coverImage":"http://images.contentreserve.com/ImageType-100/1953-1/{1E6949DF-08EC-466D-91DB-3A0650DA7475}Img100.jpg",
+			"availableDate":"2011-12-20T00:00:00Z",
+			"retailPrice":"123"
+		},{
+			"cdin":"5857e518412e4c426d7b091ce9f517f411ff44bc",
+			"available":"true",
+			"formatType":"Adobe PDF eBook",
+			"subjects":["Science","Nonfiction"],
+			"title":"The Illustrated Theory of Everything",
+			"sanitizedTitle":"The Illustrated Theory of Everything",
+			"creators":["Stephen W. Hawking"],
+			"thumbnailImage":"http://images.contentreserve.com/ImageType-200/1314-1/{5B577FDB-AE6B-4E26-A108-AE1C18F6E807}Img200.jpg",
+			"coverImage":"http://images.contentreserve.com/ImageType-100/1314-1/{5B577FDB-AE6B-4E26-A108-AE1C18F6E807}Img100.jpg",
+			"availableDate":"2011-12-20T00:00:00Z",
+			"retailPrice":"123"
+		},
+		...
+}
 ```
 
 
 ## Download
+
+Returns a [bookpurchase](/choosedigital/api-spec/blob/master/objects.md#bookpurchase) object
 
 ### URL 
 > http://[apidomain]/ebook/download/[cdin]/[hashedCustomerId]/[country]
@@ -161,8 +193,10 @@ This is a simple way to get all the valid ebook subjects
 ### Example
 
 > GET http://[apidomain]/ebook/download/[cdin]/[hashedCustomerId]/[country]
-```js
-```
+
+Remember: this response will include a redemption link which expires in minutes and must not be sent via email. [Redemption Link handling](/choosedigital/api-spec/blob/master/README.md#redemption-links)
+
+
 
 ## Search
 
@@ -267,8 +301,7 @@ This is a simple way to get all the valid ebook subjects
 ### Example
 
 > GET http://[apidomain]/ebook/search
-```js
-```
+
 
 
 ## Detail
@@ -314,8 +347,7 @@ This is a simple way to get all the valid ebook subjects
 ### Example
 
 > GET http://[apidomain]/ebook/detail/[cdin]
-```js
-```
+
 
 
 ## Curated Charts
@@ -349,8 +381,7 @@ This is a simple way to get all the valid ebook subjects
 ### Example
 
 > GET http://[apidomain]/ebook/curatedcharts/us
-```js
-```
+
 
 
 ## Purchase
@@ -488,8 +519,8 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 ### Example
 
 > POST http://[apidomain]/ebook/purchase
-```js
-```
+
+
 
 
 ## Update

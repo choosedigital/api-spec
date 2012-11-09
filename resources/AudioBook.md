@@ -116,10 +116,40 @@ This is a simple way to get all the valid audiobook subjects
 
 > GET http://[apidomain]/audiobook/list/top/us
 ```js
+{
+    "displayTitle": "Top Audiobooks (all)",
+    "books": [{
+        "cdin": "1bdba06733999983f1cdfbb95219247abd072400",
+        "available": "true",
+        "formatType": "OverDrive MP3 Audiobook",
+        "subjects": ["Science Fiction", "Thriller", "Young Adult Fiction"],
+        "title": "Mockingjay",
+        "sanitizedTitle": "Mockingjay",
+        "creators": ["Suzanne Collins", "Carolyn McCormick"],
+        "thumbnailImage": "http://images.contentreserve.com/ImageType-200/1837-1/{19358B67-49CF-47BC-960F-2807A164053D}Img200.jpg",
+        "coverImage": "http://images.contentreserve.com/ImageType-100/1837-1/{19358B67-49CF-47BC-960F-2807A164053D}Img100.jpg",
+        "availableDate": "2010-08-24T00:00:00Z",
+        "retailPrice": "123"
+    }, {
+        "cdin": "3800479f2f6c19b0c6f819a3007907665617551b",
+        "available": "true",
+        "formatType": "OverDrive MP3 Audiobook",
+        "subjects": ["Fiction", "Science Fiction"],
+        "title": "The Man in the High Castle",
+        "sanitizedTitle": "The Man in the High Castle",
+        "creators": ["Philip K. Dick", "Tom Weiner"],
+        "thumbnailImage": "http://images.contentreserve.com/ImageType-200/0887-1/{A2D8D0EA-38D5-434E-994C-036393218ACD}Img200.jpg",
+        "coverImage": "http://images.contentreserve.com/ImageType-100/0887-1/{A2D8D0EA-38D5-434E-994C-036393218ACD}Img100.jpg",
+        "availableDate": "2008-01-22T00:00:00Z",
+        "retailPrice": "123"
+}
 ```
 
 
+
 ## Download
+
+Returns a [bookpurchase](/choosedigital/api-spec/blob/master/objects.md#bookpurchase) object
 
 ### URL 
 > http://[apidomain]/audiobook/download/[cdin]/[hashedCustomerId]/[country]
@@ -162,8 +192,11 @@ This is a simple way to get all the valid audiobook subjects
 ### Example
 
 > GET http://[apidomain]/audiobook/download/[cdin]/[hashedCustomerId]/[country]
-```js
-```
+
+Remember: this response will include a redemption link which expires in minutes and must not be sent via email. [Redemption Link handling](/choosedigital/api-spec/blob/master/README.md#redemption-links)
+
+
+
 
 ## Search
 
@@ -268,8 +301,8 @@ This is a simple way to get all the valid audiobook subjects
 ### Example
 
 > GET http://[apidomain]/audiobook/search
-```js
-```
+
+
 
 
 ## Detail
@@ -315,8 +348,8 @@ This is a simple way to get all the valid audiobook subjects
 ### Example
 
 > GET http://[apidomain]/audiobook/detail/[cdin]
-```js
-```
+
+
 
 
 ## Curated Charts
@@ -350,8 +383,8 @@ This is a simple way to get all the valid audiobook subjects
 ### Example
 
 > GET http://[apidomain]/audiobook/curatedcharts/us
-```js
-```
+
+
 
 
 ## Purchase
@@ -489,8 +522,8 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 ### Example
 
 > GET http://[apidomain]/audiobook/purchase
-```js
-```
+
+
 
 
 ## Update
