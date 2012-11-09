@@ -194,7 +194,7 @@ Returns a [bookpurchase](/choosedigital/api-spec/blob/master/objects.md#bookpurc
 
 > GET http://[apidomain]/ebook/download/[cdin]/[hashedCustomerId]/[country]
 
-Remember: this response will include a redemption link which expires in minutes and must not be sent via email. [Redemption Link handling](/choosedigital/api-spec/blob/master/README.md#redemption-links)
+Remember: this response will include a redemption link which expires in minutes and must not be sent via email. [Redemption Link handling](/choosedigital/api-spec/blob/master/README.md#redemption-links-download-or-streaming)
 
 
 
