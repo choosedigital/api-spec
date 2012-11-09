@@ -466,7 +466,7 @@ To retrieve curated charts, use the [List](#list) api and set the listId to "top
 
 ### Example
 
-> POST http://[apidomain]/music/download/[cdin]/[hashedCustomerId]/[country]
+> GET http://[apidomain]/music/download/[cdin]/[hashedCustomerId]/[country]
 ```js
 ```
 
