@@ -549,6 +549,18 @@ Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#mus
 		<td>string</td>
 		<td>The tenant id</td>
 	</tr>
+	<tr>
+		<td><code>priceLow</code></td>
+		<td>Optional</td>
+		<td>integer</td>
+		<td>filter for pricing</td>
+	</tr>
+	<tr>
+		<td><code>priceHigh</code></td>
+		<td>Optional</td>
+		<td>integer</td>
+		<td>filter for pricing</td>
+	</tr>
 </table>
 
 ### Example
