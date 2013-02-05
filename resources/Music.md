@@ -468,7 +468,7 @@ To retrieve curated charts, use the [List](#list) api and set the listId to "top
 
 > GET http://[apidomain]/music/download/[cdin]/[hashedCustomerId]/[country]
 
-Remember: this response will include a redemption link which expires in minutes and must not be sent via email. [Redemption Link handling](/choosedigital/api-spec/blob/master/README.md#redemption-links-download-or-streaming)
+Remember: this response will include a redemption link which expires in minutes and must not be sent via email. [Redemption Link handling](/README.md#redemption-links-download-or-streaming)
 
 
 
