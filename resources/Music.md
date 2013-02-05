@@ -156,7 +156,7 @@ Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#mus
 
 ### Example
 
-> http://[apidomain]/music/artist/u2/us/true?rows=2
+> http://[apidomain]/music/artist/U2/us/true?rows=2
 ```js
 {
 	"numFound":31,
