@@ -44,7 +44,7 @@ Refer to the Authentication chapter for more information and examples.
 
 When an api request is made for a purchase, the response will include a redemption link.
 All redemption links expire in just a few minutes. 
-If a link expires without being used, a new one can be requested. 
+If a link expires without being used, a new one can be requested (using the [Download](/resources/Music.md#download) method for Music, for example). Once a link is used, a new link will no longer be returned.
 Just as a user must be logged in to make a purchase, they must also be logged in to request a new redemption link. See further documentation under specific media types.
 
 __*Don't*__ save redemption links to be used later
