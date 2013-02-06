@@ -33,7 +33,7 @@
 
 ## List
 
-Returns a [MovieChart](/choosedigital/api-spec/blob/master/objects.md#moviechart) object
+Returns a [MovieChart](/objects.md#moviechart) object
 
 Choose Digital maintains a list of "New and Noteworthy" movie titles.
 
@@ -146,7 +146,7 @@ Choose Digital maintains a list of "New and Noteworthy" movie titles.
 
 ## Player Info
 
-Returns a [PlayerInfo](/choosedigital/api-spec/blob/master/objects.md#playerinfo) object
+Returns a [PlayerInfo](/objects.md#playerinfo) object
 
 ### URL 
 > http://[apidomain]/movie/playerinfo/[cdin]/[hashedCustomerId]
@@ -170,7 +170,7 @@ Returns a [PlayerInfo](/choosedigital/api-spec/blob/master/objects.md#playerinfo
 		<td><code>hashedCustomerId</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td><a href="/choosedigital/api-spec/blob/master/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
+		<td><a href="/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
 	</tr>
 	<tr>
 		<td><code>tenantId</code></td>
@@ -188,7 +188,7 @@ Returns a [PlayerInfo](/choosedigital/api-spec/blob/master/objects.md#playerinfo
 
 ## Search
 
-Returns a [MovieSearchResult](/choosedigital/api-spec/blob/master/objects.md#moviesearchresult) object
+Returns a [MovieSearchResult](/objects.md#moviesearchresult) object
 
 ### URL 
 > http://[apidomain]/movie/search
@@ -295,7 +295,7 @@ Returns a [MovieSearchResult](/choosedigital/api-spec/blob/master/objects.md#mov
 
 ## Detail
 
-Returns a [Movie](/choosedigital/api-spec/blob/master/objects.md#movie) object
+Returns a [Movie](/objects.md#movie) object
 
 ### URL 
 > http://[apidomain]/movie/detail/[cdin]
@@ -325,7 +325,7 @@ Returns a [Movie](/choosedigital/api-spec/blob/master/objects.md#movie) object
 		<td><code>hashedCustomerId</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td><a href="/choosedigital/api-spec/blob/master/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
+		<td><a href="/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
 	</tr>
 	<tr>
 		<td><code>tenantId</code></td>
@@ -379,9 +379,9 @@ Returns a [Movie](/choosedigital/api-spec/blob/master/objects.md#movie) object
 
 ## Purchase
 
-Returns a [MovieRental](/choosedigital/api-spec/blob/master/objects.md#movierental) object or a [MoviePurchase](/choosedigital/api-spec/blob/master/objects.md#moviepurchase) 
+Returns a [MovieRental](/objects.md#movierental) object or a [MoviePurchase](/objects.md#moviepurchase) 
 
-The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>cdin + userId + countryCode + price</code>
+The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>cdin + userId + countryCode + price</code>
 
 ### URL 
 > http://[apidomain]/movie/purchase
@@ -522,9 +522,9 @@ Returns all genres for currently available movies.
 
 ## Update
 
-Returns an [UpdateOrder](/choosedigital/api-spec/blob/master/objects.md#updateorder) object
+Returns an [UpdateOrder](/objects.md#updateorder) object
 
-The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
+The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL 
 > http://[apidomain]/movie/update
@@ -582,9 +582,9 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ## Cancel
 
-Returns an [CancelOrder](/choosedigital/api-spec/blob/master/objects.md#cancelorder) object
+Returns an [CancelOrder](/objects.md#cancelorder) object
 
-The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
+The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL 
 > http://[apidomain]/movie/cancel
