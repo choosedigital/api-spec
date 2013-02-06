@@ -90,7 +90,7 @@ No optional or required parameters
 
 ## Retrieve Artist Detail
 
-Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#musicsearchresult) object
+Returns a [MusicSearchResult](/objects.md#musicsearchresult) object
 
 ### URL
 > http://[apidomain]/music/artist/[artist]/[country]/[albumOnly]
@@ -232,7 +232,7 @@ Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#mus
 
 ## List
 
-Returns a [MusicChart](/choosedigital/api-spec/blob/master/objects.md#musichart) object
+Returns a [MusicChart](/objects.md#musichart) object
 
 ### URL
 > http://[apidomain]/music/list/[listId]/[country]
@@ -448,7 +448,7 @@ To retrieve curated charts, use the [List](#list) api and set the listId to "top
 		<td><code>hashedCustomerId</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td><a href="/choosedigital/api-spec/blob/master/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
+		<td><a href="/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
 	</tr>
 	<tr>
 		<td><code>country</code></td>
@@ -475,7 +475,7 @@ Remember: this response will include a redemption link which expires in minutes 
 
 ## Search
 
-Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#musicsearchresult) object
+Returns a [MusicSearchResult](/objects.md#musicsearchresult) object
 
 ### URL
 > http://[apidomain]/music/search
@@ -695,7 +695,7 @@ Returns a [MusicSearchResult](/choosedigital/api-spec/blob/master/objects.md#mus
 
 ## Detail
 
-Returns a [Music](/choosedigital/api-spec/blob/master/objects.md#music) object
+Returns a [Music](/objects.md#music) object
 
 ### URL
 > http://[apidomain]/music/detail/[cdin]
@@ -725,7 +725,7 @@ Returns a [Music](/choosedigital/api-spec/blob/master/objects.md#music) object
 		<td><code>hashedCustomerId</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td><a href="/choosedigital/api-spec/blob/master/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
+		<td><a href="/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
 	</tr>
 	<tr>
 		<td><code>includeFutureReleases</code></td>
@@ -781,7 +781,7 @@ Returns a [Music](/choosedigital/api-spec/blob/master/objects.md#music) object
 
 ## Reset Download
 
-The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>userId + orderId</code>
+The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>userId + orderId</code>
 
 ### URL
 > http://[apidomain]/music/resetdownload
@@ -829,9 +829,9 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ## Purchase
 
-Returns either a [MusicContainerPurchase](/choosedigital/api-spec/blob/master/objects.md#musiccontainerpurchase) object or a [MusicTrackPurchase](/choosedigital/api-spec/blob/master/objects.md#musictrackpurchase) object, depending on what was purchased
+Returns either a [MusicContainerPurchase](/objects.md#musiccontainerpurchase) object or a [MusicTrackPurchase](/objects.md#musictrackpurchase) object, depending on what was purchased
 
-The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>cdin + userId + countryCode + price</code>
+The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>cdin + userId + countryCode + price</code>
 
 ### URL
 > POST http://[apidomain]/music/purchase
@@ -975,9 +975,9 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ## Update
 
-Returns an [UpdateOrder](/choosedigital/api-spec/blob/master/objects.md#updateorder) object
+Returns an [UpdateOrder](/objects.md#updateorder) object
 
-The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
+The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL
 > http://[apidomain]/music/update
@@ -1035,9 +1035,9 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ## Cancel
 
-Returns an [CancelOrder](/choosedigital/api-spec/blob/master/objects.md#cancelorder) object
+Returns an [CancelOrder](/objects.md#cancelorder) object
 
-The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
+The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL
 > http://[apidomain]/music/cancel

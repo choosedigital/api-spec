@@ -15,77 +15,77 @@ The ChooseDigital API is a JSON API.
 	    <tr>
             <td>/music/artist/[artist]/[country]/[albumOnly]</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#retrieve-artist-detail">Retrieve Artist Detail</a></td>
+            <td><a href="/resources/Music.md#retrieve-artist-detail">Retrieve Artist Detail</a></td>
         </tr>
 	    <tr>
             <td>/music/list/[listId]/[country]</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#">List</a></td>
+            <td><a href="/resources/Music.md#">List</a></td>
         </tr>
 	    <tr>
             <td>/music/download/[cdin]/[hashedCustomerId]/[country]</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#download">Download</a></td>
+            <td><a href="/resources/Music.md#download">Download</a></td>
         </tr>
 	    <tr>
             <td>/music/genres</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#list-all-genres">List All Genres</a></td>
+            <td><a href="/resources/Music.md#list-all-genres">List All Genres</a></td>
         </tr>
 	    <tr>
             <td>/music/genres</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#list-all-genres">List All Genres</a></td>
+            <td><a href="/resources/Music.md#list-all-genres">List All Genres</a></td>
         </tr>
 	    <tr>
             <td>/music/curatedgenres</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#list-curated-genres">List Curated Genres</a></td>
+            <td><a href="/resources/Music.md#list-curated-genres">List Curated Genres</a></td>
         </tr>
 	    <tr>
             <td>/music/curatedcharts/[country]</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#curated-charts">Curated Charts</a></td>
+            <td><a href="/resources/Music.md#curated-charts">Curated Charts</a></td>
         </tr>
 	    <tr>
             <td>/music/search</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#search">Search</a></td>
+            <td><a href="/resources/Music.md#search">Search</a></td>
         </tr>
 	    <tr>
             <td>/music/detail/[cdin]</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#detail">Detail</a></td>
+            <td><a href="/resources/Music.md#detail">Detail</a></td>
         </tr>
 	    <tr>
             <td>/music/resetdownload</td>
             <td>PUT</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#reset-download">Reset Download</a></td>
+            <td><a href="/resources/Music.md#reset-download">Reset Download</a></td>
         </tr>
 	    <tr>
             <td>/music/purchase</td>
             <td>POST</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#purchase">Purchase</a></td>
+            <td><a href="/resources/Music.md#purchase">Purchase</a></td>
         </tr>
 	    <tr>
             <td>/music/update</td>
             <td>PUT</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#update">Update</a></td>
+            <td><a href="/resources/Music.md#update">Update</a></td>
         </tr>
 	    <tr>
             <td>/music/cancel</td>
             <td>PUT</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#cancel">Cancel</a></td>
+            <td><a href="/resources/Music.md#cancel">Cancel</a></td>
         </tr>
 	    <tr>
             <td>/music</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Music.md#service-check">Service Check</a></td>
+            <td><a href="/resources/Music.md#service-check">Service Check</a></td>
         </tr>
     </tbody>
 </table>
 
-##[Movie](/choosedigital/api-spec/blob/master/resources/Movie.md)
+##[Movie](/resources/Movie.md)
 <table>
     <thead>
         <tr>
@@ -98,57 +98,57 @@ The ChooseDigital API is a JSON API.
 	    <tr>
             <td>/movie/list/[listId]/[country]</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Movie.md#list">List</a></td>
+            <td><a href="/resources/Movie.md#list">List</a></td>
         </tr>
 	    <tr>
             <td>/movie/playerinfo/[cdin]/[hashedCustomerId]</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Movie.md#player-info">Player Info</a></td>
+            <td><a href="/resources/Movie.md#player-info">Player Info</a></td>
         </tr>
 	    <tr>
             <td>/movie/search</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Movie.md#search">Search</a></td>
+            <td><a href="/resources/Movie.md#search">Search</a></td>
         </tr>
 	    <tr>
             <td>/movie/detail/[cdin]</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Movie.md#detail">Detail</a></td>
+            <td><a href="/resources/Movie.md#detail">Detail</a></td>
         </tr>
 	    <tr>
             <td>/movie/purchase</td>
             <td>POST</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Movie.md#purchase">Purchase</a></td>
+            <td><a href="/resources/Movie.md#purchase">Purchase</a></td>
         </tr>
 	    <tr>
             <td>/movie/genres</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Movie.md#genres">Genres</a></td>
+            <td><a href="/resources/Movie.md#genres">Genres</a></td>
         </tr>
 	    <tr>
             <td>/movie/curatedcharts/[country]</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Movie.md#curated-charts">Curated Charts</a></td>
+            <td><a href="/resources/Movie.md#curated-charts">Curated Charts</a></td>
         </tr>
 	    <tr>
             <td>/movie/update</td>
             <td>PUT</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Movie.md#update">Update</a></td>
+            <td><a href="/resources/Movie.md#update">Update</a></td>
         </tr>
 	    <tr>
             <td>/movie/cancel</td>
             <td>PUT</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Movie.md#cancel">Cancel</a></td>
+            <td><a href="/resources/Movie.md#cancel">Cancel</a></td>
         </tr>
 	    <tr>
             <td>/movie</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/Movie.md#service-check">Service Check</a></td>
+            <td><a href="/resources/Movie.md#service-check">Service Check</a></td>
         </tr>
     </tbody>
 </table>
 
-##[EBook](/choosedigital/api-spec/blob/master/resources/EBook.md)
+##[EBook](/resources/EBook.md)
 <table>
     <thead>
         <tr>
@@ -161,52 +161,52 @@ The ChooseDigital API is a JSON API.
 	    <tr>
             <td>/ebook/list/[listId]/[country]</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/EBook.md#list">List</a></td>
+            <td><a href="/resources/EBook.md#list">List</a></td>
         </tr>
 	    <tr>
             <td>/ebook/download/[cdin]/[hashedCustomerId]/[country]</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/EBook.md#download">Download</a></td>
+            <td><a href="/resources/EBook.md#download">Download</a></td>
         </tr>
 	    <tr>
             <td>/ebook/search</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/EBook.md#search">Search</a></td>
+            <td><a href="/resources/EBook.md#search">Search</a></td>
         </tr>
 	    <tr>
             <td>/ebook/detail/[cdin]</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/EBook.md#detail">Detail</a></td>
+            <td><a href="/resources/EBook.md#detail">Detail</a></td>
         </tr>
 	    <tr>
             <td>/ebook/curatedcharts/[country]</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/EBook.md#curated-charts">Curated Charts</a></td>
+            <td><a href="/resources/EBook.md#curated-charts">Curated Charts</a></td>
         </tr>
 	    <tr>
             <td>/ebook/purchase</td>
             <td>POST</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/EBook.md#purchase">Purchase</a></td>
+            <td><a href="/resources/EBook.md#purchase">Purchase</a></td>
         </tr>
 	    <tr>
             <td>/ebook/update</td>
             <td>PUT</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/EBook.md#update">Update</a></td>
+            <td><a href="/resources/EBook.md#update">Update</a></td>
         </tr>
 	    <tr>
             <td>/ebook/cancel</td>
             <td>PUT</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/EBook.md#cancel">Cancel</a></td>
+            <td><a href="/resources/EBook.md#cancel">Cancel</a></td>
         </tr>
 	    <tr>
             <td>/ebook</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/EBook.md#service-check">Service Check</a></td>
+            <td><a href="/resources/EBook.md#service-check">Service Check</a></td>
         </tr>
     </tbody>
 </table>
 
-##[AudioBook](/choosedigital/api-spec/blob/master/resources/AudioBook.md)
+##[AudioBook](/resources/AudioBook.md)
 <table>
     <thead>
         <tr>
@@ -219,52 +219,52 @@ The ChooseDigital API is a JSON API.
 	    <tr>
             <td>/audiobook/list/[listId]/[country]</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/AudioBook.md#list">List</a></td>
+            <td><a href="/resources/AudioBook.md#list">List</a></td>
         </tr>
 	    <tr>
             <td>/audiobook/download/[cdin]/[hashedCustomerId]/[country]</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/AudioBook.md#download">Download</a></td>
+            <td><a href="/resources/AudioBook.md#download">Download</a></td>
         </tr>
 	    <tr>
             <td>/audiobook/search</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/AudioBook.md#search">Search</a></td>
+            <td><a href="/resources/AudioBook.md#search">Search</a></td>
         </tr>
 	    <tr>
             <td>/audiobook/detail/[cdin]</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/AudioBook.md#detail">Detail</a></td>
+            <td><a href="/resources/AudioBook.md#detail">Detail</a></td>
         </tr>
 	    <tr>
             <td>/audiobook/curatedcharts/[country]</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/AudioBook.md#curated-charts">Curated Charts</a></td>
+            <td><a href="/resources/AudioBook.md#curated-charts">Curated Charts</a></td>
         </tr>
 	    <tr>
             <td>/audiobook/purchase</td>
             <td>POST</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/AudioBook.md#purchase">Purchase</a></td>
+            <td><a href="/resources/AudioBook.md#purchase">Purchase</a></td>
         </tr>
 	    <tr>
             <td>/audiobook/update</td>
             <td>PUT</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/AudioBook.md#update">Update</a></td>
+            <td><a href="/resources/AudioBook.md#update">Update</a></td>
         </tr>
 	    <tr>
             <td>/audiobook/cancel</td>
             <td>PUT</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/AudioBook.md#cancel">Cancel</a></td>
+            <td><a href="/resources/AudioBook.md#cancel">Cancel</a></td>
         </tr>
 	    <tr>
             <td>/ebook</td>
             <td>GET</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/AudioBook.md#service-check">Service Check</a></td>
+            <td><a href="/resources/AudioBook.md#service-check">Service Check</a></td>
         </tr>
     </tbody>
 </table>
 
-##[History](/choosedigital/api-spec/blob/master/resources/History.md)
+##[History](/resources/History.md)
 <table>
     <thead>
         <tr>
@@ -277,17 +277,17 @@ The ChooseDigital API is a JSON API.
 	    <tr>
             <td>/history/all</td>
             <td>POST</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/History.md#all">All</a></td>
+            <td><a href="/resources/History.md#all">All</a></td>
         </tr>
 	    <tr>
             <td>/history/count</td>
             <td>POST</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/History.md#count">Count</a></td>
+            <td><a href="/resources/History.md#count">Count</a></td>
         </tr>
     </tbody>
 </table>
 
-##[VideoPlayer](/choosedigital/api-spec/blob/master/resources/VideoPlayer.md)
+##[VideoPlayer](/resources/VideoPlayer.md)
 <table>
     <thead>
         <tr>
@@ -300,12 +300,12 @@ The ChooseDigital API is a JSON API.
 	    <tr>
             <td>/videoplayer/start</td>
             <td>POST</td>
-            <td><a href="/choosedigital/api-spec/blob/master/resources/VideoPlayer.md#start">Start</a></td>
+            <td><a href="/resources/VideoPlayer.md#start">Start</a></td>
         </tr>
     </tbody>
 </table>
 
-##[Television](/choosedigital/api-spec/blob/master/resources/Television.md) -- coming soon
+##[Television](/resources/Television.md) -- coming soon
 
 
 #### CONFIDENTIALITY

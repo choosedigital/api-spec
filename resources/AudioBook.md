@@ -149,7 +149,7 @@ This is a simple way to get all the valid audiobook subjects
 
 ## Download
 
-Returns a [bookpurchase](/choosedigital/api-spec/blob/master/objects.md#bookpurchase) object
+Returns a [bookpurchase](/objects.md#bookpurchase) object
 
 ### URL 
 > http://[apidomain]/audiobook/download/[cdin]/[hashedCustomerId]/[country]
@@ -173,7 +173,7 @@ Returns a [bookpurchase](/choosedigital/api-spec/blob/master/objects.md#bookpurc
 		<td><code>hashedCustomerId</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td><a href="/choosedigital/api-spec/blob/master/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
+		<td><a href="/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
 	</tr>
 	<tr>
 		<td><code>country</code></td>
@@ -193,7 +193,7 @@ Returns a [bookpurchase](/choosedigital/api-spec/blob/master/objects.md#bookpurc
 
 > GET http://[apidomain]/audiobook/download/[cdin]/[hashedCustomerId]/[country]
 
-Remember: this response will include a redemption link which expires in minutes and must not be sent via email. [Redemption Link handling](/choosedigital/api-spec/blob/master/README.md#redemption-links-download-or-streaming)
+Remember: this response will include a redemption link which expires in minutes and must not be sent via email. [Redemption Link handling](/README.md#redemption-links-download-or-streaming)
 
 
 
@@ -335,7 +335,7 @@ Remember: this response will include a redemption link which expires in minutes 
 		<td><code>hashedCustomerId</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td<a href="/choosedigital/api-spec/blob/master/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
+		<td<a href="/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
 	</tr>
 	<tr>
 		<td><code>tenantId</code></td>
@@ -389,7 +389,7 @@ Remember: this response will include a redemption link which expires in minutes 
 
 ## Purchase
 
-The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>cdin + userId + countryCode + price</code>
+The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>cdin + userId + countryCode + price</code>
 
 ### URL 
 > http://[apidomain]/audiobook/purchase
@@ -528,7 +528,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ## Update
 
-The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
+The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL 
 > http://[apidomain]/audiobook/update
@@ -587,7 +587,7 @@ The [authentication parameter](/choosedigital/api-spec/blob/master/resources/Gen
 
 ## Cancel
 
-The [authentication parameter](/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
+The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
 ### URL 
 > http://[apidomain]/audiobook/cancel
