@@ -158,6 +158,16 @@ The ChooseDigital API is a JSON API.
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td>/ebook/subjects</td>
+            <td>GET</td>
+            <td><a href="/resources/EBook.md#list-all-subjects">List All Subjects</a></td>
+        </tr>
+        <tr>
+            <td>/ebook/languages</td>
+            <td>GET</td>
+            <td><a href="/resources/EBook.md#list-all-languages">List All Languages</a></td>
+        </tr>
 	    <tr>
             <td>/ebook/list/[listId]/[country]</td>
             <td>GET</td>
@@ -216,6 +226,16 @@ The ChooseDigital API is a JSON API.
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td>/audiobook/subjects</td>
+            <td>GET</td>
+            <td><a href="/resources/AudioBook.md#list-all-subjects">List All Subjects</a></td>
+        </tr>
+        <tr>
+            <td>/audiobook/languages</td>
+            <td>GET</td>
+            <td><a href="/resources/AudioBook.md#list-all-languages">List All Languages</a></td>
+        </tr>
 	    <tr>
             <td>/audiobook/list/[listId]/[country]</td>
             <td>GET</td>

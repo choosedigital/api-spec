@@ -66,6 +66,40 @@ This is a simple way to get all the valid audiobook subjects
 }
 ```
 
+## List All Languages
+
+This is a simple way to get all the valid audiobook languages
+
+### URL
+>http://[apidomain]/audiobook/languages
+
+### Parameters
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Required</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>tenantId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>The tenant id</td>
+	</tr>
+</table>
+
+### Example
+
+> GET http://[apidomain]/audiobook/languages
+```js
+{
+"languages":["English","Spanish","French","Chinese","Swedish","German","Afrikaans","Russian","Indonesian","Italian","Portuguese","Irish","Dutch","Arabic","Catalan","Ukrainian","Polish","Japanese","Korean","Hungarian","Serbian","Albanian","Armenian","Romanian","Slovak","Czech","Swahili","Icelandic","Esperanto","Finnish","Hebrew","Serbo-Croatian","Latin","Norwegian","Faeroese","Lithuanian","Danish","Greek","Nauru","Rhaeto-Romance","Welsh","Zulu"]
+}
+```
+
+
 ## List
 
 ### URL 
