@@ -254,7 +254,7 @@ Remember: this response will include a redemption link which expires in minutes 
 	</tr>
 	<tr>
 		<td><code>country</code></td>
-		<td>Optional</td>
+		<td>Required</td>
 		<td>string</td>
 		<td></td>
 	</tr>
@@ -361,7 +361,7 @@ Remember: this response will include a redemption link which expires in minutes 
 	</tr>
 	<tr>
 		<td><code>country</code></td>
-		<td>Optional</td>
+		<td>Required</td>
 		<td>string</td>
 		<td></td>
 	</tr>

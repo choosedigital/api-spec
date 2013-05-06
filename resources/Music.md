@@ -497,7 +497,7 @@ Returns a [MusicSearchResult](/objects.md#musicsearchresult) object
 	</tr>
 	<tr>
 		<td><code>country</code></td>
-		<td>Optional</td>
+		<td>Required</td>
 		<td>string</td>
 		<td>valid values: us, ca. Default value: us</td>
 	</tr>
@@ -717,7 +717,7 @@ Returns a [Music](/objects.md#music) object
 	</tr>
 	<tr>
 		<td><code>country</code></td>
-		<td>Optional</td>
+		<td>Required</td>
 		<td>string</td>
 		<td>valid values: us, ca. Default value = us</td>
 	</tr>

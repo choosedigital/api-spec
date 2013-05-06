@@ -216,7 +216,7 @@ Returns a [MovieSearchResult](/objects.md#moviesearchresult) object
 	</tr>
 	<tr>
 		<td><code>country</code></td>
-		<td>Optional</td>
+		<td>Required</td>
 		<td>string</td>
 		<td>valid values: us, ca</td>
 	</tr>
@@ -317,7 +317,7 @@ Returns a [Movie](/objects.md#movie) object
 	</tr>
 	<tr>
 		<td><code>country</code></td>
-		<td>Optional</td>
+		<td>Required</td>
 		<td>string</td>
 		<td>valid values: us, ca. Default value: us</td>
 	</tr>
