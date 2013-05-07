@@ -136,7 +136,7 @@ This is a simple way to get all the valid audiobook languages
 		<td><code>rows</code></td>
 		<td>Optional</td>
 		<td>integer</td>
-		<td>valid values: 1 to 100</td>
+		<td>valid values: 1 to 100. Default is 10.</td>
 	</tr>
 	<tr>
 		<td><code>tenantId</code></td>
@@ -268,7 +268,7 @@ Remember: this response will include a redemption link which expires in minutes 
 		<td><code>rows</code></td>
 		<td>Optional</td>
 		<td>integer</td>
-		<td></td>
+		<td>valid values: 1 to 100. Default is 10.</td>
 	</tr>
 	<tr>
 		<td><code>start</code></td>

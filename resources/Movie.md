@@ -77,7 +77,7 @@ Choose Digital maintains a list of "New and Noteworthy" movie titles.
 		<td><code>rows</code></td>
 		<td>Optional</td>
 		<td>integer</td>
-		<td>valid values: 1 to 100</td>
+		<td>valid values: 1 to 100. Default is 10.</td>
 	</tr>
 	<tr>
 		<td><code>tenantId</code></td>
@@ -224,7 +224,7 @@ Returns a [MovieSearchResult](/objects.md#moviesearchresult) object
 		<td><code>rows</code></td>
 		<td>Optional</td>
 		<td>integer</td>
-		<td>valid values: 1 to 100</td>
+		<td>valid values: 1 to 100. Default is 10.</td>
 	</tr>
 	<tr>
 		<td><code>start</code></td>
