@@ -67,6 +67,7 @@ Dates are in short format:
 2012-02-14T14:17:59.440-05:00
 ```
 #### Wiki
+Choose Digital API Support Wiki
 https://github.com/choosedigital/api-spec/wiki
 
 
