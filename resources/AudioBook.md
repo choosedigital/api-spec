@@ -379,9 +379,71 @@ Remember: this response will include a redemption link which expires in minutes 
 	</tr>
 </table>
 
+
 ### Example
 
-> GET http://[apidomain]/audiobook/detail/[cdin]
+> Get http://[apidomain]/audiobook/detail/b4d6c46e3d2cdba3986778d757ba197bcc7c5143/us
+
+RESPONSE:
+
+```js
+{
+    "cdin": "b4d6c46e3d2cdba3986778d757ba197bcc7c5143",
+
+    "creators": ["Douglas Adams"],
+
+    "formatType": "OverDrive MP3 Audiobook",
+
+    "isbn": "9781607473077",
+
+    "title": "The Hitchhiker's Guide to the Galaxy",
+
+    "sanitizedTitle": "The Hitchhiker's Guide to the Galaxy",
+
+    "coverImage": "http://d3hg0uhxi21mja.cloudfront.net/ImageType-100/1314-1/{6334C547-0672-4082-84F3-9484CDBCE57D}Img100.jpg",
+
+    "noSchemeCoverImage": "//d3hg0uhxi21mja.cloudfront.net/ImageType-100/1314-1/{6334C547-0672-4082-84F3-9484CDBCE57D}Img100.jpg",
+
+    "thumbnailImage": "http://d3hg0uhxi21mja.cloudfront.net/ImageType-200/1314-1/{6334C547-0672-4082-84F3-9484CDBCE57D}Img200.jpg",
+
+    "noSchemeThumbnailImage": "//d3hg0uhxi21mja.cloudfront.net/ImageType-200/1314-1/{6334C547-0672-4082-84F3-9484CDBCE57D}Img200.jpg",
+
+    "shortDescription": "<p>On a hot night in August 1995 Douglas Adams gave a barnstorming performance to an invited audience at the Almeida Theatre in London. This compact disc is a record of that remarkable event. Douglas gives dramatic solo performances of episodes and passages from The Hitchhiker's Guide to the Galaxy, The Restaurant at the End of the Universe, and Life, the Universe and Everything. Including: How to Fly! Arthur and the Irrational Sofa and much, much...more.",
+
+    "fullDescription": "<p>On a hot night in August 1995 Douglas Adams gave a barnstorming performance to an invited audience at the Almeida Theatre in London. This compact disc is a record of that remarkable event. Douglas gives dramatic solo performances of episodes and passages from The Hitchhiker's Guide to the Galaxy, The Restaurant at the End of the Universe, and Life, the Universe and Everything. Including: How to Fly! Arthur and the Irrational Sofa and much, much...more.",
+
+    "publisher": "Phoenix Books, Inc.",
+
+    "imprint": "",
+
+    "languages": ["English"],
+
+    "series": "The Hitchhiker's Guide to the Galaxy",
+
+    "edition": "Unabridged",
+
+    "subjects": ["Fiction", "Science Fiction", "Humor (Fiction)"],
+
+    "fileSize": "34 MB",
+
+    "retailPrice": "1295",
+
+    "availableDate": "2010-01-25T00:00:00Z",
+
+    "subtitle": "Douglas Adams Live in Concert",
+
+    "digitalRights": ["Transfer to Device: Permitted; Unlimited Devices", "Public Performance: Not Permitted", "Burn to Disk: Permitted"],
+
+    "contentDuration": "01:14:16",
+
+    "numberOfParts": "1",
+
+    "digitalExcerpt": "http://excerpts.contentreserve.com/FormatType-425/1314-1/308605-TheHitchhikersGuideToTheGalaxy.mp3",
+
+    "available": "true"
+
+}
+```
 
 
 

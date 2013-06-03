@@ -285,7 +285,7 @@ Remember: this response will include a redemption link which expires in minutes 
 		<td><code>mediaFormat</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td></td>
+		<td>valid values:Adobe EPUB eBook , Adobe PDF eBook.</td>
 	</tr>
 	<tr>
 		<td><code>creator</code></td>
