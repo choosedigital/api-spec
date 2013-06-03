@@ -344,6 +344,42 @@ Remember: this response will include a redemption link which expires in minutes 
 ### URL 
 > http://[apidomain]/audiobook/detail/[cdin]
 
+### Parameters
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Required</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>cdin</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>country</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>hashedCustomerId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td<a href="/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
+	</tr>
+	<tr>
+		<td><code>tenantId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>The tenant id</td>
+	</tr>
+</table>
+
+
 ### Example
 
 > Get http://[apidomain]/audiobook/detail/b4d6c46e3d2cdba3986778d757ba197bcc7c5143/us
@@ -412,44 +448,6 @@ RESPONSE:
 
 }
 ```
-### Parameters
-
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Required</th>
-		<th>Type</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td><code>cdin</code></td>
-		<td>Required</td>
-		<td>string</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><code>country</code></td>
-		<td>Required</td>
-		<td>string</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><code>hashedCustomerId</code></td>
-		<td>Optional</td>
-		<td>string</td>
-		<td<a href="/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
-	</tr>
-	<tr>
-		<td><code>tenantId</code></td>
-		<td>Optional</td>
-		<td>string</td>
-		<td>The tenant id</td>
-	</tr>
-</table>
-
-### Example
-
-> GET http://[apidomain]/audiobook/detail/[cdin]
 
 
 
