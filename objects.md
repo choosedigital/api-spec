@@ -23,6 +23,17 @@
 <li><a href="#playerinfo">PlayerInfo</a></li>
 </ul>
 
+## Television objects
+
+<ul>
+<li><a href="#televisioncontainer">TelevisionContainer</a></li>
+<li><a href="#televisionresponse">TelevisionResponse</a></li>
+<li><a href="#televisionchart">TelevisionChart</a></li>
+<li><a href="#televisionsearchresult">TelevisionSearchResult</a></li>
+<li><a href="#televisionpurchase">TelevisionPurchase</a></li>
+<li><a href="#televisionplayerinfo">TelevisionPlayerInfo</a></li>
+</ul>
+
 ## Book objects
 
 <ul>
@@ -809,6 +820,907 @@
 	<tr>
 		<td><code>playerKey</code></td>
 		<td>string</td>
+		<td></td>
+	</tr>
+</table>
+
+
+## TelevisionResponse
+
+### Example TelevisionResponse Object
+
+### TelevisionResponse fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>displayEpisode</code></td>
+		<td>TelevisionContainer</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>season</code></td>
+		<td>TelevisionContainer</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>episodes</code></td>
+		<td>List of TelevisionContainers</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>allSeasons</code></td>
+		<td>List of TelevisionContainers</td>
+		<td></td>
+	</tr>
+</table>
+
+## TelevisionContainer
+
+### Example TelevisionContainer Object
+
+### TelevisionContainer fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>yourPriceFormatted</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>yourPrice</code></td>
+		<td>integer</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>basePrice</code></td>
+		<td>integer</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>purchaseDate</code></td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>orderId</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>cdin</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>releaseType</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>title</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>synopsis</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>copyrightInfo</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>actors</code></td>
+		<td>list of string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>genres</code></td>
+		<td>list of string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>rating</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>runningTime</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>retailPrice</code></td>
+		<td>integer</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>format</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>popularity</code></td>
+		<td>integer</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>originalBroadcastDate</code></td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>episodeNumber</code></td>
+		<td>integer</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seasonCdin</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seasonTitle</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seasonNumber</code></td>
+		<td>integer</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seasonYear</code></td>
+		<td>integer</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seasonRetailPrice</code></td>
+		<td>integer</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seriesName</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>available</code></td>
+		<td>boolean</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>salesStartDate</code></td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>smallImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>mediumImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>largeImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>smallSeriesLogoUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>mediumSeriesLogoUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>largeSeriesLogoUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seriesBannerUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+</table>
+
+## TelevisionSeason
+
+### Example TelevisionSeason Object
+
+### TelevisionSeason fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>purchaseDate</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>orderId</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>cdin</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>releaseType</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>title</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>synopsis</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seasonNumber</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seasonYear</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seriesName</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seriesBanner</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeSeriesBanner</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>copyrightInfo</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>actors</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>genres</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>rating</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>retailPrice</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>format</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>popularity</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>smallImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>mediumImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>largeImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeSmallImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeMediumImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeLargeImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>smallSeriesLogoUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>mediumSeriesLogoUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>largeSeriesLogoUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeSmallSeriesLogoUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeMediumSeriesLogoUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeLargeSeriesLogoUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seriesBannerUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeSeriesBannerUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>available</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>salesStartDate</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>episodes</code></td>
+		<td>List of TelevisionEpisodes</td>
+		<td></td>
+	</tr>
+</table>
+
+
+## TelevisionEpisode
+
+### Example TelevisionEpisode Object
+
+### TelevisionEpisode fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>purchaseDate</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>orderId</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>cdin</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>releaseType</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>title</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>videoReferenceId</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>episodeName</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>episodeNumber</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>synopsis</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seasonCdin</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seasonTitle</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seasonName</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seasonNumber</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seasonYear</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seriesName</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>copyrightInfo</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>actors</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>genres</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>rating</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>runningTime</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>retailPrice</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seasonRetailPrice</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>format</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>popularity</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>originalBroadcastDate</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>smallImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeSmallImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>mediumImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeMediumImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>largeImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeLargeImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>salesStartDate</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>available</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>smallSeriesLogoUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>mediumSeriesLogoUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>largeSeriesLogoUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeSmallSeriesLogoUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeMediumSeriesLogoUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeLargeSeriesLogoUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seriesBannerUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeSeriesBannerUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeSmallImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeMediumImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeLargeImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>smallImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>mediumImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>largeImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+</table>
+
+
+## TelevisionChart
+
+### Example TelevisionChart Object
+
+### TelevisionChart fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>isList</code></td>
+		<td>boolean</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>listId</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>genre</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>country</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>rows</code></td>
+		<td>integer</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>releaseType</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>displayTitle</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>releases</code></td>
+		<td>list of TelevisionContainer</td>
+		<td></td>
+	</tr>
+</table>
+
+
+
+## TelevisionSearchResult
+
+### Example TelevisionSearchResult Object
+
+### TelevisionSearchResult fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>numFound</code></td>
+		<td>long</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>start</code></td>
+		<td>long</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>searchTerm</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>releaseType</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>releases</code></td>
+		<td>List of TelevisionContainer</td>
+		<td></td>
+	</tr>
+</table>
+
+## TelevisionContainer
+
+### Example TelevisionContainer Object
+
+### TelevisionContainer fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>cdin</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>title</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>runningTime</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>rating</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seriesName</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seasonName</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seasonNumber</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>seasonYear</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>episodeName</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>episodeNumber</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>releaseType</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+</table>
+
+## TelevisionPurchase
+
+### Example TelevisionPurchase Object
+
+### TelevisionPurchase fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>orderId</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>transactionDate</code></td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>downloadLink</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>streamLink</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>priceSold</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>televisionContainer</code></td>
+		<td>TelevisionContainer</td>
+		<td></td>
+	</tr>
+</table>
+
+## TelevisionPlayerInfo
+
+### Example TelevisionPlayerInfo Object
+
+### TelevisionPlayerInfo fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>playerId</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>playerKey</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>currentEpisode</code></td>
+		<td>TelevisionEpisode</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>allEpisodes</code></td>
+		<td>list of TelevisionEpisodes</td>
 		<td></td>
 	</tr>
 </table>
