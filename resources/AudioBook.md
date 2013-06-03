@@ -346,10 +346,11 @@ Remember: this response will include a redemption link which expires in minutes 
 
 ### Example
 
-http://[apidomain]/audiobook/detail/b4d6c46e3d2cdba3986778d757ba197bcc7c5143/us
+> Get http://[apidomain]/audiobook/detail/b4d6c46e3d2cdba3986778d757ba197bcc7c5143/us
 
 RESPONSE:
 
+```js
 {
 
  
@@ -410,7 +411,7 @@ RESPONSE:
     "available": "true"
 
 }
-
+```
 ### Parameters
 
 <table>
