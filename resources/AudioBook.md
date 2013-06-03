@@ -388,10 +388,6 @@ RESPONSE:
 
 ```js
 {
-
- 
- 
-
     "cdin": "b4d6c46e3d2cdba3986778d757ba197bcc7c5143",
 
     "creators": ["Douglas Adams"],
