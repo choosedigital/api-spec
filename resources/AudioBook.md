@@ -343,6 +343,9 @@ Remember: this response will include a redemption link which expires in minutes 
 
 ### URL 
 > http://[apidomain]/audiobook/detail/[cdin]
+
+### Example
+
 {
 
     "cdin": "b4d6c46e3d2cdba3986778d757ba197bcc7c5143",
