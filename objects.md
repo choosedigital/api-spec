@@ -872,21 +872,6 @@
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td><code>yourPriceFormatted</code></td>
-		<td>string</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><code>yourPrice</code></td>
-		<td>integer</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><code>basePrice</code></td>
-		<td>integer</td>
-		<td></td>
-	</tr>
-	<tr>
 		<td><code>purchaseDate</code></td>
 		<td>date</td>
 		<td></td>
