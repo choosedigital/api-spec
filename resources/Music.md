@@ -831,7 +831,7 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 
 Returns either a [MusicContainerPurchase](/objects.md#musiccontainerpurchase) object or a [MusicTrackPurchase](/objects.md#musictrackpurchase) object, depending on what was purchased
 
-The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>cdin + userId + countryCode + price</code>
+The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>cdin + customerId + customerCountryCode + priceSold</code>
 
 ### URL
 > POST http://[apidomain]/music/purchase

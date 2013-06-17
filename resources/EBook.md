@@ -419,7 +419,7 @@ Remember: this response will include a redemption link which expires in minutes 
 
 ## Purchase
 
-The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>cdin + userId + countryCode + price</code>
+The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>cdin + customerId + customerCountryCode + priceSold</code>
 
 ### URL 
 > http://[apidomain]/ebook/purchase

@@ -485,7 +485,7 @@ RESPONSE:
 
 ## Purchase
 
-The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>cdin + userId + countryCode + price</code>
+The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>cdin + customerId + customerCountryCode + priceSold</code>
 
 ### URL 
 > http://[apidomain]/audiobook/purchase
