@@ -1,11 +1,11 @@
 # Promo Banners
 
-Choose Digital provides collections of promotional images in two sizes: 240x80, and 720x240 (in pixels). These lists are updated weekly. Individual promo banners may be changed at any time.
+Choose Digital provides collections of promotional images in two sizes: 240x80, and 720x240 (in pixels). The smaller 240x80 images are usually in sets of three. The larger 720x240 images are in collections of 4-7 images each. These collections are updated weekly, and individual promo banners may be changed at any time.
 
 
 ## List Available Promo Banner Ids
 
-A simple way to get back a list of available promo banner lists Ids.
+A simple way to get back a list of available promo banner lists ids (names).
 
 ### URL 
 > http://[apidomain]/promo/lists/ids/[country]
@@ -42,8 +42,8 @@ A simple way to get back a list of available promo banner lists Ids.
 }
 ```
 
-## Promo Collection by ID
-Returns a [PromoItem](/objects.md#promoitem) object
+## Promo Collection by Id (name)
+Returns a list of [PromoItem](/objects.md#promoitem) objects in JSON format
 
 ### URL 
 > http://[apidomain]/promo/lists/[promoCollectionName]/[country]/[rows]
