@@ -23,7 +23,7 @@ A simple way to get back a list of available promo banner lists ids (names).
         <td><code>country</code></td>
         <td>Required</td>
         <td>string</td>
-        <td>valid values: us, ca</td>
+        <td>valid values: us, (Canada lists will be included in a future release)</td>
     </tr>
     <tr>
         <td><code>tenantId</code></td>
