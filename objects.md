@@ -51,6 +51,8 @@
 <li><a href="#genre">Genre</a></li>
 <li><a href="#cancelorder">CancelOrder</a></li>
 <li><a href="#updateorder">UpdateOrder</a></li>
+<li><a href="#promoitem">PromoItem</a></li>
+<li><a href="#dates">Date Formatting</a></li>
 </ul>
 
 
@@ -2023,6 +2025,70 @@
 		<td></td>
 	</tr>
 </table>
+
+
+
+## PromoItem
+
+### Example UpdateOrder Object
+
+```js
+{
+	"name": "movie - Cloud Atlas",
+	"importance": 40,
+	"bannerUrl": "http://d3qcb5osaw6g5.cloudfront.net/a/wl/img/pro/cloud_atlas_mo_240x80.jpg",
+	"noSchemeBannerUrl": "//d3qcb5osaw6g5.cloudfront.net/a/wl/img/pro/cloud_atlas_mo_240x80.jpg",
+	"altText": "movie - Cloud Atlas",
+	"exclusive": false,
+	"linkUrl": "/movie/detail/480e0a5b042e1c8b739ca742252ffc0c4d51ef41",
+}
+```
+
+### PromoItem fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>name</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>importance</code></td>
+		<td>number</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>bannerUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeBannerUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>altText</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>exclusive</code></td>
+		<td>boolean</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>linkUrl</code></td>
+		<td>string</td>
+		<td>specific route for detail page structured as /mediaType/detail/cdin</td>
+	</tr>
+</table>
+
 
 ## Notes on data formats
 
