@@ -829,7 +829,7 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 
 ## Purchase
 
-Returns either a [MusicContainerPurchase](/objects.md#musiccontainerpurchase) object or a [MusicTrackPurchase](/objects.md#musictrackpurchase) object, depending on what was purchased
+Returns a [MusicPurchaseInfo](/objects.md#musicpurchaseinfo) object
 
 The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>cdin + customerId + customerCountryCode + priceSold</code>
 

@@ -6,9 +6,12 @@
 <li><a href="#music">Music</a></li>
 <li><a href="#musicchart">MusicChart</a></li>
 <li><a href="#musicsearchresult">MusicSearchResult</a></li>
-<li><a href="#musiccontainerpurchase">MusicContainerPurchase</a></li>
-<li><a href="#musictrackpurchase">MusicTrackPurchase</a></li>
+<li><a href="#musicpurchaseinfo">MusicPurchaseInfo</a></li>
 <li><a href="#releasetype">ReleaseType</a></li>
+<li><a href="#release">Release</a></li>
+<li><a href="#downloadinfo">DownloadInfo</a></li>
+<li><a href="#container">Container</a></li>
+<li><a href="#component">Component</a></li>
 </ul>
 
 ## Movie objects
@@ -413,6 +416,473 @@
 	<tr>
 		<td><code>releases</code></td>
 		<td>list of Music</td>
+		<td></td>
+	</tr>
+</table>
+
+## MusicPurchaseInfo
+
+### Example MusicPurchaseInfo Object
+
+### MusicPurchaseInfo fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>orderId</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>transactionDate</code></td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>downloadLink</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>downloadInfos</code></td>
+		<td>List of [DownloadInfos](/objects.md#downloadinfo)</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>priceSold</code></td>
+		<td>integer</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>container</code></td>
+		<td>[Container](/objects.md#container)</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>release</code></td>
+		<td>[Release](/objects.md#release)</td>
+		<td></td>
+	</tr>
+</table>
+
+## Release
+
+### Example Release Object
+
+### Release fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>cdin</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>albumOnly</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>available</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>downloadsAvailable</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>genre</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>displayTitle</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>sanitizedDisplayTitle</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>icpn</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>albumIcpn</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>albumCdin</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>albumDisplayTitle</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>sanitizedAlbumDisplayTitle</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>label</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>copyright</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>duration</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>explicit</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>mainArtist</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>artist</code></td>
+		<td>list of strings</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>httpPreviewUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeHttpPreviewUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>streamPreviewUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>smallImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>mediumImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>largeImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeSmallImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeMediumImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeLargeImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>componentNumber</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>trackNumber</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>price</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>startDate</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>bitrate</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>releaseType</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>originalReleaseDate</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>popularity</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+</table>
+
+
+## Container
+
+### Example Container Object
+
+### Container fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>cdin</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>available</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>downloadsAvailable</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>genre</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>displayTitle</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>sanitizedDisplayTitle</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>icpn</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>albumIcpn</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>albumDisplayTitle</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>sanitizedAlbumDisplayTitle</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>label</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>copyright</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>duration</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>explicit</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>mainArtist</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>multiArtistCompilation</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>componentNumber</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>trackNumber</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>artist</code></td>
+		<td>list of strings</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>smallImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>mediumImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>largeImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeSmallImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeMediumImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>noSchemeLargeImageUrl</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>price</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>startDate</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>bitrate</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>releaseType</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>originalReleaseDate</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>popularity</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>components</code></td>
+		<td>list of [Components](/objects.md#component)</td>
+		<td></td>
+	</tr>
+</table>
+
+## Component
+
+### Example Component Object
+
+### Component fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>componentNumber</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>trackReleases</code></td>
+		<td>list of [Releases](/objects.md#release)</td>
+		<td></td>
+	</tr>
+</table>
+
+
+## DownloadInfo
+
+### Example DownloadInfo Object
+
+### DownloadInfo fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>url</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>title</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>remaining</code></td>
+		<td>string</td>
 		<td></td>
 	</tr>
 </table>
