@@ -449,7 +449,7 @@
 	</tr>
 	<tr>
 		<td><code>downloadInfos</code></td>
-		<td>List of [DownloadInfos](/objects.md#downloadinfo)</td>
+		<td>List of <a href="#downloadinfo">DownloadInfo</a>s</td>
 		<td></td>
 	</tr>
 	<tr>
@@ -459,12 +459,12 @@
 	</tr>
 	<tr>
 		<td><code>container</code></td>
-		<td>[Container](/objects.md#container)</td>
+		<td><a href="#container">Container</a></td>
 		<td></td>
 	</tr>
 	<tr>
 		<td><code>release</code></td>
-		<td>[Release](/objects.md#release)</td>
+		<td><a href="#release">Release</a></td>
 		<td></td>
 	</tr>
 </table>
@@ -828,7 +828,7 @@
 	</tr>
 	<tr>
 		<td><code>components</code></td>
-		<td>list of [Components](/objects.md#component)</td>
+		<td>list of <a href="#component">Component</a>s</td>
 		<td></td>
 	</tr>
 </table>
@@ -852,7 +852,7 @@
 	</tr>
 	<tr>
 		<td><code>trackReleases</code></td>
-		<td>list of [Releases](/objects.md#release)</td>
+		<td>list of <a href="#release">Release</a>s</td>
 		<td></td>
 	</tr>
 </table>
