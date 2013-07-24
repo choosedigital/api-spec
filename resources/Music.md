@@ -565,7 +565,7 @@ Returns a [MusicSearchResult](/objects.md#musicsearchresult) object
 
 ### Example
 
-> http://[apidomain]/music/search?term=u2&rows=3
+> http://[apidomain]/music/search?term=u2&country=us&rows=3
 ```js
 {
 	"numFound":418,
