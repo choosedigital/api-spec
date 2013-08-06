@@ -247,7 +247,7 @@ Remember: this response will include a redemption link which expires in minutes 
 	</tr>
 	<tr>
 		<td><code>term</code></td>
-		<td>Required</td>
+		<td>Optional</td>
 		<td>string</td>
 		<td></td>
 	</tr>
