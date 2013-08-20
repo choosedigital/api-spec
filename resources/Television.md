@@ -437,6 +437,87 @@ Returns all genres for currently available television seasons.
 }
 ```
 
+
+## Curated Lists
+
+Returns a curated list of TV seasons along with their contents
+
+### URL
+>http://[apidomain]/tv/list/[listId]/[country]?releaseType=[releaseType]
+
+### Parameters
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Required</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>country</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>listId</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>tenantId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>The tenant id</td>
+	</tr>
+	<tr>
+		<td><code>releaseType</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>either "season" (default) or "episode"</td>
+	</tr>
+</table>
+
+### Example
+
+> GET http://[apidomain]/tv/list/top/us
+```js
+{
+    "displayTitle": "New and Noteworthy TV",
+    "listId": "top",
+    "genre": "all",
+    "releaseType": "SEASON",
+    "releases": [{
+        "cdin": "abcdefghij1234567890",
+        "releaseType": "SEASON",
+        "title": "Homeland: The Complete First Season",
+        "synopsis": "Months after the dramatic events that prompted Carrie to undergo Electroconvulsive Therapy, the former CIA case officer has found a modicum of peace in her family\u2019s suburban embrace. But the strides she\u2019s made towards mental health are threatened when an asset from her former life comes in from the cold. Meanwhile, freshman Congressman Nick Brody discovers that Abu Nazir may not be content with his nonviolent approach to affecting change in American foreign policy.",
+        "seasonNumber": 1,
+        "seasonYear": 1,
+        "seriesName": "Homeland",
+        "copyrightInfo": "",
+        "actors": ["Diego Klattenhoff", "Morena Baccarin", "Mandy Patinkin", "Claire Danes", "David Harewood", "Damian Lewis"],
+        "genres": ["Drama"],
+        "rating": "",
+        "retailPrice": 2199,
+        "format": "SD",
+        "smallImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/t/s/1WAH79.jpg",
+        "mediumImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/t/m/1WAH79.jpg",
+        "largeImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/t/l/1WAH79.jpg",
+        "noSchemeSmallImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/s/1WAH79.jpg",
+        "noSchemeMediumImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/m/1WAH79.jpg",
+        "noSchemeLargeImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/l/1WAH79.jpg",
+        "available": "",
+        "salesStartDate": "2013-01-01T05:00:00Z"
+}, 
+{
+	...
+}
+```
+
+
 ## Update
 
 Returns an [UpdateOrder](/objects.md#updateorder) object
@@ -563,65 +644,9 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 
 > PUT http://[apidomain]/tv/cancel
 ```js
-
-```
-
-## List Curated Charts
-
-This is a simple way to get all the valid lists associated with curated lists along with their contents
-
-### URL
->http://[apidomain]/tv/curatedcharts/[country]
-
-### Parameters
-
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Required</th>
-		<th>Type</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td><code>country</code></td>
-		<td>Required</td>
-		<td>string</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><code>tenantId</code></td>
-		<td>Optional</td>
-		<td>string</td>
-		<td>The tenant id</td>
-	</tr>
-</table>
-
-### Example
-
-> GET http://[apidomain]/tv/curatedcharts/us
-```js
-[{
-    "displayTitle": "New and Noteworthy TV",
-    "releases": [{
-        "title": "Arrow: The Complete First Season",
-        "cdin": "2fe2227dbd2077fa8abafdf11801dac1487f0cad"
-    }, {
-        "title": "Walking Dead: The Complete Third Season",
-        "cdin": "c74e88c70d239004f9b1d544f02e85713efc2453"
-    }, {
-        "title": "Modern Family: The Complete Third Season",
-        "cdin": "bd49d7d446c752c081e63b8824a40a9519c1afa5"
-    }, {
-        "title": "Glee: The Complete Third Season",
-        "cdin": "842efa4daa7a0fa448de3da30519ae36f83db71d"
-    }, {
-        "title": "The Big Bang Theory: The Complete Fifth Season",
-        "cdin": "c16fb7987bc2da41d99a0771e36bfee23f5d792a"
-    }, {
-        "title": "How I Met Your Mother: The Complete Seventh Season",
-        "cdin": "9bd4fb6eb809279bf8ed26859181e06e9f203dd8"
-    }]
-}]
+{
+	...
+}
 ```
 
 
