@@ -90,6 +90,7 @@ Choose Digital maintains a list of "New and Noteworthy" television seasons.
 ### Example
 
 > GET http://[apidomain]/tv/list/top/us
+
 ```js
 {
     "displayTitle": "New and Noteworthy TV",
@@ -160,6 +161,7 @@ Returns a [TelevisionPlayerInfo](/objects.md#televisionplayerinfo) object
 ### Example
 
 > GET http://[apidomain]/tv/playerinfo/[cdin]/[hashedCustomerId]
+
 ```js
 {
 	todo...
@@ -271,6 +273,7 @@ Returns a [TelevisionSearchResult](/objects.md#televisionsearchresult) object
 ### Example
 
 > GET http://[apidomain]/tv/search?term=super&country=us
+
 ```js
 {
 	todo...
@@ -316,6 +319,9 @@ Returns a [TelevisionDetail](/objects.md#televisiondetail) object
 ### Example
 
 > GET http://[apidomain]/tv/detail/c74e88c70d239004f9b1d544f02e85713efc2453/us
+
+Prices displayed in documentation are only representative and may not be accurate.
+
 ```js
 {
 "displayEpisode": {
