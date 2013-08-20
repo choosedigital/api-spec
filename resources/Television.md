@@ -282,7 +282,7 @@ Returns a [TelevisionSearchResult](/objects.md#televisionsearchresult) object
 Returns a [TelevisionDetail](/objects.md#televisiondetail) object
 
 ### URL 
-> http://[apidomain]/tv/detail/[cdin]/[country]/[hashedCustomerId]
+> http://[apidomain]/tv/detail/[cdin]/[country]?tenantId=[tenantId]
 
 ### Parameters
 
@@ -306,12 +306,6 @@ Returns a [TelevisionDetail](/objects.md#televisiondetail) object
 		<td>valid values: us, ca</td>
 	</tr>
 	<tr>
-		<td><code>hashedCustomerId</code></td>
-		<td>Optional</td>
-		<td>string</td>
-		<td><a href="/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
-	</tr>
-	<tr>
 		<td><code>tenantId</code></td>
 		<td>Optional</td>
 		<td>string</td>
@@ -321,10 +315,76 @@ Returns a [TelevisionDetail](/objects.md#televisiondetail) object
 
 ### Example
 
-> GET http://[apidomain]/tv/detail/4124e7ac0b2d0ef17a5ce5ffbaf41b1897ec9471/us
+> GET http://[apidomain]/tv/detail/c74e88c70d239004f9b1d544f02e85713efc2453/us
 ```js
 {
-	todo...
+"displayEpisode": {
+    "cdin": "df95bf70f8041964ef62c77f6a2b41afa6980629",
+    "releaseType": "EPISODE",
+    "title": "Seed",
+    "episodeNumber": 1,
+    "synopsis": "After several months on the road, the group finds the prison, fights off walkers to get inside, and tries to make the prison into a safe fortress. Lori, thinking Rick hates her and fearful for her unborn child, confides in Hershel. Elsewhere, Michonne tends to a feverish Andrea as they seek safer refuge. Rick's group gets separated inside the prison. Hershel searches for Glenn and Maggie and gets bitten on the lower leg by a walker. In the prison cafeteria, Rick amputates the leg at the knee. Five prison survivors, trapped in the cafeteria and surviving on pantry food, hear the commotion and come to their location.",
+    "copyrightInfo": "",
+    "runningTime": "43 minutes",
+    "retailPrice": 199,
+    "format": "SD",
+    "available": "true",
+    "salesStartDate": "2012-10-15T04:00:00Z",
+    "originalBroadcastDate": "2012-10-14T00:00:00Z",
+    "noSchemeSmallImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/s/WALKINGDEAD_EP_03_01sea.jpg",
+    "noSchemeMediumImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/m/WALKINGDEAD_EP_03_01sea.jpg",
+    "noSchemeLargeImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/l/WALKINGDEAD_EP_03_01sea.jpg",
+    "smallImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/t/s/WALKINGDEAD_EP_03_01sea.jpg",
+    "mediumImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/t/m/WALKINGDEAD_EP_03_01sea.jpg",
+    "largeImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/t/l/WALKINGDEAD_EP_03_01sea.jpg"
+},
+"season": {
+    "cdin": "c74e88c70d239004f9b1d544f02e85713efc2453",
+    "releaseType": "SEASON",
+    "title": "Walking Dead: The Complete Third Season",
+    "synopsis": "AMC's \"The Walking Dead,\" the most watched drama in basic cable history, explores a desolate world in which Rick and his band of survivors must fight the dead to survive.",
+    "copyrightInfo": "",
+    "actors": ["Sarah Wayne Callies", "Steven Yeun", "Andrew Lincoln", "Chandler Riggs", "Laurie Holden"],
+    "genres": ["Science Fiction", "Action", "Horror", "Drama"],
+    "rating": "",
+    "retailPrice": 2899,
+    "format": "SD",
+    "seasonNumber": 3,
+    "seasonYear": 2012,
+    "seriesName": "Walking Dead",
+    "available": true,
+    "salesStartDate": "2012-10-15T04:00:00Z",
+    "noSchemeSmallImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/s/WALKINGDEAD_EP_03_01sea.jpg",
+    "noSchemeMediumImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/m/WALKINGDEAD_EP_03_01sea.jpg",
+    "noSchemeLargeImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/l/WALKINGDEAD_EP_03_01sea.jpg",
+    "smallImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/t/s/WALKINGDEAD_EP_03_01sea.jpg",
+    "mediumImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/t/m/WALKINGDEAD_EP_03_01sea.jpg",
+    "largeImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/t/l/WALKINGDEAD_EP_03_01sea.jpg"
+},
+"episodes": [{
+    "cdin": "df95bf70f8041964ef62c77f6a2b41afa6980629",
+    "title": "Seed",
+    "episodeNumber": 1,
+    "releaseType": "EPISODE",
+    "originalBroadcastDate": "2012-10-14T00:00:00Z",
+    "synopsis": "After several months on the road, the group finds the prison, fights off walkers to get inside, and tries to make the prison into a safe fortress. Lori, thinking Rick hates her and fearful for her unborn child, confides in Hershel. Elsewhere, Michonne tends to a feverish Andrea as they seek safer refuge. Rick's group gets separated inside the prison. Hershel searches for Glenn and Maggie and gets bitten on the lower leg by a walker. In the prison cafeteria, Rick amputates the leg at the knee. Five prison survivors, trapped in the cafeteria and surviving on pantry food, hear the commotion and come to their location.",
+    "copyrightInfo": "",
+    "runningTime": "43 minutes",
+    "retailPrice": 199,
+    "format": "SD",
+    "available": "true",
+    "salesStartDate": "2012-10-15T04:00:00Z",
+    "noSchemeSmallImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/s/WALKINGDEAD_EP_03_01sea.jpg",
+    "noSchemeMediumImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/m/WALKINGDEAD_EP_03_01sea.jpg",
+    "noSchemeLargeImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/l/WALKINGDEAD_EP_03_01sea.jpg",
+    "smallImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/t/s/WALKINGDEAD_EP_03_01sea.jpg",
+    "mediumImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/t/m/WALKINGDEAD_EP_03_01sea.jpg",
+    "largeImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/t/l/WALKINGDEAD_EP_03_01sea.jpg"
+}, {
+	"cdin": "94a961847d637375823674f269a5798c68f920ac",
+	"title": "Sick",
+	"episodeNumber": 2,
+    ...
 }
 ```
 
