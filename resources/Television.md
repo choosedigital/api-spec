@@ -91,6 +91,35 @@ Choose Digital maintains a list of "New and Noteworthy" television seasons.
 
 > GET http://[apidomain]/tv/list/top/us
 ```js
+{
+    "displayTitle": "New and Noteworthy TV",
+    "listId": "top",
+    "genre": "all",
+    "releaseType": "SEASON",
+    "releases": [{
+        "cdin": "abcdefghij1234567890",
+        "releaseType": "SEASON",
+        "title": "Homeland: The Complete First Season",
+        "synopsis": "Months after the dramatic events that prompted Carrie to undergo Electroconvulsive Therapy, the former CIA case officer has found a modicum of peace in her family\u2019s suburban embrace. But the strides she\u2019s made towards mental health are threatened when an asset from her former life comes in from the cold. Meanwhile, freshman Congressman Nick Brody discovers that Abu Nazir may not be content with his nonviolent approach to affecting change in American foreign policy.",
+        "seasonNumber": 1,
+        "seasonYear": 1,
+        "seriesName": "Homeland",
+        "copyrightInfo": "",
+        "actors": ["Diego Klattenhoff", "Morena Baccarin", "Mandy Patinkin", "Claire Danes", "David Harewood", "Damian Lewis"],
+        "genres": ["Drama"],
+        "rating": "",
+        "retailPrice": 2199,
+        "format": "SD",
+        "smallImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/t/s/1WAH79.jpg",
+        "mediumImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/t/m/1WAH79.jpg",
+        "largeImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/t/l/1WAH79.jpg",
+        "noSchemeSmallImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/s/1WAH79.jpg",
+        "noSchemeMediumImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/m/1WAH79.jpg",
+        "noSchemeLargeImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/l/1WAH79.jpg",
+        "available": "",
+        "salesStartDate": "2013-01-01T05:00:00Z"
+}, 
+{
 
 ```
 
@@ -134,6 +163,8 @@ Returns a [TelevisionPlayerInfo](/objects.md#televisionplayerinfo) object
 
 > GET http://[apidomain]/tv/playerinfo/[cdin]/[hashedCustomerId]
 ```js
+{}
+
 ```
 
 ## Search
@@ -291,6 +322,7 @@ Returns a [TelevisionDetail](/objects.md#televisiondetail) object
 
 > GET http://[apidomain]/tv/detail/4124e7ac0b2d0ef17a5ce5ffbaf41b1897ec9471/us
 ```js
+{}
 
 ```
 
@@ -402,6 +434,7 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 
 > POST http://[apidomain]/tv/purchase
 ```js
+ {}
 ```
 
 ## Genres
@@ -434,86 +467,6 @@ Returns all genres for currently available television seasons.
 ```js
 {
 	"genres":["Action","Adventure","Animation","Comedy","Crime","Documentary","Drama","Family","Fantasy Adventure","Foreign","Horror","Independent","Music","Musical","Mystery","Romance","Romantic Comedy","Science Fiction","Sport","Suspense","Thriller","War","Western"]
-}
-```
-
-
-## Curated Lists
-
-Returns a curated list of TV seasons along with their contents
-
-### URL
->http://[apidomain]/tv/list/[listId]/[country]?releaseType=[releaseType]
-
-### Parameters
-
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Required</th>
-		<th>Type</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td><code>country</code></td>
-		<td>Required</td>
-		<td>string</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><code>listId</code></td>
-		<td>Required</td>
-		<td>string</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><code>tenantId</code></td>
-		<td>Optional</td>
-		<td>string</td>
-		<td>The tenant id</td>
-	</tr>
-	<tr>
-		<td><code>releaseType</code></td>
-		<td>Optional</td>
-		<td>string</td>
-		<td>either "season" (default) or "episode"</td>
-	</tr>
-</table>
-
-### Example
-
-> GET http://[apidomain]/tv/list/top/us
-```js
-{
-    "displayTitle": "New and Noteworthy TV",
-    "listId": "top",
-    "genre": "all",
-    "releaseType": "SEASON",
-    "releases": [{
-        "cdin": "abcdefghij1234567890",
-        "releaseType": "SEASON",
-        "title": "Homeland: The Complete First Season",
-        "synopsis": "Months after the dramatic events that prompted Carrie to undergo Electroconvulsive Therapy, the former CIA case officer has found a modicum of peace in her family\u2019s suburban embrace. But the strides she\u2019s made towards mental health are threatened when an asset from her former life comes in from the cold. Meanwhile, freshman Congressman Nick Brody discovers that Abu Nazir may not be content with his nonviolent approach to affecting change in American foreign policy.",
-        "seasonNumber": 1,
-        "seasonYear": 1,
-        "seriesName": "Homeland",
-        "copyrightInfo": "",
-        "actors": ["Diego Klattenhoff", "Morena Baccarin", "Mandy Patinkin", "Claire Danes", "David Harewood", "Damian Lewis"],
-        "genres": ["Drama"],
-        "rating": "",
-        "retailPrice": 2199,
-        "format": "SD",
-        "smallImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/t/s/1WAH79.jpg",
-        "mediumImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/t/m/1WAH79.jpg",
-        "largeImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/t/l/1WAH79.jpg",
-        "noSchemeSmallImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/s/1WAH79.jpg",
-        "noSchemeMediumImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/m/1WAH79.jpg",
-        "noSchemeLargeImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/l/1WAH79.jpg",
-        "available": "",
-        "salesStartDate": "2013-01-01T05:00:00Z"
-}, 
-{
-	...
 }
 ```
 
