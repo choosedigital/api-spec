@@ -38,7 +38,7 @@ Returns a [TelevisionChart](/objects.md#televisionchart) object
 Choose Digital maintains a list of "New and Noteworthy" television seasons.
 
 ### URL 
-> http://[apidomain]/tv/list/[listId]/[country]
+> http://[apidomain]/tv/list/top/[country]
 
 ### Parameters
 

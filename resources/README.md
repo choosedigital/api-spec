@@ -164,7 +164,7 @@ The ChooseDigital API is a JSON API.
             <td><a href="/resources/Television.md#service-check">Service Check</a></td>
         </tr>
 	    <tr>
-            <td>/tv/list/[listId]/[country]</td>
+            <td>/tv/list/top/[country]</td>
             <td>GET</td>
             <td><a href="/resources/Television.md#list">List</a></td>
         </tr>
