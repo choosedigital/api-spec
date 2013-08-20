@@ -118,9 +118,7 @@ Choose Digital maintains a list of "New and Noteworthy" television seasons.
         "noSchemeLargeImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/t/l/1WAH79.jpg",
         "available": "",
         "salesStartDate": "2013-01-01T05:00:00Z"
-}, 
-{
-
+}
 ```
 
 ## Player Info
@@ -163,8 +161,9 @@ Returns a [TelevisionPlayerInfo](/objects.md#televisionplayerinfo) object
 
 > GET http://[apidomain]/tv/playerinfo/[cdin]/[hashedCustomerId]
 ```js
-{}
-
+{
+	todo...
+}
 ```
 
 ## Search
@@ -273,7 +272,9 @@ Returns a [TelevisionSearchResult](/objects.md#televisionsearchresult) object
 
 > GET http://[apidomain]/tv/search?term=super&country=us
 ```js
-
+{
+	todo...
+}
 ```
 
 ## Detail
@@ -322,8 +323,9 @@ Returns a [TelevisionDetail](/objects.md#televisiondetail) object
 
 > GET http://[apidomain]/tv/detail/4124e7ac0b2d0ef17a5ce5ffbaf41b1897ec9471/us
 ```js
-{}
-
+{
+	todo...
+}
 ```
 
 ## Purchase
@@ -434,7 +436,9 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 
 > POST http://[apidomain]/tv/purchase
 ```js
- {}
+{
+	todo...
+}
 ```
 
 ## Genres
@@ -598,7 +602,7 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 > PUT http://[apidomain]/tv/cancel
 ```js
 {
-	...
+	todo...
 }
 ```
 
