@@ -169,9 +169,19 @@ The ChooseDigital API is a JSON API.
             <td><a href="/resources/Television.md#list">List</a></td>
         </tr>
 	    <tr>
+            <td>/tv/playerinfo/[cdin]/[hashedCustomerId]</td>
+            <td>GET</td>
+            <td><a href="/resources/Television.md#player-info">Player Info</a></td>
+        </tr>
+	    <tr>
             <td>/tv/search</td>
             <td>GET</td>
             <td><a href="/resources/Television.md#search">Search</a></td>
+        </tr>
+	    <tr>
+            <td>/tv/detail/[cdin]</td>
+            <td>GET</td>
+            <td><a href="/resources/Television.md#detail">Detail</a></td>
         </tr>
 	    <tr>
             <td>/tv/purchase</td>
