@@ -498,7 +498,7 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 > PUT http://[apidomain]/tv/update
 ```js
 {
-	"orderId":"WL3-3359944-6701838",
+	"orderId":"ABC1234567890",
 	"transactionId":"123456"
 }
 ```
