@@ -148,6 +148,54 @@ The ChooseDigital API is a JSON API.
     </tbody>
 </table>
 
+##[Television](/resources/Television.md)
+<table>
+    <thead>
+        <tr>
+            <th>Path</th>
+            <th>HTTP Method</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+	    <tr>
+            <td>/tv</td>
+            <td>GET</td>
+            <td><a href="/resources/Television.md#service-check">Service Check</a></td>
+        </tr>
+	    <tr>
+            <td>/tv/list/[listId]/[country]</td>
+            <td>GET</td>
+            <td><a href="/resources/Television.md#list">List</a></td>
+        </tr>
+	    <tr>
+            <td>/tv/search</td>
+            <td>GET</td>
+            <td><a href="/resources/Television.md#search">Search</a></td>
+        </tr>
+	    <tr>
+            <td>/tv/purchase</td>
+            <td>POST</td>
+            <td><a href="/resources/Television.md#purchase">Purchase</a></td>
+        </tr>
+	    <tr>
+            <td>/tv/genres</td>
+            <td>GET</td>
+            <td><a href="/resources/Television.md#genres">Genres</a></td>
+        </tr>
+	    <tr>
+            <td>/tv/update</td>
+            <td>PUT</td>
+            <td><a href="/resources/Television.md#update">Update</a></td>
+        </tr>
+	    <tr>
+            <td>/tv/cancel</td>
+            <td>PUT</td>
+            <td><a href="/resources/Television.md#cancel">Cancel</a></td>
+        </tr>
+    </tbody>
+</table>
+
 ##[EBook](/resources/EBook.md)
 <table>
     <thead>
@@ -284,7 +332,7 @@ The ChooseDigital API is a JSON API.
     </tbody>
 </table>
 
-##[History](/resources/History.md)
+##[Order History](/resources/History.md)
 <table>
     <thead>
         <tr>
@@ -325,7 +373,6 @@ The ChooseDigital API is a JSON API.
     </tbody>
 </table>
 
-##[Television](/resources/Television.md) -- coming soon
 
 
 #### CONFIDENTIALITY
