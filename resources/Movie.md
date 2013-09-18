@@ -9,7 +9,7 @@
 
 <table>
     <tr>
-		<th>Name</th>
+    	<th>Name</th>
 		<th>Required</th>
 		<th>Type</th>
 		<th>Description</th>
@@ -102,11 +102,7 @@ Returns a [MovieSearchResult](/objects.md#moviesearchresult) object
       "name": "Drama",
       "count": 24
     },
-    {...},
-    {
-      "name": "Western",
-      "count": 1
-    }
+    ...
   ],
   "movies": [
     {
@@ -156,93 +152,7 @@ Returns a [MovieSearchResult](/objects.md#moviesearchresult) object
         }
       ]
     },
-    {
-      "cdin": "6ce34e10b2631917b6c7b1561cd60ed2984e9aa0",
-      "title": "27 Dresses",
-      "sanitizedTitle": "27 Dresses",
-      "actors": [
-        "Edward Burns",
-        "Malin Åkerman",
-        "James Marsden",
-        "Judy Greer",
-        "Katherine Heigl"
-      ],
-      "genres": [
-        "Romance",
-        "Comedy"
-      ],
-      "rating": "PG-13",
-      "httpTrailerUrl": "http://d3qcb5osaw6g5.cloudfront.net/s/v/27Dresses.mp4",
-      "rtmpTrailerUrl": "rtmp://s2sacn9d6arc57.cloudfront.net/cfx/st/s/v/27Dresses.mp4",
-      "noSchemeHttpTrailerUrl": "//d3qcb5osaw6g5.cloudfront.net/s/v/27Dresses.mp4",
-      "smallImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/f/s/030875.jpg",
-      "mediumImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/f/m/030875.jpg",
-      "largeImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/f/l/030875.jpg",
-      "noSchemeSmallImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/f/s/030875.jpg",
-      "noSchemeMediumImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/f/m/030875.jpg",
-      "noSchemeLargeImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/f/l/030875.jpg",
-      "originalReleaseYear": "2008",
-      "director": "Anne Fletcher",
-      "language": "English",
-      "available": "false",
-      "offerings": [
-        {
-          "cdin": "f5790f7e3fb7eb1908149ad05823166cb2a4c89b",
-          "price": "2215",
-          "rights": "buy",
-          "definition": "SD"
-        },
-        {
-          "cdin": "9a30616e377ddc60f6576fc6e599f464b8acb684",
-          "price": "399",
-          "rights": "rent",
-          "rentalHours": "24",
-          "definition": "SD"
-        }
-      ]
-    },
-    {
     ...
-    },
-    {
-      "cdin": "fd2904f17a1ebcfb2dfdb70107d396d94601079a",
-      "title": "Addicted to Love",
-      "sanitizedTitle": "Addicted to Love",
-      "actors": [
-        "Meg Ryan",
-        "Matthew Broderick",
-        "Tcheky Karyo",
-        "Kelly Preston"
-      ],
-      "genres": [
-        "Romance",
-        "Comedy"
-      ],
-      "rating": "R",
-      "httpTrailerUrl": "http://d3qcb5osaw6g5.cloudfront.net/s/v/Content_Chopper_ADDICTED_TO_LOVE_16x9_MONO_TRAILER_E0016655_3116650.mp4",
-      "rtmpTrailerUrl": "rtmp://s2sacn9d6arc57.cloudfront.net/cfx/st/s/v/Content_Chopper_ADDICTED_TO_LOVE_16x9_MONO_TRAILER_E0016655_3116650.mp4",
-      "noSchemeHttpTrailerUrl": "//d3qcb5osaw6g5.cloudfront.net/s/v/Content_Chopper_ADDICTED_TO_LOVE_16x9_MONO_TRAILER_E0016655_3116650.mp4",
-      "smallImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/f/s/6000000237.jpg",
-      "mediumImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000000237.jpg",
-      "largeImageUrl": "http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000000237.jpg",
-      "noSchemeSmallImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/f/s/6000000237.jpg",
-      "noSchemeMediumImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/f/m/6000000237.jpg",
-      "noSchemeLargeImageUrl": "//d3qcb5osaw6g5.cloudfront.net/i/f/l/6000000237.jpg",
-      "originalReleaseYear": "1997",
-      "director": "Griffin Dunne",
-      "language": "English",
-      "available": "false",
-      "offerings": [
-        {
-          "cdin": "e32e92733857a4763172ec0fc77cd13ae23649d6",
-          "price": "999",
-          "rights": "buy",
-          "definition": "SD"
-        }
-      ]
-    }
-  ]
-}
 ```
 
 ## List
@@ -317,20 +227,10 @@ Choose Digital maintains a list of "New and Noteworthy" movie titles.
 			"rating":"PG-13",
 			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/s/6000068672.jpg",
 			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000068672.jpg",
-			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000068672.jpg","originalReleaseYear":"2011","salesStartDate":"2012-06-12T00:00:00Z","theatricalReleaseDate":"2011-12-16T00:00:00Z",
-			"available":""
-		},{
-            ...
-        },{
-			"cdin":"de0f830518421a3ca6a6712b0619b89e863819f8",
-			"title":"Wrath of the Titans",
-			"sanitizedTitle":"Wrath of the Titans",
-			"actors":["Sam Worthington","Rosamund Pike","Bill Nighy","Edgar Ramirez","Toby Kebbell","Danny Huston","Ralph Fiennes","Liam Neeson"],
-			"genres":["Action","Fantasy Adventure"],
-			"rating":"PG-13",
-			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/s/6000071579.jpg",
-			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000071579.jpg",
-			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000071579.jpg","originalReleaseYear":"2012","salesStartDate":"2012-06-26T00:00:00Z","theatricalReleaseDate":"2012-03-30T00:00:00Z",
+			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000068672.jpg",
+            "originalReleaseYear":"2011",
+            "salesStartDate":"2012-06-12T00:00:00Z",
+            "theatricalReleaseDate":"2011-12-16T00:00:00Z",
 			"available":""
 		},
 		...
@@ -374,11 +274,6 @@ Returns a [PlayerInfo](/objects.md#playerinfo) object
 	</tr>
 </table>
 
-### Example
-
-> GET http://[apidomain]/movie
-```js
-```
 
 ## Search
 
@@ -466,23 +361,8 @@ Returns a [MovieSearchResult](/objects.md#moviesearchresult) object
 			"director":"Bryan Singer",
 			"language":"English",
 			"available":"true"
-		},{
-			"cdin":"5db77177c7de135f2009f34050bcef03d459e02c",
-			"title":"Superman vs. The Elite",
-			"sanitizedTitle":"Superman vs. The Elite",
-			"actors":[],
-			"genres":["Action","Animation"],
-			"rating":"PG-13",
-			"httpTrailerUrl":"http://d3qcb5osaw6g5.cloudfront.net/s/v/Content_Chopper_SUPERMAN_VS_THE_ELITE_16x9_STEREO_TRAILER_E0282070_3352108.mp4",
-			"rtmpTrailerUrl":"rtmp://s2sacn9d6arc57.cloudfront.net/cfx/st/s/v/Content_Chopper_SUPERMAN_VS_THE_ELITE_16x9_STEREO_TRAILER_E0282070_3352108.mp4",
-			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/s/6000066434.jpg",
-			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/m/6000066434.jpg",
-			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/f/l/6000066434.jpg",
-			"originalReleaseYear":"2012",
-			"director":"Michael Chang",
-			"language":"English",
-			"available":"true"
 		}
+        ...
 	]
 }
 ```
@@ -677,14 +557,6 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 
 **Please note that movie rentals require implementation of [VideoPlayer Start](/resources/VideoPlayer.md#start)**
 
-
-### Example
-
-> POST http://[apidomain]/movie/purchase
-```js
-    // returns MovieRental or MoviePurchase object
-```
-
 ## Genres
 
 Returns all genres for currently available movies.
@@ -773,7 +645,7 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 > PUT http://[apidomain]/movie/update
 ```js
 {
-	"orderId":"WL3-3359944-6701838",
+	"orderId":"ABC-0123456789",
 	"transactionId":"123456"
 }
 ```
@@ -833,8 +705,8 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 > PUT http://[apidomain]/movie/cancel
 ```js
 {
-	"orderId":"WL3-3359944-6701838",
-	"cancelOrderId":"WL3-2873051-1679841",
+	"orderId":"ABC-0123456789",
+	"cancelOrderId":"XYZ-9876543210",
 	"cancelTransactionDateUTC":"2012-08-15T00:00:00Z",
 	"priceSold":"135",
 	"cancelTransactionId":""
