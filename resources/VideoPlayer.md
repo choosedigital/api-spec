@@ -17,7 +17,7 @@ Update the playerFirstStartDate
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td><code>customerId</code></td>
+		<td><code>hashedCustomerId</code></td>
 		<td>Required</td>
 		<td>string</td>
 		<td></td>
@@ -36,13 +36,7 @@ Update the playerFirstStartDate
 	</tr>
 </table>
 
-### Example
-
-> PUT http://[apidomain]/videoplayer/start
-```js
-{
-}
-```
+Please contact Choose Digital for account configuration and testing support during implementation.
 
 
 #### CONFIDENTIALITY
