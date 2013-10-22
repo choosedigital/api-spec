@@ -28,6 +28,11 @@ A valid time stamp, using ```x-cd-date``` header, is mandatory for all authentic
 The value of the ```x-cd-date``` header must be in one of the RFC 2616 formats ( http://www.ietf.org/rfc/rfc2616.txt ).
 
 
+Authentication Parameter
+
+To calculate this parameter, concat the variables as noted for the method (we'll call that data for now) and do a HMAC-SHA1 hash with your secret key. Here's a Java sample:
+https://github.com/choosedigital/api-spec/blob/master/resources/General.md
+
 #### CONFIDENTIALITY
 
 This document is the sole and confidential property of Choose Digital, and is being shared with the partner for the purposes of collaboration, or for evaluating a possible collaboration, to provide users of the partner website(s) with access to a Digital Media Music Store, as provided by Choose Digital. 
