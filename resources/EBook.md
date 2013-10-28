@@ -5,7 +5,7 @@
 This is a simple sanity check to make sure your header authentication is working properly. Can also be used to check that the service is up.
 
 ### URL 
-> http://[apidomain]/ebook
+> http://[apidomain]/ebook if Using tenantId http://[apidomain]/ebook?tenantId=myTenantId
 
 ### Parameters
 
