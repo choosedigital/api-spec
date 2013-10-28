@@ -7,7 +7,7 @@ This is a simple sanity check to make sure your header authentication is working
 Can also be used to check that the service is up.
 
 ### URL 
-> http://[apidomain]/music
+> http://[apidomain]/music if Using tenantId http://[apidomain]/music?tenantId=myTenantId
 
 ### Parameters
 

@@ -3,7 +3,7 @@
 ## Service Check
 
 ### URL 
-> http://[apidomain]/movie
+> http://[apidomain]/movie if Using tenantId http://[apidomain]/movie?tenantId=myTenantId
 
 ### Parameters
 
