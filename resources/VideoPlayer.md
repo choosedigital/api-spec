@@ -17,7 +17,7 @@ Update the playerFirstStartDate
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td><code>hashedCustomerId</code></td>
+		<td><code>customerId</code></td>
 		<td>Required</td>
 		<td>string</td>
 		<td></td>
