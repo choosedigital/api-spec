@@ -20,7 +20,7 @@ Update the playerFirstStartDate
 		<td><code>customerId</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td></td>
+		<td><a href="/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
 	</tr>
 	<tr>
 		<td><code>orderId</code></td>
