@@ -482,6 +482,18 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 		<td></td>
 	</tr>
 	<tr>
+		<td><code>customerStreetAddress1</code></td>
+		<td>Optional *</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>customerStreetAddress2</code></td>
+		<td>Optional *</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
 		<td><code>customerCity</code></td>
 		<td>Required</td>
 		<td>string</td>
@@ -496,6 +508,12 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 	<tr>
 		<td><code>customerPostalCode</code></td>
 		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>customerPlus4</code></td>
+		<td>Optional *</td>
 		<td>string</td>
 		<td></td>
 	</tr>
