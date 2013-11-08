@@ -2,6 +2,8 @@
 
 ## All
 
+The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>customerId + customerCountryCode</code>
+
 ### URL 
 > http://[apidomain]/history/all
 
@@ -283,6 +285,8 @@
 ```
 
 ## Count
+
+The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>customerId + customerCountryCode</code>
 
 ### URL 
 > http://[apidomain]/history/count
