@@ -16,7 +16,9 @@ Follow these guidelines to ensure that you're following our best practices for a
 ## On February 24th 2014, the Choose Digital API will be SSL only. 
 
 Today SSl traffic is sent in the clear, meaning anyone with the ability to sniff network traffic could potentially see the information flowing to/from our API and the REST endpoint accessing the APIs. As we need new customer information for certain books to combat this, SSL support has been 
-added to Choose Digital API. Here are the steps taken to add SSL support from the beginning.
+added to Choose Digital API. 
+
+Here are the steps taken to add SSL support all endpoints will now change from HTTP:// to HTTPS://
 
 Also anyone looking to use our new book options (being added soon) will have to use the new SSL API endpoints 
 
