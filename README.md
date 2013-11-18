@@ -11,6 +11,19 @@ Follow these guidelines to ensure that you're following our best practices for a
 1. Always parse response data without assuming the number or order of elements in the response. For example, if a new field were to be added to the object your code should gracefully handle a change in the total number of elements, or a change where the element you are interested is now 5th instead of 4th.
 1. Always use hostnames in your code and let the DNS servers resolve the IP - don't pre-resolve the name in order to try and save time at runtime, as the IP will not always be the same.
 
+## Attention Changes coming soon
+
+## On February 24th 2014, the Choose Digital API will be SSL only. 
+
+Today SSl traffic is sent in the clear, meaning anyone with the ability to sniff network traffic could potentially see the information flowing to/from our API and the REST endpoint accessing the APIs. As we need new customer information for certain books to combat this, SSL support has been 
+added to Choose Digital API. Here are the steps taken to add SSL support from the beginning.
+
+Also anyone looking to use our new book options (being added soon) will have to use the new SSL API endpoints 
+
+On February 24th 2014, the Choose Digital API will also require country to be passed on all call they require a country /[country]
+
+Please be sure to give us your feedback if you think you needed more time. 
+
 ## Table of Content
 
 * [Object definitions](/master/objects.md)
