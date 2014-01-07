@@ -458,6 +458,16 @@
 		<td></td>
 	</tr>
 	<tr>
+		<td><code>exchangeRateDate</code></td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>exchangeRate</code></td>
+		<td>decimal</td>
+		<td></td>
+	</tr>
+	<tr>
 		<td><code>container</code></td>
 		<td><a href="#container">Container</a></td>
 		<td></td>
@@ -1182,6 +1192,16 @@
 		<td></td>
 	</tr>
 	<tr>
+		<td><code>exchangeRateDate</code></td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>exchangeRate</code></td>
+		<td>decimal</td>
+		<td></td>
+	</tr>
+	<tr>
 		<td><code>movie</code></td>
 		<td>movie</td>
 		<td></td>
@@ -1228,6 +1248,16 @@
 	<tr>
 		<td><code>priceSold</code></td>
 		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>exchangeRateDate</code></td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>exchangeRate</code></td>
+		<td>decimal</td>
 		<td></td>
 	</tr>
 	<tr>
@@ -2142,6 +2172,16 @@
 		<td></td>
 	</tr>
 	<tr>
+		<td><code>exchangeRateDate</code></td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>exchangeRate</code></td>
+		<td>decimal</td>
+		<td></td>
+	</tr>
+	<tr>
 		<td><code>televisionContainer</code></td>
 		<td>TelevisionContainer</td>
 		<td></td>
@@ -2373,6 +2413,11 @@
 		<td></td>
 	</tr>
 	<tr>
+		<td><code>transactionDate</code></td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
 		<td><code>downloadLink</code></td>
 		<td>string</td>
 		<td></td>
@@ -2380,6 +2425,16 @@
 	<tr>
 		<td><code>priceSold</code></td>
 		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>exchangeRateDate</code></td>
+		<td>date</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>exchangeRate</code></td>
+		<td>decimal</td>
 		<td></td>
 	</tr>
 	<tr>
