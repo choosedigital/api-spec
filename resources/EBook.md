@@ -419,6 +419,8 @@ Remember: this response will include a redemption link which expires in minutes 
 
 ## Purchase
 
+Returns a [BookPurchase](/objects.md#bookpurchase) object
+
 The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>cdin + customerId + customerCountryCode + priceSold</code>
 
 ### URL 

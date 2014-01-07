@@ -485,6 +485,8 @@ RESPONSE:
 
 ## Purchase
 
+Returns a [BookPurchase](/objects.md#bookpurchase) object
+
 The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>cdin + customerId + customerCountryCode + priceSold</code>
 
 ### URL 
@@ -635,7 +637,7 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 
 ### Example
 
-> GET http://[apidomain]/audiobook/purchase
+> POST http://[apidomain]/audiobook/purchase
 
 
 
