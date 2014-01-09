@@ -331,7 +331,7 @@ Returns a [MovieSearchResult](/objects.md#moviesearchresult) object
 		<td><code>sort</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td></td>
+		<td>title, releasedate, price (append :a or :d for ascending or descending)</td>
 	</tr>
 </table>
 

@@ -234,12 +234,12 @@ Remember: this response will include a redemption link which expires in minutes 
 ## Search
 
 ### URL 
-> http://[apidomain]/ebook/search
+> http://[apidomain]/audiobook/search
 
 ### Parameters
 
 <table>
-	<tr>
+    <tr>
 		<th>Name</th>
 		<th>Required</th>
 		<th>Type</th>
@@ -249,17 +249,11 @@ Remember: this response will include a redemption link which expires in minutes 
 		<td><code>term</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td></td>
+		<td>searches all fields</td>
 	</tr>
 	<tr>
 		<td><code>country</code></td>
 		<td>Required</td>
-		<td>string</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><code>sortedBy</code></td>
-		<td>Optional</td>
 		<td>string</td>
 		<td></td>
 	</tr>
@@ -280,12 +274,6 @@ Remember: this response will include a redemption link which expires in minutes 
 		<td>Optional</td>
 		<td>string</td>
 		<td></td>
-	</tr>
-	<tr>
-		<td><code>mediaFormat</code></td>
-		<td>Optional</td>
-		<td>string</td>
-		<td>valid values:Adobe EPUB eBook , Adobe PDF eBook.</td>
 	</tr>
 	<tr>
 		<td><code>creator</code></td>
@@ -317,11 +305,11 @@ Remember: this response will include a redemption link which expires in minutes 
 		<td>string</td>
 		<td></td>
 	</tr>
-	<tr>
-		<td><code>includeFutureReleases</code></td>
+    <tr>
+		<td><code>sort</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td>valid values: y, n</td>
+    	<td>title, releasedate, price (append :a or :d for ascending or descending)</td>
 	</tr>
 	<tr>
 		<td><code>tenantId</code></td>
@@ -333,7 +321,7 @@ Remember: this response will include a redemption link which expires in minutes 
 
 ### Example
 
-> GET http://[apidomain]/ebook/search
+> GET http://[apidomain]/ebook/search?title=Lincoln&country=us&sort=title:a
 
 
 

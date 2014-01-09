@@ -209,18 +209,6 @@ Returns a [TelevisionSearchResult](/objects.md#televisionsearchresult) object
 		<td>valid values: 0 to 2000000</td>
 	</tr>
 	<tr>
-		<td><code>sort</code></td>
-		<td>Optional</td>
-		<td>string</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><code>definition</code></td>
-		<td>Optional</td>
-		<td>valid values: hd, sd</td>
-		<td></td>
-	</tr>
-	<tr>
 		<td><code>broadcastNetwork</code></td>
 		<td>Optional</td>
 		<td>string</td>
@@ -239,28 +227,10 @@ Returns a [TelevisionSearchResult](/objects.md#televisionsearchresult) object
 		<td>valid values: season, episode</td>
 	</tr>
 	<tr>
-		<td><code>hashedCustomerId</code></td>
+		<td><code>sort</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td><a href="/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
-	</tr>
-	<tr>
-		<td><code>postalCode</code></td>
-		<td>Optional</td>
-		<td>string</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><code>birthDate</code></td>
-		<td>Optional</td>
-		<td>string</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><code>ipaddress</code></td>
-		<td>Optional</td>
-		<td>string</td>
-		<td></td>
+		<td>title, releasedate, price (append :a or :d for scending or descending, i.e. sort=releasedate:a)</td>
 	</tr>
 	<tr>
 		<td><code>tenantId</code></td>
@@ -274,11 +244,7 @@ Returns a [TelevisionSearchResult](/objects.md#televisionsearchresult) object
 
 > GET http://[apidomain]/tv/search?term=super&country=us
 
-```js
-{
-	todo...
-}
-```
+
 
 ## Detail
 

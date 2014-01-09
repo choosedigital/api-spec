@@ -514,12 +514,6 @@ Returns a [MusicSearchResult](/objects.md#musicsearchresult) object
 		<td>Genre</td>
 	</tr>
 	<tr>
-		<td><code>sortedBy</code></td>
-		<td>Optional</td>
-		<td>string</td>
-		<td>Sort by any field in the Release (add :a or :d Ascending/Descending)</td>
-	</tr>
-	<tr>
 		<td><code>rows</code></td>
 		<td>Optional</td>
 		<td>integer</td>
@@ -548,6 +542,12 @@ Returns a [MusicSearchResult](/objects.md#musicsearchresult) object
 		<td>Optional</td>
 		<td>string</td>
 		<td>The tenant id</td>
+	</tr>
+	<tr>
+		<td><code>sort</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>title, releasedate, mainArtist, price (append :a or :d for scending or descending, i.e. sort=releasedate:a)</td>
 	</tr>
 	<tr>
 		<td><code>priceLow</code></td>
