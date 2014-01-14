@@ -5,7 +5,7 @@
 Update the playerFirstStartDate
 
 ### URL
-> http://[apidomain]/videoplayer/start
+> PUT http://[apidomain]/videoplayer/start
 
 ### Parameters
 
