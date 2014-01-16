@@ -367,6 +367,16 @@ Returns a [MovieSearchResult](/objects.md#moviesearchresult) object
 }
 ```
 
+## Test video playback support
+
+Some devices (most notably older Android) do not support our video DRM. You can let users try out a sample video to see if their browser works by using this videoReferenceId in your normal player.
+
+Returns a string
+
+### URL 
+> GET http://[apidomain]/movie/videotest
+
+
 ## Detail
 
 Returns a [Movie](/objects.md#movie) object
