@@ -493,7 +493,7 @@ Returns a [MusicSearchResult](/objects.md#musicsearchresult) object
 		<td><code>term</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td>Query keyword(s)</td>
+		<td>Query keyword(s). An error is returned for wildcards and the empty string.</td>
 	</tr>
 	<tr>
 		<td><code>country</code></td>
