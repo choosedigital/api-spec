@@ -35,59 +35,6 @@ Can also be used to check that the service is up.
 }
 ```
 
-## List All Genres
-
-This is a simple way to get all the valid music genres
-
-### URL
->http://[apidomain]/music/genres
-
-### Parameters
-
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Required</th>
-		<th>Type</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td><code>tenantId</code></td>
-		<td>Optional</td>
-		<td>string</td>
-		<td>The tenant id</td>
-	</tr>
-</table>
-
-### Example
-
-> GET http://[apidomain]/music/genres
-```js
-{
-	"genres":["Classical","Pop","Rock","Jazz","Country","Latin","Christian","R & B","Hip Hop","Opera","Metal","Alternative","Blues","Folk","Reggae","World","Soundtrack","Dance","Hip Hop\/Rap","Latin \/ Regional Mexican","Holiday","R&B","New Age","Electronic","Gospel","Spoken Word","Bluegrass","Vocal","Comedy","Children","Gospel\/Christian","Singer\/Songwriter","Easy Listening","French Pop","Latin \/ Urban","Rap","Children's Music","URBAN\/R AND B","Soundtracks","Latin \/ Pop","Devotional","Punk","Inspirational","Ghazal","Musique Francophone","ROCK-TRADITIONAL AND CLASSIC","Reggaeton","Soul","Flamenco","Instrumental","CLASSICAL(VOCAL,EARLY,CHAMBER)","Musical","Children's","German Pop","ALTERNATIVE","Metal\/Hard Rock","Classical(Vocal,Early,Chamber)","Broadway","DANCE\/ELECTRONIC","LATIN POP INTERNATIONAL","Latin \/ Tropical","Latin Pop","TV\/Film","Country\/Sertanejo","VOCALS","Disco","J-Pop","MPB","Boleros\/Baladas","Classical - Hindustani","POP ALTERNATIVE","Funk","Regional Mexican","LATIN REGIONAL MEXICAN","TRADITIONAL JAZZ","Variété française","Dance\/Electronic","Latin Rock","Schlager\/Volksmusik","Latin Urban \/ Reggaeton","Pop\/Rock","Samba\/Carnaval","CONTEMPORARY CHRISTIAN","RAP","World Music","Soundtrack (Bollywood)","Latin Pop International","Tamil","Rancheras","Hip-Hop\/Rap","Urban","Other","Indian Classical","Latin Regional Mexican","Fado","Tropical","Latin Urban","Brasil Soul","Schlager"]
-}
-```
-
-## List Curated Genres
-
-This is a simple way to get all the valid genres associated with curated lists
-
-### URL
->http://[apidomain]/music/curatedgenres
-
-### Parameters
-
-No optional or required parameters
-
-### Example
-
-> GET http://[apidomain]/music/curatedgenres
-```js
-{
-    "genres":["all","alternative","christian","classical","country","electronic","hip hop","jazz","latin","pop","r&b","rock","soundtrack"]
-}
-```
-
 ## Retrieve Artist Detail
 
 Returns a [MusicSearchResult](/objects.md#musicsearchresult) object
@@ -196,41 +143,15 @@ Returns a [MusicSearchResult](/objects.md#musicsearchresult) object
 			"releaseType":"Album","originalReleaseDate":"2011-11-01T00:00:00Z",
 			"popularity":"0"
 		},{
-			"cdin":"64110f2323ef53aed7c82083e64c7b6c81f1c8c8",
-			"icpn":"00602527882246",
-			"albumOnly":"false",
-			"available":"true",
-			"downloadsAvailable":"1",
-			"genre":"Rock",
-			"displayTitle":"Achtung Baby",
-			"sanitizedDisplayTitle":"Achtung Baby",
-			"albumDisplayTitle":"",
-			"sanitizedAlbumDisplayTitle":"",
-			"label":"U2 \/Island Catalog",
-			"copyright":"(C) 2011 Universal-Island Records Limited under exclusive licence to Mercury Records Limited in the UK, Interscope Records in the US and Universal Music Group for the rest of the world",
-			"duration":"",
-			"explicit":"false",
-			"albumIcpn":"",
-			"albumCdin":"",
-			"artist":[],
-			"mainArtist":"U2",
-			"httpPreviewUrl":"http://d3qcb5osaw6g5.cloudfront.net/s/m//",
-			"streamPreviewUrl":"rtmp://s2sacn9d6arc57.cloudfront.net/cfx/st/s/m//",
-			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/s/00602527882246.jpg",
-			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/m/00602527882246.jpg",
-			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/l/00602527882246.jpg",
-			"componentNumber":"0",
-			"trackNumber":"0",
-			"price":"1699","startDate":"2011-10-31T00:00:00Z",
-			"bitrate":"",
-			"releaseType":"Album","originalReleaseDate":"2011-11-01T00:00:00Z",
-			"popularity":"0"
+			...
 		}
 	]
 }
 ```
 
 ## List
+
+For both curated "top" lists of popular titles (updated weekly) and non-curated "latest" by sales date. 
 
 Returns a [MusicChart](/objects.md#musichart) object
 
@@ -250,7 +171,7 @@ Returns a [MusicChart](/objects.md#musichart) object
 		<td><code>listId</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td>valid values: "latest", "upcoming" and curated listIds</td>
+		<td>valid values: "latest", "top"</td>
 	</tr>
 	<tr>
 		<td><code>country</code></td>
@@ -274,7 +195,7 @@ Returns a [MusicChart](/objects.md#musichart) object
 		<td><code>releaseType</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td>releaseType=album</td>
+		<td>"album" (default) or "trackrelease" ("top" listId with genre specified only works with albums)</td>
 	</tr>
 	<tr>
 		<td><code>tenantId</code></td>
@@ -284,7 +205,11 @@ Returns a [MusicChart](/objects.md#musichart) object
 	</tr>
 </table>
 
-### Example
+### Curated "top" lists
+
+Choose Digital curates lists of top tiles both for overall music and for several genres. See the [List of Curated Genres](#list-of-curated-genres) below for genres available. 
+
+Example of a top list request, _no genre_ specified:
 
 > GET http://[apidomain]/music/list/top/us?rows=3
 ```js
@@ -314,67 +239,15 @@ Returns a [MusicChart](/objects.md#musichart) object
 			"originalReleaseDate":"2010-11-22T00:00:00Z",
 			"popularity":"0"
 		},{
-			"cdin":"ffac0f248d418aac317aba905287180d8375ab17",
-			"available":"true",
-			"downloadsAvailable":"1",
-			"albumOnly":"false",
-			"releaseType":"Album",
-			"genre":"Hip Hop",
-			"displayTitle":"Life Is Good (Explicit Version)",
-			"sanitizedDisplayTitle":"Life Is Good (Explicit Version)",
-			"label":"Def Jam Records",
-			"copyright":"(C) 2012 The Island Def Jam Music Group",
-			"duration":"58:17",
-			"explicit":"true",
-			"icpn":"00602537077472",
-			"mainArtist":"Nas",
-			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/s/00602537077472.jpg",
-			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/m/00602537077472.jpg",
-			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/l/00602537077472.jpg",
-			"price":"1199",
-			"startDate":"2012-07-16T00:00:00Z",
-			"originalReleaseDate":"2012-07-17T00:00:00Z",
-			"popularity":"0"
+			...
 		},{
-			"cdin":"40bfcf9d8fa8ee3efb4e73f1e30beb24ab04f0c8",
-			"available":"true",
-			"downloadsAvailable":"1",
-			"albumOnly":"false",
-			"releaseType":"Album",
-			"genre":"Alternative",
-			"displayTitle":"Magic",
-			"sanitizedDisplayTitle":"Magic",
-			"label":"429 Records",
-			"copyright":"(C) 2012 SLG, LLC",
-			"duration":"3:00",
-			"explicit":"false",
-			"icpn":"00795041790668",
-			"mainArtist":"Smash Mouth",
-			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/s/00795041790668.jpg",
-			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/m/00795041790668.jpg",
-			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/l/00795041790668.jpg",
-			"price":"99",
-			"startDate":"2012-07-23T00:00:00Z",
-			"originalReleaseDate":"2012-07-24T00:00:00Z",
-			"popularity":"0"
+			...
 		}
 	]
 }
 ```
 
-
-## Curated Top Charts
-
-"Top 25" charts for the following genres: Alternative, Country, Electronic, Hip/Hop, Pop, Rock,  and Soundtracks.  
-Plus: Top Albums and Top Songs (all genres).  
-Music charts are updated weekly on Tuesday morning.  
-
-To retrieve curated charts, use the [List](#list) api and set the listId to "top".
-
-### URL
-> http://[apidomain]/music/list/top/[country]
-
-### Example
+Example of a top list request _with_ specified genre:
 
 > GET http://[apidomain]/music/list/top/us?genre=rock
 ```js
@@ -424,6 +297,28 @@ To retrieve curated charts, use the [List](#list) api and set the listId to "top
 ```
 
 
+## List of Curated Genres
+
+This is a simple way to get all the valid genres associated with curated lists
+
+### URL
+>http://[apidomain]/music/curatedgenres
+
+### Parameters
+
+No optional or required parameters
+
+### Example
+
+> GET http://[apidomain]/music/curatedgenres
+```js
+{
+    "genres":["all","alternative","christian","classical","country","electronic","hip hop","jazz","latin","pop","r&b","rock","soundtrack"]
+}
+```
+
+
+
 ## Download
 
 ### URL
@@ -469,8 +364,6 @@ To retrieve curated charts, use the [List](#list) api and set the listId to "top
 > GET http://[apidomain]/music/download/[cdin]/[hashedCustomerId]/[country]
 
 Remember: this response will include a redemption link which expires in minutes and must not be sent via email. [Redemption Link handling](/README.md#redemption-links-download-or-streaming)
-
-
 
 
 ## Search
@@ -659,35 +552,7 @@ Returns a [MusicSearchResult](/objects.md#musicsearchresult) object
 			"releaseType":"TrackRelease","originalReleaseDate":"2011-11-01T00:00:00Z",
 			"popularity":"0"
 		},{
-			"cdin":"7c03df584d234a83648981bf7e5192565275cee8",
-			"icpn":"",
-			"albumOnly":"false",
-			"available":"true",
-			"downloadsAvailable":"1",
-			"genre":"Pop",
-			"displayTitle":"Mysterious Ways",
-			"sanitizedDisplayTitle":"Mysterious Ways",
-			"albumDisplayTitle":"Achtung Baby",
-			"sanitizedAlbumDisplayTitle":"Achtung Baby",
-			"label":"Island\/Interscope\/UMe",
-			"copyright":"(P) 2011 Universal-Island Records Ltd.",
-			"duration":"4:04",
-			"explicit":"false",
-			"albumIcpn":"00602527882048",
-			"albumCdin":"7efeae23302636bbac85fb5a9acfa9dc91f8c406",
-			"artist":[],
-			"mainArtist":"U2",
-			"httpPreviewUrl":"http://d3qcb5osaw6g5.cloudfront.net/s/m/00602527882048/UMG_audclp_00602527882048_01_008_164.mp3",
-			"streamPreviewUrl":"rtmp://s2sacn9d6arc57.cloudfront.net/cfx/st/s/m/00602527882048/UMG_audclp_00602527882048_01_008_164.mp3",
-			"smallImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/s/00602527882048.jpg",
-			"mediumImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/m/00602527882048.jpg",
-			"largeImageUrl":"http://d3qcb5osaw6g5.cloudfront.net/i/m/l/00602527882048.jpg",
-			"componentNumber":"1",
-			"trackNumber":"8",
-			"price":"129","startDate":"2011-11-01T00:00:00Z",
-			"bitrate":"",
-			"releaseType":"TrackRelease","originalReleaseDate":"2011-11-01T00:00:00Z",
-			"popularity":"0"
+			...
 		}
 	]
 }
