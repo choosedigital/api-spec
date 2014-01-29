@@ -238,12 +238,12 @@ Choose Digital maintains a list of "New and Noteworthy" movie titles.
 }
 ```
 
-## Player Info
+## Genres
 
-Returns a [PlayerInfo](/objects.md#playerinfo) object
+Returns all genres for currently available movies.
 
 ### URL 
-> http://[apidomain]/movie/playerinfo/[cdin]/[hashedCustomerId]
+> http://[apidomain]/movie/genres
 
 ### Parameters
 
@@ -255,18 +255,6 @@ Returns a [PlayerInfo](/objects.md#playerinfo) object
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td><code>cdin</code></td>
-		<td>Required</td>
-		<td>string</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><code>hashedCustomerId</code></td>
-		<td>Required</td>
-		<td>string</td>
-		<td><a href="/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
-	</tr>
-	<tr>
 		<td><code>tenantId</code></td>
 		<td>Optional</td>
 		<td>string</td>
@@ -274,6 +262,14 @@ Returns a [PlayerInfo](/objects.md#playerinfo) object
 	</tr>
 </table>
 
+### Example
+
+> GET http://[apidomain]/movie/genres
+```js
+{
+	"genres":["Action","Adventure","Animation","Comedy","Crime","Documentary","Drama","Family","Fantasy Adventure","Foreign","Horror","Independent","Music","Musical","Mystery","Romance","Romantic Comedy","Science Fiction","Sport","Suspense","Thriller","War","Western"]
+}
+```
 
 ## Search
 
@@ -584,12 +580,13 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 
 **Please note that movie rentals require implementation of [VideoPlayer Start](/resources/VideoPlayer.md#start)**
 
-## Genres
 
-Returns all genres for currently available movies.
+## Player Info
+
+Returns a [PlayerInfo](/objects.md#playerinfo) object
 
 ### URL 
-> http://[apidomain]/movie/genres
+> http://[apidomain]/movie/playerinfo/[cdin]/[hashedCustomerId]
 
 ### Parameters
 
@@ -601,6 +598,18 @@ Returns all genres for currently available movies.
 		<th>Description</th>
 	</tr>
 	<tr>
+		<td><code>cdin</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>hashedCustomerId</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td><a href="/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
+	</tr>
+	<tr>
 		<td><code>tenantId</code></td>
 		<td>Optional</td>
 		<td>string</td>
@@ -608,14 +617,7 @@ Returns all genres for currently available movies.
 	</tr>
 </table>
 
-### Example
 
-> GET http://[apidomain]/movie/genres
-```js
-{
-	"genres":["Action","Adventure","Animation","Comedy","Crime","Documentary","Drama","Family","Fantasy Adventure","Foreign","Horror","Independent","Music","Musical","Mystery","Romance","Romantic Comedy","Science Fiction","Sport","Suspense","Thriller","War","Western"]
-}
-```
 
 ## Update
 
