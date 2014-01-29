@@ -259,6 +259,8 @@
 	</tr>
 </table>
 
+
+
 ## MusicChart
 
 ### Example MusicChart Object
@@ -1210,9 +1212,7 @@
 
 ## MoviePurchase
 
-### Example MoviePurchase Object
-
-### MoviePurchase fields
+### Fields
 
 <table>
 	<tr>
@@ -1264,9 +1264,7 @@
 
 ## PlayerInfo
 
-### Example PlayerInfo Object
-
-### PlayerInfo fields
+### Fields
 
 <table>
 	<tr>
@@ -1324,9 +1322,7 @@
 
 ## TelevisionResponse
 
-### Example TelevisionResponse Object
-
-### TelevisionResponse fields
+### Fields
 
 <table>
 	<tr>
@@ -1358,9 +1354,7 @@
 
 ## TelevisionContainer
 
-### Example TelevisionContainer Object
-
-### TelevisionContainer fields
+### Fields
 
 <table>
 	<tr>
@@ -2062,9 +2056,7 @@
 
 ## TelevisionContainer
 
-### Example TelevisionContainer Object
-
-### TelevisionContainer fields
+### Fields
 
 <table>
 	<tr>
@@ -2131,9 +2123,7 @@
 
 ## TelevisionPurchase
 
-### Example TelevisionPurchase Object
-
-### TelevisionPurchase fields
+### Fields
 
 <table>
 	<tr>
@@ -2185,9 +2175,7 @@
 
 ## TelevisionPlayerInfo
 
-### Example TelevisionPlayerInfo Object
-
-### TelevisionPlayerInfo fields
+### Fields
 
 <table>
 	<tr>
@@ -2217,11 +2205,11 @@
 	</tr>
 </table>
 
+
+
 ## Book
 
-### Example Book Object
-
-### Book fields
+### Fields
 
 <table>
 	<tr>
@@ -2366,11 +2354,11 @@
 	</tr>
 </table>
 
+
+
 ## BookChart
 
-### Example BookChart Object
-
-### BookChart fields
+### Fields
 
 <table>
 	<tr>
@@ -2390,11 +2378,11 @@
 	</tr>
 </table>
 
+
+
 ## BookPurchase
 
-### Example BookPurchase Object
-
-### BookPurchase fields
+### Fields
 
 <table>
 	<tr>
@@ -2439,11 +2427,11 @@
 	</tr>
 </table>
 
+
+
 ## BookSearchResult
 
-### Example BookSearchResult Object
-
-### BookSearchResult fields
+### Fields
 
 <table>
 	<tr>
@@ -2483,11 +2471,11 @@
 	</tr>
 </table>
 
+
+
 ## CancelOrder
 
-### Example CancelOrder Object
-
-### CancelOrder fields
+### Fields
 
 <table>
 	<tr>
@@ -2522,11 +2510,11 @@
 	</tr>
 </table>
 
+
+
 ## UpdateOrder
 
-### Example UpdateOrder Object
-
-### UpdateOrder fields
+### Fields
 
 <table>
 	<tr>
