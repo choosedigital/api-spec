@@ -1238,12 +1238,7 @@
 	<tr>
 		<td><code>downloadLink</code></td>
 		<td>string</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><code>streamLink</code></td>
-		<td>string</td>
-		<td></td>
+		<td>(For special cases, please contact Choose Digital)</td>
 	</tr>
 	<tr>
 		<td><code>priceSold</code></td>
@@ -1263,7 +1258,7 @@
 	<tr>
 		<td><code>movie</code></td>
 		<td>movie</td>
-		<td></td>
+		<td>data of the buy or rent offering</td>
 	</tr>
 </table>
 
