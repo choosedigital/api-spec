@@ -62,12 +62,6 @@ Choose Digital maintains a list of "New and Noteworthy" television seasons.
 		<td>valid values: us, ca</td>
 	</tr>
 	<tr>
-		<td><code>genre</code></td>
-		<td>Optional</td>
-		<td>string</td>
-		<td></td>
-	</tr>
-	<tr>
 		<td><code>rows</code></td>
 		<td>Optional</td>
 		<td>integer</td>
