@@ -1238,7 +1238,7 @@
 	<tr>
 		<td><code>downloadLink</code></td>
 		<td>string</td>
-		<td>(For special cases, please contact Choose Digital)</td>
+		<td>(For special split purchase-delivery apps. Please contact Choose Digital)</td>
 	</tr>
 	<tr>
 		<td><code>priceSold</code></td>
