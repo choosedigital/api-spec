@@ -480,7 +480,7 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 	</tr>
 	<tr>
 		<td><code>customerStreetAddress1</code></td>
-		<td>Optional / Required for [agency eBooks](#agency-ebooks)</td>
+		<td>Optional / Required for [agency eBooks](#agencyebooks)</td>
 		<td>string</td>
 		<td></td>
 	</tr>
