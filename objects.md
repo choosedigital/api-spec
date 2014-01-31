@@ -2540,8 +2540,8 @@
 	</tr>
 	<tr>
 		<td><code>addresses</code></td>
-		<td>array of [addresses](#address)</td>
-		<td></td>
+		<td>array of <a href="#address">Address</a></td>
+		<td>A [valid address](/resources/Address.md) is required for purchasing [agency](/resources/EBook.md#agency-ebooks) eBooks.</td>
 	</tr>
 </table>
 
