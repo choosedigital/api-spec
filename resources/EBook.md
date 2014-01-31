@@ -32,6 +32,7 @@ This is a simple sanity check to make sure your header authentication is working
 	"ping":"pong"
 }
 ```
+
 ## List All Subjects
 
 This is a simple way to get all the valid ebook subjects
@@ -479,7 +480,7 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 	</tr>
 	<tr>
 		<td><code>customerStreetAddress1</code></td>
-		<td>Optional (Required for [agency eBooks](#agency-ebooks))</td>
+		<td>Optional / Required for [agency eBooks](#agency-ebooks)</td>
 		<td>string</td>
 		<td></td>
 	</tr>
