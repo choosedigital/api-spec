@@ -10,7 +10,7 @@ This is a simple sanity check to make sure your header authentication is working
 ### Parameters
 
 <table>
-	<tr>
+    <tr>
 		<th>Name</th>
 		<th>Required</th>
 		<th>Type</th>
@@ -358,6 +358,12 @@ Remember: this response will include a redemption link which expires in minutes 
 		<td><a href="/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
 	</tr>
 	<tr>
+		<td><code>address</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>[Many eBooks require a validated physical address]()</td>
+	</tr>
+	<tr>
 		<td><code>tenantId</code></td>
 		<td>Optional</td>
 		<td>string</td>
@@ -473,13 +479,13 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 	</tr>
 	<tr>
 		<td><code>customerStreetAddress1</code></td>
-		<td>Optional *</td>
+		<td>Optional (Required for [agency eBooks](#agency-ebooks))</td>
 		<td>string</td>
 		<td></td>
 	</tr>
 	<tr>
 		<td><code>customerStreetAddress2</code></td>
-		<td>Optional *</td>
+		<td>Optional</td>
 		<td>string</td>
 		<td></td>
 	</tr>
@@ -503,7 +509,7 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 	</tr>
 	<tr>
 		<td><code>customerPlus4</code></td>
-		<td>Optional *</td>
+		<td>Optional  (Required for [agency eBooks](#agency-ebooks))</td>
 		<td>string</td>
 		<td></td>
 	</tr>
@@ -683,6 +689,14 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 	"cancelTransactionId":""
 }
 ```
+
+## Agency eBooks
+
+A large portion of the eBooks available are under what’s referred to as the “agency” model. The price for agency books may vary based on the customer's physical location, therefore a validated address is required to purchase. Use the [address validation](/resources/Address.md#validate) service to get a valid address prior to making a purchase call.  
+
+
+<br><br>
+<hr>
 
 #### CONFIDENTIALITY
 
