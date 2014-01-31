@@ -2541,7 +2541,7 @@
 	<tr>
 		<td><code>addresses</code></td>
 		<td>array of <a href="#address">Address</a></td>
-		<td>A [valid address](/resources/Address.md) is required for purchasing [agency](/resources/EBook.md#agency-ebooks) eBooks.</td>
+		<td>A [valid address](/resources/Address.md) is required for purchasing <a href="/resources/EBook.md#agency-ebooks">agency</a> eBooks.</td>
 	</tr>
 </table>
 
