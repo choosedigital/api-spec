@@ -67,7 +67,7 @@ Returns an [AddressResponse](/objects.md#addressresponse)
 </table>
 
 ### Example
-```
+```js
 {
   "status": "MultipleMatches",
   "addresses": [
