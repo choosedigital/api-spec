@@ -1,6 +1,6 @@
 ## validate
 
-Some eBook prices require a tax calculation based on a user's physical address. A validated address is required to request a taxValue. 
+Some eBook prices require a tax calculation based on a user's physical address. A validated address is required to [request a taxValue](/resources/EBook.md#tax-calculation). 
 
 Returns an [AddressResponse](/objects.md#addressresponse)
 
