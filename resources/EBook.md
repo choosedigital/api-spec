@@ -359,16 +359,46 @@ Remember: this response will include a redemption link which expires in minutes 
 		<td><a href="/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
 	</tr>
 	<tr>
-		<td><code>address</code></td>
-		<td>Optional</td>
-		<td>string</td>
-		<td>[Many eBooks require a validated physical address]()</td>
-	</tr>
-	<tr>
 		<td><code>tenantId</code></td>
 		<td>Optional</td>
 		<td>string</td>
 		<td>The tenant id</td>
+	</tr>
+	<tr>
+		<td><code>street1</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>max length 255</td>
+	</tr>
+	<tr>
+		<td><code>street2</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>max length 255</td>
+	</tr>
+	<tr>
+		<td><code>city</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>max length 255</td>
+	</tr>
+	<tr>
+		<td><code>regionCode</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>2 character US state abbreviation</td>
+	</tr>
+	<tr>
+		<td><code>postalCode</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>length between 5 and 10 to support US zip code formats 00000, 000001111 and 00000-1111</td>
+	</tr>
+	<tr>
+		<td><code>plus4</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>4 digits for US Plus4 zip code</td>
 	</tr>
 </table>
 
@@ -376,7 +406,21 @@ Remember: this response will include a redemption link which expires in minutes 
 
 > GET http://[apidomain]/ebook/detail/[cdin]
 
+### Note
 
+If you pass in the following fields:
+
+* street1
+* city
+* regionCode
+* postalCode
+
+and optionally
+
+* street2
+* plus4
+
+we will also do a tax calculation so you do not have to make a separate tax calculation call for agency books. However, you need to already have an already validated address from the [address validation](/resources/Address.md#validate) service.
 
 ## Curated Charts
 
@@ -396,7 +440,77 @@ Remember: this response will include a redemption link which expires in minutes 
 		<td><code>country</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td>valid values: us, ca</td>
+		<td><code>us</code> or <code>ca</code></td>
+	</tr>
+</table>
+
+### Example
+
+> GET http://[apidomain]/ebook/curatedcharts/us
+
+## Tax Calculation
+
+Returns a tax value in pennies
+
+### URL 
+> http://[apidomain]/ebook/taxcalc
+
+### Parameters
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Required</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>cdin</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>street1</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td>max length 255</td>
+	</tr>
+	<tr>
+		<td><code>street2</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>max length 255</td>
+	</tr>
+	<tr>
+		<td><code>city</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td>max length 255</td>
+	</tr>
+	<tr>
+		<td><code>regionCode</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td>2 character US state abbreviation</td>
+	</tr>
+	<tr>
+		<td><code>countryCode</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td><code>us</code> is the only supported value</td>
+	</tr>
+	<tr>
+		<td><code>postalCode</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td>max length of 5 for only supported US zip codes</td>
+	</tr>
+	<tr>
+		<td><code>plus4</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>4 digits for US Plus4 zip code</td>
 	</tr>
 	<tr>
 		<td><code>tenantId</code></td>
@@ -406,10 +520,14 @@ Remember: this response will include a redemption link which expires in minutes 
 	</tr>
 </table>
 
+
 ### Example
-
-> GET http://[apidomain]/ebook/curatedcharts/us
-
+> POST http://[apidomain]/ebook/taxcalc
+```js
+{
+    "tax":90
+}
+```
 
 
 ## Purchase
