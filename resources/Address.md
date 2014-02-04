@@ -91,3 +91,5 @@ Returns an [AddressResponse](/objects.md#addressresponse)
     }
 }
 ```
+
+Note: in the case of receiving a multiple matches response, you will need to allow your customer to select the correct address. 
