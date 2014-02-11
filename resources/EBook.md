@@ -367,7 +367,7 @@ Remember: this response will include a redemption link which expires in minutes 
 
 ### Example
 
-> GET http://[apidomain]/ebook/detail/[cdin]
+> GET http://[apidomain]/ebook/detail/[cdin]/us
 
 
 
