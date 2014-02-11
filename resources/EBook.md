@@ -328,7 +328,7 @@ Remember: this response will include a redemption link which expires in minutes 
 ## Detail
 
 ### URL 
-> http://[apidomain]/ebook/detail/[cdin]
+> http://[apidomain]/ebook/detail/[cdin]/[country]
 
 ### Parameters
 
