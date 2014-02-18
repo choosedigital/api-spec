@@ -51,6 +51,8 @@
 <ul>
 <li><a href="#errors">Errors</a></li>
 <li><a href="#error">Error</a></li>
+<li><a href="#address">Address</a></li>
+<li><a href="#addressresponse">AddressResponse</a></li>
 <li><a href="#genre">Genre</a></li>
 <li><a href="#cancelorder">CancelOrder</a></li>
 <li><a href="#updateorder">UpdateOrder</a></li>
@@ -2470,6 +2472,79 @@
 		<td></td>
 	</tr>
 </table>
+
+
+
+## Address
+
+### Fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>street1</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>street2</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>city</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>region</code></td>
+		<td>string</td>
+		<td>aka, state</td>
+	</tr>
+	<tr>
+		<td><code>postalCode</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>plus4</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>countryCode</code></td>
+		<td>string</td>
+		<td></td>
+	</tr>
+</table>
+
+
+## AddressResponse
+
+### Fields
+
+<table>
+	<tr>
+		<th>Field</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>status</code></td>
+		<td>string</td>
+		<td>"Ok", "MultipleMatches", "Corrected", "CouldNotCorrect", "UnsupportedCountry"</td>
+	</tr>
+	<tr>
+		<td><code>addresses</code></td>
+		<td>array of <a href="#address">Address</a></td>
+		<td>A <a href="/resources/Address.md">valid address</a> is required for purchasing <a href="/resources/EBook.md#agency-ebooks">agency</a> eBooks.</td>
+	</tr>
+</table>
+
 
 
 
