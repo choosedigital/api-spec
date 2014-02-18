@@ -94,4 +94,3 @@ The partner agrees to treat any and all information contained or referenced in t
 
 All information contained or referenced in this document shall remain the exclusive property of Choose Digital as well as all patent, copyright, trade secret, trademark and other intellectual property rights therein. No license or conveyance of any such rights to the partner is granted or implied under this agreement.
 
-/
