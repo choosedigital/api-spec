@@ -644,6 +644,92 @@ Returns a [Music](/objects.md#music) object
 }
 ```
 
+## Detail by ISRC
+
+Returns a [Music](/objects.md#music) object
+
+### URL
+> http://[apidomain]/music/isrc/[isrc]/[country]
+
+### Parameters
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Required</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>isrc</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td>ISRC</td>
+	</tr>
+	<tr>
+		<td><code>country</code></td>
+		<td>Required</td>
+		<td>string</td>
+		<td>valid values: us, ca</td>
+	</tr>
+	<tr>
+		<td><code>hashedCustomerId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td><a href="/resources/General.md#hashed-customer-id">hashedCustomerId definition</a></td>
+	</tr>
+	<tr>
+		<td><code>includeFutureReleases</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><code>tenantId</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>The tenant id</td>
+	</tr>
+</table>
+
+
+### Example
+
+> GET http://[apidomain]/music/isrc/GBAYE0200772/us
+```js
+{
+    "cdin": "7de9747835d903c57a765c43d79eb09b6f6a1eb2",
+    "albumOnly": "false",
+    "available": "true",
+    "genre": "Rock",
+    "displayTitle": "The Scientist",
+    "sanitizedDisplayTitle": "The Scientist",
+    "icpn": "",
+    "albumIcpn": "0724355164056",
+    "albumCdin": "4d1a3b274d1ef98e85962aa8b95357de468574a0",
+    "albumDisplayTitle": "The Scientist",
+    "sanitizedAlbumDisplayTitle": "The Scientist",
+    "label": "Parlophone",
+    "copyright": "(P) 2002 The copyright in this sound recording is owned by EMI Records Ltd",
+    "duration": "5:09",
+    "explicit": "false",
+    "mainArtist": "Coldplay",
+    "artist": [],
+    "mp3PreviewUrl": "http://cdn.choosedigital.net/s/m/0724355164056/0724355164056_T-20067_SoundRecording_01-001.mp3",
+    "oggPreviewUrl": "http://cdn.choosedigital.net/s/m/0724355164056/0724355164056_T-20067_SoundRecording_01-001.ogg",
+    "smallImageUrl": "http://cdn.choosedigital.net/i/m/s/0724355164056.jpg",
+    "mediumImageUrl": "http://cdn.choosedigital.net/i/m/m/0724355164056.jpg",
+    "largeImageUrl": "http://cdn.choosedigital.net/i/m/l/0724355164056.jpg",
+    "componentNumber": "1",
+    "trackNumber": "1",
+    "price": "129",
+    "startDate": "2010-04-06T00:00:00Z",
+    "bitrate": "",
+    "releaseType": "TrackRelease",
+    "popularity": "0"
+}
+```
+
 ## Reset Download
 
 The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>userId + orderId</code>
