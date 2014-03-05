@@ -782,7 +782,7 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 
 Returns a [MusicPurchaseInfo](/objects.md#musicpurchaseinfo) object
 
-A required [authentication parameter](/choosedigital/api-spec/blob/master/Authentication.md#authentication-parameter) is calculated with <code>cdin + customerId + customerCountryCode + priceSold</code>
+A required [authentication parameter](/Authentication.md#authentication-parameter) is calculated with <code>cdin + customerId + customerCountryCode + priceSold</code>
 
 ### URL
 > POST http://[apidomain]/music/purchase
