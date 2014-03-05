@@ -385,7 +385,7 @@ Prices displayed in documentation are only representative and may not be accurat
 
 Returns a [TelevisionPurchase](/objects.md#televisionpurchase) 
 
-The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>cdin + customerId + customerCountryCode + priceSold</code>
+A required [authentication parameter](/Authentication.md#authentication-parameter) is calculated with <code>cdin + customerId + customerCountryCode + priceSold</code>
 
 ### URL 
 > http://[apidomain]/tv/purchase

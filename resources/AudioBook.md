@@ -446,7 +446,7 @@ RESPONSE:
 
 Returns a [BookPurchase](/objects.md#bookpurchase) object
 
-The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>cdin + customerId + customerCountryCode + priceSold</code>
+A required [authentication parameter](/Authentication.md#authentication-parameter) is calculated with <code>cdin + customerId + customerCountryCode + priceSold</code>
 
 ### URL 
 > http://[apidomain]/audiobook/purchase

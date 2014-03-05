@@ -478,7 +478,7 @@ Returns a [Movie](/objects.md#movie) object
 
 Returns a [MovieRental](/objects.md#movierental) object or a [MoviePurchase](/objects.md#moviepurchase) 
 
-The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>cdin + customerId + customerCountryCode + priceSold</code>
+A required [authentication parameter](/Authentication.md#authentication-parameter) is calculated with <code>cdin + customerId + customerCountryCode + priceSold</code>
 
 ### URL 
 > http://[apidomain]/movie/purchase

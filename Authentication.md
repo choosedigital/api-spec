@@ -32,7 +32,7 @@ The value of the ```x-cd-date``` header must be in one of the RFC 2616 formats (
 
 For a few methods (like purchases), an ```authentication``` parameter is required. To calculate this parameter, concat the variables as noted for the method (we'll call that ```data``` for now) and do a HMAC-SHA1 hash with your secret key. Here's a Java sample:
 
-## HMAC-SHA1 hash with Secret Key
+### HMAC-SHA1 hash with Secret Key
 
 Java example:
 
@@ -61,7 +61,7 @@ public static String calculateRFC2104HMAC(String data, String secretKey) throws 
 
 
 
-#### CONFIDENTIALITY
+## CONFIDENTIALITY
 
 This document is the sole and confidential property of Choose Digital, and is being shared with the partner for the purposes of collaboration, or for evaluating a possible collaboration, to provide users of the partner website(s) with access to a Digital Media Music Store, as provided by Choose Digital. 
 
