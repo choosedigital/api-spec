@@ -28,13 +28,13 @@ A valid time stamp, using ```x-cd-date``` header, is mandatory for all authentic
 The value of the ```x-cd-date``` header must be in one of the RFC 2616 formats ( http://www.ietf.org/rfc/rfc2616.txt ).
 
 
-##Authentication Parameter (additional requirement for purchase calls)
+##Authentication Parameter
 
-For a few methods, an ```authentication``` parameter is required. To calculate this parameter, concat the variables as noted for the method (we'll call that data for now) and do a HMAC-SHA1 hash with your secret key. Here's a Java sample:
+For a few methods (like purchases), an ```authentication``` parameter is required. To calculate this parameter, concat the variables as noted for the method (we'll call that ```data``` for now) and do a HMAC-SHA1 hash with your secret key. Here's a Java sample:
 
 ## HMAC-SHA1 hash with Secret Key
 
-To calculate an ```authentication``` parameter, concat the variables as noted for the method (we'll call that ```data``` for now) and do a HMAC-SHA1 hash with your secret key. Java example:
+Java example:
 
 ```java
 public static String calculateRFC2104HMAC(String data, String secretKey) throws SignatureException {
