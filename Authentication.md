@@ -21,17 +21,45 @@ Optionally, you can also include a gzip/deflate header
 
 * <code>Accept-Encoding:gzip,deflate,sdch</code>
 
-## Time Stamp Requirement
+### x-cd-date: Time Stamp Requirement
 
 A valid time stamp, using ```x-cd-date``` header, is mandatory for all authenticated requests. Furthermore, the client time-stamp included with an authenticated request must be within 15 minutes of the Choose Digital system time when the request is received. If not, the request will fail with the ```validation.invalid.outofrange``` error status code. The intention of these restrictions is to limit the possibility that intercepted requests could be replayed.
 
 The value of the ```x-cd-date``` header must be in one of the RFC 2616 formats ( http://www.ietf.org/rfc/rfc2616.txt ).
 
 
-##Authentication Parameter
+##Authentication Parameter (additional requirement for purchase calls)
 
-To calculate this parameter, concat the variables as noted for the method (we'll call that data for now) and do a HMAC-SHA1 hash with your secret key. Here's a Java sample:
-https://github.com/choosedigital/api-spec/blob/master/resources/General.md
+For a few methods, an ```authentication``` parameter is required. To calculate this parameter, concat the variables as noted for the method (we'll call that data for now) and do a HMAC-SHA1 hash with your secret key. Here's a Java sample:
+
+## HMAC-SHA1 hash with Secret Key
+
+To calculate an ```authentication``` parameter, concat the variables as noted for the method (we'll call that ```data``` for now) and do a HMAC-SHA1 hash with your secret key. Java example:
+
+```java
+public static String calculateRFC2104HMAC(String data, String secretKey) throws SignatureException {
+    String result;
+    try {
+        // get an hmac_sha1 key from the raw key bytes
+        SecretKeySpec signingKey = new SecretKeySpec(secretKey.getBytes(), "HmacSHA1");
+
+        // get an hmac_sha1 Mac instance and initialize with the signing key
+        Mac mac = Mac.getInstance("HmacSHA1");
+        mac.init(signingKey);
+
+        // compute the hmac on input data bytes
+        byte[] rawHmac = mac.doFinal(data.getBytes());
+
+        // base64-encode the hmac
+        result = Codec.encodeBASE64(rawHmac);
+    } catch (Exception e) {
+        throw new SignatureException("Failed to generate HMAC : " + e.getMessage());
+    }
+    return result;
+}
+```
+
+
 
 #### CONFIDENTIALITY
 

@@ -1,32 +1,5 @@
 # General Notes
 
-## Authentication Parameter
-
-For a few methods, an ```authentication``` parameter is required. To calculate this parameter, concat the variables as noted for the method (we'll call that ```data``` for now) and do a HMAC-SHA1 hash with your secret key. Here's a Java sample:
-
-```java
-public static String calculateRFC2104HMAC(String data, String secretKey) throws SignatureException {
-    String result;
-    try {
-        // get an hmac_sha1 key from the raw key bytes
-        SecretKeySpec signingKey = new SecretKeySpec(secretKey.getBytes(), "HmacSHA1");
-
-        // get an hmac_sha1 Mac instance and initialize with the signing key
-        Mac mac = Mac.getInstance("HmacSHA1");
-        mac.init(signingKey);
-
-        // compute the hmac on input data bytes
-        byte[] rawHmac = mac.doFinal(data.getBytes());
-
-        // base64-encode the hmac
-        result = Codec.encodeBASE64(rawHmac);
-    } catch (Exception e) {
-        throw new SignatureException("Failed to generate HMAC : " + e.getMessage());
-    }
-    return result;
-}
-```
-
 ## Hashed Customer Id
 
 For a few methods, we require a hashed customer id. To calculate this parameter, do a SHA-256 of the customer id that you previously sent over in the purchases that you made. Here's a Java sample:
