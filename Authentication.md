@@ -5,15 +5,15 @@
 This process is very similar to how Amazon does their authentication for their platform. For more information, look at 
 http://docs.amazonwebservices.com/AmazonS3/latest/dev/RESTAuthentication.html
 
-## The Authentication Header
+## Required Authentication Headers
 
 There are 5 required headers to add to every request:
 
-* <code>cdaccesskeyid</code> - your Choose Digital client id
+* <code>cdaccesskeyid</code> - provided by Choose Digital
 * <code>x-cd-date</code> - time of request in one of the following formats
     * ISO8601 + timezone - yyyy-MM-dd'T'HH:mm:ss'Z'
     * ISO8601 - yyyy-MM-dd'T'HH:mm:ss
-* <code>authorization</code> - HMAC-SHA1 hash of x-cd-date and your secret
+* <code>authorization</code> - HMAC-SHA1 hash of x-cd-date and your secret (Example code: [Java](https://github.com/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter))
 * <code>Content-type:application/json</code>
 * <code>Accept:application/json</code>
 
