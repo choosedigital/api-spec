@@ -13,7 +13,7 @@ The 5 required headers are:
 * <code>x-cd-date</code> - time of request in one of the following formats
     * ISO8601 + timezone - yyyy-MM-dd'T'HH:mm:ss'Z'
     * ISO8601 - yyyy-MM-dd'T'HH:mm:ss
-* <code>authorization</code> - HMAC-SHA1 hash of x-cd-date and your secret (Example code: [Java](https://github.com/choosedigital/api-spec/blob/master/resources/General.md#authentication-parameter))
+* <code>authorization</code> - HMAC-SHA1 hash of x-cd-date and your secret (Example code: [Java](#authentication-parameter))
 * <code>Content-type:application/json</code>
 * <code>Accept:application/json</code>
 
