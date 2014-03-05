@@ -1012,11 +1012,10 @@ For an album purchase:
 		"noSchemeMediumImageUrl":"//d3qcb5osaw6g5.cloudfront.net/i/m/m/886443982444.jpg",
 		"noSchemeLargeImageUrl":"//d3qcb5osaw6g5.cloudfront.net/i/m/l/886443982444.jpg",
 		"price":"1099",
-		 
-		 "startDate":"2013-07-16T00:00:00Z",
+		"startDate":"2013-07-16T00:00:00Z",
 		"bitrate":"",
 		"releaseType":"Album",
-		 "originalReleaseDate":"2013-07-16T00:00:00Z",
+		"originalReleaseDate":"2013-07-16T00:00:00Z",
 		"popularity":"0",
 		"components":[
 			 {
@@ -1051,13 +1050,11 @@ For an album purchase:
 				"price":"129",
 				"componentNumber":"1",
 				"trackNumber":"1",
-				 
-				 "startDate":"2013-07-16T00:00:00Z",
+				"startDate":"2013-07-16T00:00:00Z",
 				"bitrate":"",
 				"releaseType":"TrackRelease",
 				"popularity":"0"
-			 },
-			 {
+			 },{
 				"cdin":"6b86f488f7e71403d54b0cb35e6815c333918ffc",
 				"albumOnly":"false",
 				"available":"true",
@@ -1086,13 +1083,11 @@ For an album purchase:
 				"price":"129",
 				"componentNumber":"1",
 				"trackNumber":"2",
-				 
-				 "startDate":"2013-07-16T00:00:00Z",
+				"startDate":"2013-07-16T00:00:00Z",
 				"bitrate":"",
 				"releaseType":"TrackRelease",
 				"popularity":"0"
-			 },
-			 {
+			 },{
 				"cdin":"b8c6a3238b888313f6df0bdfbbe1697b7c045203",
 				"albumOnly":"false",
 				"available":"true",
@@ -1121,13 +1116,11 @@ For an album purchase:
 				"price":"129",
 				"componentNumber":"1",
 				"trackNumber":"3",
-				 
-				 "startDate":"2013-07-16T00:00:00Z",
+				"startDate":"2013-07-16T00:00:00Z",
 				"bitrate":"",
 				"releaseType":"TrackRelease",
 				"popularity":"0"
-			 },
-			 {
+			 },{
 				"cdin":"3506bb08dcc46a1c6a840e42205510f3f37ece7a",
 				"albumOnly":"false",
 				"available":"true",
@@ -1156,13 +1149,11 @@ For an album purchase:
 				"price":"129",
 				"componentNumber":"1",
 				"trackNumber":"4",
-				 
-				 "startDate":"2013-07-16T00:00:00Z",
+				"startDate":"2013-07-16T00:00:00Z",
 				"bitrate":"",
 				"releaseType":"TrackRelease",
 				"popularity":"0"
-			 },
-			 {
+			 },{
 				"cdin":"2aaf33a5e766bbb552ffebc0362b26ab4bb7c0a3",
 				"albumOnly":"false",
 				"available":"true",
@@ -1191,13 +1182,11 @@ For an album purchase:
 				"price":"129",
 				"componentNumber":"1",
 				"trackNumber":"5",
-				 
-				 "startDate":"2013-07-16T00:00:00Z",
+				"startDate":"2013-07-16T00:00:00Z",
 				"bitrate":"",
 				"releaseType":"TrackRelease",
 				"popularity":"0"
-			 },
-			 {
+			 },{
 				"cdin":"230a58eeb04e4219beb01b9be744ecd8aecc7369",
 				"albumOnly":"false",
 				"available":"true",
@@ -1226,13 +1215,11 @@ For an album purchase:
 				"price":"129",
 				"componentNumber":"1",
 				"trackNumber":"6",
-				 
-				 "startDate":"2013-07-16T00:00:00Z",
+				"startDate":"2013-07-16T00:00:00Z",
 				"bitrate":"",
 				"releaseType":"TrackRelease",
 				"popularity":"0"
-			 },
-			 {
+			 },{
 				"cdin":"454a56068f7569ab4c84e2b9542fe1352838f2f2",
 				"albumOnly":"false",
 				"available":"true",
@@ -1261,13 +1248,11 @@ For an album purchase:
 				"price":"129",
 				"componentNumber":"1",
 				"trackNumber":"7",
-				 
-				 "startDate":"2013-07-16T00:00:00Z",
+				"startDate":"2013-07-16T00:00:00Z",
 				"bitrate":"",
 				"releaseType":"TrackRelease",
 				"popularity":"0"
-			 },
-			 {
+			 },{
 				"cdin":"ee194788570c46f0eab0295f91e9fb88adda174f",
 				"albumOnly":"false",
 				"available":"true",
@@ -1296,13 +1281,11 @@ For an album purchase:
 				"price":"129",
 				"componentNumber":"1",
 				"trackNumber":"8",
-				 
-				 "startDate":"2013-07-16T00:00:00Z",
+				"startDate":"2013-07-16T00:00:00Z",
 				"bitrate":"",
 				"releaseType":"TrackRelease",
 				"popularity":"0"
-			 },
-			 {
+			 },{
 				"cdin":"df688d83d160e27d57d3b7ad454f9ea0aa03b68f",
 				"albumOnly":"false",
 				"available":"true",
@@ -1331,13 +1314,11 @@ For an album purchase:
 				"price":"129",
 				"componentNumber":"1",
 				"trackNumber":"9",
-				 
-				 "startDate":"2013-07-16T00:00:00Z",
+				"startDate":"2013-07-16T00:00:00Z",
 				"bitrate":"",
 				"releaseType":"TrackRelease",
 				"popularity":"0"
-			 },
-			 {
+			 },{
 				"cdin":"fcfd18f4c7cf37d8819e0740086fa56d31689b06",
 				"albumOnly":"false",
 				"available":"true",
@@ -1366,13 +1347,11 @@ For an album purchase:
 				"price":"129",
 				"componentNumber":"1",
 				"trackNumber":"10",
-				 
-				 "startDate":"2013-07-16T00:00:00Z",
+				"startDate":"2013-07-16T00:00:00Z",
 				"bitrate":"",
 				"releaseType":"TrackRelease",
 				"popularity":"0"
-			 },
-			 {
+			 },{
 				"cdin":"dd2fd8dc3f0376f6c5b410f908d87b0e95cd51dd",
 				"albumOnly":"false",
 				"available":"true",
@@ -1401,13 +1380,11 @@ For an album purchase:
 				"price":"129",
 				"componentNumber":"1",
 				"trackNumber":"11",
-				 
-				 "startDate":"2013-07-16T00:00:00Z",
+				"startDate":"2013-07-16T00:00:00Z",
 				"bitrate":"",
 				"releaseType":"TrackRelease",
 				"popularity":"0"
-			 },
-			 {
+			 },{
 				"cdin":"94783d2bef7156b7a0ca2503b2663b6c56105be1",
 				"albumOnly":"false",
 				"available":"true",
@@ -1436,8 +1413,7 @@ For an album purchase:
 				"price":"129",
 				"componentNumber":"1",
 				"trackNumber":"12",
-				 
-				 "startDate":"2013-07-16T00:00:00Z",
+				"startDate":"2013-07-16T00:00:00Z",
 				"bitrate":"",
 				"releaseType":"TrackRelease",
 				"popularity":"0"
