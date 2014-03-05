@@ -2,12 +2,12 @@
 
 ## Overview
 
-This process is very similar to how Amazon does their authentication for their platform. For more information, look at 
-http://docs.amazonwebservices.com/AmazonS3/latest/dev/RESTAuthentication.html
+There are 5 required headers to add to every request. This process is very similar to how Amazon does their authentication for their platform. For more information, look at 
+[Amazon’s documentation](http://docs.amazonwebservices.com/AmazonS3/latest/dev/RESTAuthentication.html)
 
 ## Required Authentication Headers
 
-There are 5 required headers to add to every request:
+The 5 required headers are:
 
 * <code>cdaccesskeyid</code> - provided by Choose Digital
 * <code>x-cd-date</code> - time of request in one of the following formats
