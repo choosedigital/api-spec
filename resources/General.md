@@ -2,11 +2,21 @@
 
 ## Hashed Customer Id
 
-For a few methods, we require a hashed customer id. To calculate this parameter, do a SHA-256 of the customer id that you previously sent over in the purchases that you made. Here's a Java sample:
+For a few methods, we require a hashed customer id. To calculate this parameter, do a SHA-256 of the customer id that you previously sent over in the purchases that you made.
+
+Java sample:
 
 ```java
 public String generateHashedCustomerId(String customerId) {
     return DigestUtils.sha256Hex(customerId);
+}
+```
+
+PHP sample:
+
+```php
+function generateHashedCustomerId($customerId){
+    return hash('sha256', $customerId);
 }
 ```
 
