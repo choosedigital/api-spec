@@ -59,7 +59,14 @@ public static String calculateRFC2104HMAC(String data, String secretKey) throws 
 }
 ```
 
+PHP example:
 
+```php
+function calculateRFC2104HMAC( $data, $secretKey ) {
+   $bytes = hash_hmac("sha1", $data, $secretKey, true);
+   return base64_encode($bytes);
+}
+```
 
 ## CONFIDENTIALITY
 
