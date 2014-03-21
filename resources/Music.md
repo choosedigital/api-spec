@@ -728,6 +728,7 @@ Returns a [Music](/objects.md#music) object
     "releaseType": "TrackRelease",
     "popularity": "0"
 }
+
 ```
 
 ## Reset Download
