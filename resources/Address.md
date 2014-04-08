@@ -5,7 +5,7 @@ Some eBook prices require a tax calculation based on a user's physical address. 
 Returns an [AddressResponse](/objects.md#addressresponse)
 
 ### URL 
-> POST http://[apidomain]/address/validate
+> POST http://[apidomain]/ebook/addressvalidation
 
 ### Parameters
 
