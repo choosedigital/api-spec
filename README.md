@@ -28,7 +28,7 @@ Please be sure to give us your feedback if you think you needed more time.
 
 ## Table of Content
 
-* [Object definitions](/master/objects.md)
+* [Object definitions](/objects.md)
 * [Resource definitions](/resources/README.md)
 * [Signing and Authenticating REST Requests](/Authentication.md)
 * [Custom Delivery Handling](/Custom-Delivery-Handling.md)
