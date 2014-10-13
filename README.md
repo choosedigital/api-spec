@@ -11,9 +11,9 @@ Follow these guidelines to ensure that you're following our best practices for a
 1. Always parse response data without assuming the number or order of elements in the response. For example, if a new field were to be added to the object your code should gracefully handle a change in the total number of elements, or a change where the element you are interested is now 5th instead of 4th.
 1. Always use hostnames in your code and let the DNS servers resolve the IP - don't pre-resolve the name in order to try and save time at runtime, as the IP will not always be the same.
 
-## Attention: API to be SSL only on November 21, 2014
+## Attention: API to be SSL only on December 1, 2014
 
-On November 21 2014, the Choose Digital API for both stage and production will be SSL only.
+On December 1 2014 at noon EST, the Choose Digital API for both stage and production will be SSL only.
 
 Here are the changes you need to make:
 
