@@ -8,4 +8,4 @@ REFERENCE_DATE="2014-03-05T18:28:32.000Z"
 
 AUTH_VAL=`echo -n "$REFERENCE_DATE" | openssl dgst -sha1 -hmac "$SECRET_KEY" -binary | base64`
 
-curl -X GET --header "Accept:application/json" --header "cdaccesskeyid:$ACCESS_KEY_ID" --header "x-cd-date:$REFERENCE_DATE" --header "authorization:$AUTH_VAL" http://api-stage.choosedigital.cloudbees.net/music
+curl -X GET --header "Accept:application/json" --header "cdaccesskeyid:$ACCESS_KEY_ID" --header "x-cd-date:$REFERENCE_DATE" --header "authorization:$AUTH_VAL" https://api-stage.choosedigital.com/music
