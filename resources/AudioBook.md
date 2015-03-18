@@ -127,12 +127,6 @@ This is a simple way to get all the valid audiobook languages
 		<td></td>
 	</tr>
 	<tr>
-		<td><code>subject</code></td>
-		<td>Optional</td>
-		<td>string</td>
-		<td></td>
-	</tr>
-	<tr>
 		<td><code>rows</code></td>
 		<td>Optional</td>
 		<td>integer</td>
