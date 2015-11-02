@@ -813,7 +813,13 @@ A required [authentication parameter](/Authentication.md#authentication-paramete
 		<td><code>taxAmount</code></td>
 		<td>Required</td>
 		<td>integer</td>
-		<td>Tax amount charged</td>
+		<td>For loyalty "points" programs, please use 0. </td>
+	</tr>
+	<tr>
+		<td><code>currencyType</code></td>
+		<td>Required</td>
+		<td>string ("points")</td>
+		<td>Must be "points" except for special cases</td>
 	</tr>
 	<tr>
 		<td><code>customerId</code></td>
