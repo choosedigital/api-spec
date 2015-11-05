@@ -596,13 +596,13 @@ Returns a [Music](/objects.md#music) object
 		<td><code>includeFutureReleases</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td></td>
+		<td>set to "y" to allow items with a release date in the future. These items cannot be purchased until the release date.</td>
 	</tr>
 	<tr>
 		<td><code>tenantId</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td>The tenant id</td>
+		<td>A unique id to identify a tenant (sub-client)</td>
 	</tr>
 </table>
 
@@ -773,11 +773,7 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 	</tr>
 </table>
 
-### Example
 
-> PUT http://[apidomain]/music/resetdownload
-```js
-```
 
 ## Purchase
 
@@ -825,13 +821,13 @@ A required [authentication parameter](/Authentication.md#authentication-paramete
 		<td><code>customerId</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td></td>
+		<td>A unique ID for the end user</td>
 	</tr>
 	<tr>
 		<td><code>externalMemberId</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td></td>
+		<td>An optional ID for reporting reference</td>
 	</tr>
 	<tr>
 		<td><code>customerEmail</code></td>
@@ -849,13 +845,13 @@ A required [authentication parameter](/Authentication.md#authentication-paramete
 		<td><code>customerCountryCode</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td></td>
+		<td>"us" (or "ca" if approved)</td>
 	</tr>
 	<tr>
 		<td><code>promoCode</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td>Promo code</td>
+		<td>(for internal use)</td>
 	</tr>
 	<tr>
 		<td><code>tenantId</code></td>
@@ -873,13 +869,13 @@ A required [authentication parameter](/Authentication.md#authentication-paramete
 		<td><code>segment</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td></td>
+		<td>the end user's loyalty status (a.k.a. "tier" or "level")</td>
 	</tr>
 	<tr>
 		<td><code>tier</code></td>
 		<td>Optional</td>
 		<td>string</td>
-		<td></td>
+		<td>alternative to segment</td>
 	</tr>
 	<tr>
 		<td><code>authentication</code></td>
