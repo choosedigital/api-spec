@@ -35,7 +35,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ## List All Subjects
 
-This is a simple way to get all the valid ebook subjects
+This is a simple way to get all the valid ebook subjects for the entire catalog. Please note that not all subjects have a corresponding curated list of top books (see [List](#list)). 
 
 ### URL
 >http://[apidomain]/ebook/subjects
@@ -100,6 +100,7 @@ This is a simple way to get all the valid ebook languages
 ```
 
 ## List
+Returns a curated collection of books. 
 
 ### URL 
 > http://[apidomain]/ebook/list/[listId]/[country]
@@ -137,7 +138,25 @@ This is a simple way to get all the valid ebook languages
 		<td>string</td>
 		<td>The tenant id</td>
 	</tr>
+	<tr>
+		<td><code>subject</code></td>
+		<td>Optional</td>
+		<td>string</td>
+		<td>See list of available subjects</td>
+	</tr>
 </table>
+
+The following subjects have corresponding curated lists:
+  - Biography & Autobiography
+  - Business
+  - Fiction
+  - Kids & Juvenile Fiction
+  - Nonfiction
+  - Religion & Spirituality
+  - Science Fiction
+  - Sex & Romance
+  - Sports
+  - Travel
 
 ### Example
 
