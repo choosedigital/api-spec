@@ -2536,7 +2536,7 @@
 	<tr>
 		<td><code>status</code></td>
 		<td>string</td>
-		<td>"Ok", "MultipleMatches", "Corrected", "CouldNotCorrect", "UnsupportedCountry"</td>
+		<td>"Ok", "Corrected", "CouldNotCorrect", "UnsupportedCountry"</td>
 	</tr>
 	<tr>
 		<td><code>addresses</code></td>
