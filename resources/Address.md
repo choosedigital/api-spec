@@ -69,29 +69,17 @@ Returns an [AddressResponse](/objects.md#addressresponse)
 ### Example
 ```js
 {
-  "status": "MultipleMatches",
-  "addresses": [
-    {
-      "street1": "1133 W 9th St",
-      "street2": "",
-      "city": "Cleveland",
-      "region": "OH",
-      "postalCode": "44113",
-      "plus4": "1002",
-      "countryCode": "US"
-    },
-    {
-      "street1": "1133 E 9th St",
-      "street2": "",
-      "city": "Cleveland",
-      "region": "OH",
-      "postalCode": "44114",
-      "plus4": "1016",
-      "countryCode": "US"
-    }
+    "status":"OK",
+    "addresses":[
+        {
+        "street1":"1915 Matthews Township Pkwy",
+        "street2":"",
+        "city":"Matthews",
+        "region":"NC",
+        "postalCode":"28105",
+        "plus4":"5049",
+        "countryCode":"US"
+        }
+     ]
 }
 ```
-
-### Note
-
-In the case of receiving a multiple matches response, you will need to allow your customer to select the correct address. 
