@@ -4,7 +4,7 @@
 
 This is a simple sanity check to make sure your header authentication is working properly. Can also be used to check that the service is up.
 
-### URL 
+### URL
 > http://[apidomain]/ebook if Using tenantId http://[apidomain]/ebook?tenantId=myTenantId
 
 ### Parameters
@@ -35,7 +35,7 @@ This is a simple sanity check to make sure your header authentication is working
 
 ## List All Subjects
 
-This is a simple way to get all the valid ebook subjects for the entire catalog. Please note that not all subjects have a corresponding curated list of top books (see [List](#list)). 
+This is a simple way to get all the valid ebook subjects for the entire catalog. Please note that not all subjects have a corresponding curated list of top books (see [List](#list)).
 
 ### URL
 >http://[apidomain]/ebook/subjects
@@ -100,9 +100,9 @@ This is a simple way to get all the valid ebook languages
 ```
 
 ## List
-Returns a curated collection of books. 
+Returns a curated collection of books.
 
-### URL 
+### URL
 > http://[apidomain]/ebook/list/[listId]/[country]
 
 ### Parameters
@@ -118,7 +118,7 @@ Returns a curated collection of books.
 		<td><code>listId</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td></td>
+		<td>valid values: thisweek, top, popular (agency books only), and the subjects listed below</td>
 	</tr>
 	<tr>
 		<td><code>country</code></td>
@@ -147,49 +147,37 @@ Returns a curated collection of books.
 </table>
 
 The following subjects have corresponding curated lists:
-  - Biography & Autobiography
-  - Business
-  - Fiction
-  - Kids & Juvenile Fiction
-  - Nonfiction
-  - Religion & Spirituality
-  - Science Fiction
-  - Sex & Romance
-  - Sports
-  - Travel
+  - Biography & Autobiography (subject=Biography%20%26%20Autobiography)
+  - Fiction (subject=Fiction)
+  - Nonfiction (subject=Nonfiction)
+  - Science Fiction (subject=Science%20Fiction)
+  - Sex & Romance (subject=Sex%20%26%20Romance)
+  - Travel (?subject=Travel)
 
 ### Example
 
-> GET http://[apidomain]/ebook/list/top/us
+> GET http://[apidomain]/ebook/list/top/us?subject=Fiction
 ```js
 {
 	"displayTitle":"Top eBooks (all)",
 	"books":[
-		{
-			"cdin":"e508cae4104e650e66102c2e8fd1992b1b885f95",
-			"available":"true",
-			"formatType":"Adobe EPUB eBook",
-			"subjects":["Cooking & Food","Nonfiction"],
-			"title":"The Intolerant Gourmet",
-			"sanitizedTitle":"The Intolerant Gourmet",
-			"creators":["Barbara Kafka"],
-			"thumbnailImage":"http://images.contentreserve.com/ImageType-200/1953-1/{1E6949DF-08EC-466D-91DB-3A0650DA7475}Img200.jpg",
-			"coverImage":"http://images.contentreserve.com/ImageType-100/1953-1/{1E6949DF-08EC-466D-91DB-3A0650DA7475}Img100.jpg",
-			"availableDate":"2011-12-20T00:00:00Z",
-			"retailPrice":"123"
-		},{
-			"cdin":"5857e518412e4c426d7b091ce9f517f411ff44bc",
-			"available":"true",
-			"formatType":"Adobe PDF eBook",
-			"subjects":["Science","Nonfiction"],
-			"title":"The Illustrated Theory of Everything",
-			"sanitizedTitle":"The Illustrated Theory of Everything",
-			"creators":["Stephen W. Hawking"],
-			"thumbnailImage":"http://images.contentreserve.com/ImageType-200/1314-1/{5B577FDB-AE6B-4E26-A108-AE1C18F6E807}Img200.jpg",
-			"coverImage":"http://images.contentreserve.com/ImageType-100/1314-1/{5B577FDB-AE6B-4E26-A108-AE1C18F6E807}Img100.jpg",
-			"availableDate":"2011-12-20T00:00:00Z",
-			"retailPrice":"123"
-		},
+    {
+          "cdin": "7e98e79fc272277a0d32246fdd5306aa603eb3d6",
+          "available": "false",
+          "formatType": "Adobe EPUB eBook",
+          "subjects": ["Science Fiction","Fiction","Fantasy","Thriller"],
+          "title": "Stiletto",
+          "sanitizedTitle": "Stiletto",
+          "creators": ["Daniel O'Malley"],
+          "languages": ["English"],
+          "noSchemeCoverImage": "//d3hg0uhxi21mja.cloudfront.net/ImageType-100/0017-1/{59DF163F-2ECC-4278-86A9-BA08457B3A46}Img100.jpg",
+          "thumbnailImage": "http://d3hg0uhxi21mja.cloudfront.net/ImageType-200/0017-1/{59DF163F-2ECC-4278-86A9-BA08457B3A46}Img200.jpg",
+          "noSchemeThumbnailImage": "//d3hg0uhxi21mja.cloudfront.net/ImageType-200/0017-1/{59DF163F-2ECC-4278-86A9-BA08457B3A46}Img200.jpg",
+          "coverImage": "http://d3hg0uhxi21mja.cloudfront.net/ImageType-100/0017-1/{59DF163F-2ECC-4278-86A9-BA08457B3A46}Img100.jpg",
+          "availableDate": "2016-06-14T00:00:00Z",
+          "publicationDate": "2016-06-14T00:00:00Z",
+          "retailPrice": "0"
+        },
 		...
 }
 ```
@@ -199,7 +187,7 @@ The following subjects have corresponding curated lists:
 
 Returns a [bookpurchase](/objects.md#bookpurchase) object
 
-### URL 
+### URL
 > http://[apidomain]/ebook/download/[cdin]/[hashedCustomerId]/[country]
 
 ### Parameters
@@ -247,7 +235,7 @@ Remember: this response will include a redemption link which expires in minutes 
 
 ## Search
 
-### URL 
+### URL
 > http://[apidomain]/audiobook/search
 
 ### Parameters
@@ -341,7 +329,7 @@ Remember: this response will include a redemption link which expires in minutes 
 
 ## Detail
 
-### URL 
+### URL
 > http://[apidomain]/ebook/detail/[cdin]/[country]
 
 ### Parameters
@@ -437,7 +425,7 @@ we will also do a tax calculation so you do not have to make a separate tax calc
 
 ## Curated Charts
 
-### URL 
+### URL
 > http://[apidomain]/ebook/curatedcharts/[country]
 
 ### Parameters
@@ -465,7 +453,7 @@ we will also do a tax calculation so you do not have to make a separate tax calc
 
 Returns a tax value in pennies
 
-### URL 
+### URL
 > http://[apidomain]/ebook/taxcalc
 
 ### Parameters
@@ -549,7 +537,7 @@ Returns a [BookPurchase](/objects.md#bookpurchase) object
 
 A required [authentication parameter](/Authentication.md#authentication-parameter) is calculated with <code>cdin + customerId + customerCountryCode + priceSold</code>
 
-### URL 
+### URL
 > http://[apidomain]/ebook/purchase
 
 ### Parameters
@@ -706,7 +694,7 @@ A required [authentication parameter](/Authentication.md#authentication-paramete
 
 The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
-### URL 
+### URL
 > http://[apidomain]/ebook/update
 
 ### Parameters
@@ -765,7 +753,7 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 
 The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
-### URL 
+### URL
 > http://[apidomain]/ebook/cancel
 
 ### Parameters
@@ -832,7 +820,7 @@ A large portion of the eBooks available are under whatâ€™s referred to as the â€
 
 #### CONFIDENTIALITY
 
-This document is the sole and confidential property of Choose Digital, and is being shared with the partner for the purposes of collaboration, or for evaluating a possible collaboration, to provide users of the partner website(s) with access to a Digital Media Music Store, as provided by Choose Digital. 
+This document is the sole and confidential property of Choose Digital, and is being shared with the partner for the purposes of collaboration, or for evaluating a possible collaboration, to provide users of the partner website(s) with access to a Digital Media Music Store, as provided by Choose Digital.
 
 The partner agrees to treat any and all information contained or referenced in this document as confidential, to use it solely for the purpose of the evaluation and definition of a collaboration, to make it accessible only to such employees who have a need to know, not to disclose it to any third party, and not to make it publicly available or accessible in any way, except with the prior written consent of Choose Digital.
 
