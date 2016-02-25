@@ -4,7 +4,7 @@
 
 This is a simple sanity check to make sure your header authentication is working properly. Can also be used to check that the service is up.
 
-### URL 
+### URL
 > http://[apidomain]/audiobook if Using tenantId http://[apidomain]/audiobook?tenantId=myTenantId
 
 ### Parameters
@@ -102,7 +102,7 @@ This is a simple way to get all the valid audiobook languages
 
 ## List
 
-### URL 
+### URL
 > http://[apidomain]/audiobook/list/[listId]/[country]
 
 ### Parameters
@@ -118,7 +118,7 @@ This is a simple way to get all the valid audiobook languages
 		<td><code>listId</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td></td>
+		<td>valid values: thisweek, top, popular (agency books only), and the subjects listed below</td>
 	</tr>
 	<tr>
 		<td><code>country</code></td>
@@ -140,12 +140,18 @@ This is a simple way to get all the valid audiobook languages
 	</tr>
 </table>
 
+The following subjects have corresponding curated audiobook lists:
+  - Biography & Autobiography (subject=Biography%20%26%20Autobiography)
+  - Fiction (subject=Fiction)
+  - Nonfiction (subject=Nonfiction)
+  - Science Fiction (subject=Science%20Fiction)
+
 ### Example
 
 > GET http://[apidomain]/audiobook/list/top/us
 ```js
 {
-    "displayTitle": "Top Audiobooks (all)",
+    "displayTitle": "Top Audiobooks",
     "books": [{
         "cdin": "1bdba06733999983f1cdfbb95219247abd072400",
         "available": "true",
@@ -158,19 +164,8 @@ This is a simple way to get all the valid audiobook languages
         "coverImage": "http://images.contentreserve.com/ImageType-100/1837-1/{19358B67-49CF-47BC-960F-2807A164053D}Img100.jpg",
         "availableDate": "2010-08-24T00:00:00Z",
         "retailPrice": "123"
-    }, {
-        "cdin": "3800479f2f6c19b0c6f819a3007907665617551b",
-        "available": "true",
-        "formatType": "OverDrive MP3 Audiobook",
-        "subjects": ["Fiction", "Science Fiction"],
-        "title": "The Man in the High Castle",
-        "sanitizedTitle": "The Man in the High Castle",
-        "creators": ["Philip K. Dick", "Tom Weiner"],
-        "thumbnailImage": "http://images.contentreserve.com/ImageType-200/0887-1/{A2D8D0EA-38D5-434E-994C-036393218ACD}Img200.jpg",
-        "coverImage": "http://images.contentreserve.com/ImageType-100/0887-1/{A2D8D0EA-38D5-434E-994C-036393218ACD}Img100.jpg",
-        "availableDate": "2008-01-22T00:00:00Z",
-        "retailPrice": "123"
-}
+},
+...
 ```
 
 
@@ -179,7 +174,7 @@ This is a simple way to get all the valid audiobook languages
 
 Returns a [bookpurchase](/objects.md#bookpurchase) object
 
-### URL 
+### URL
 > http://[apidomain]/audiobook/download/[cdin]/[hashedCustomerId]/[country]
 
 ### Parameters
@@ -228,7 +223,7 @@ Remember: this response will include a redemption link which expires in minutes 
 
 ## Search
 
-### URL 
+### URL
 > http://[apidomain]/audiobook/search
 
 ### Parameters
@@ -323,7 +318,7 @@ Remember: this response will include a redemption link which expires in minutes 
 
 ## Detail
 
-### URL 
+### URL
 > http://[apidomain]/audiobook/detail/[cdin]
 
 ### Parameters
@@ -403,7 +398,7 @@ RESPONSE:
 
 ## Curated Charts
 
-### URL 
+### URL
 > http://[apidomain]/audiobook/curatedcharts/[country]
 
 ### Parameters
@@ -442,7 +437,7 @@ Returns a [BookPurchase](/objects.md#bookpurchase) object
 
 A required [authentication parameter](/Authentication.md#authentication-parameter) is calculated with <code>cdin + customerId + customerCountryCode + priceSold</code>
 
-### URL 
+### URL
 > http://[apidomain]/audiobook/purchase
 
 ### Parameters
@@ -599,7 +594,7 @@ A required [authentication parameter](/Authentication.md#authentication-paramete
 
 The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
-### URL 
+### URL
 > http://[apidomain]/audiobook/update
 
 ### Parameters
@@ -658,7 +653,7 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 
 The [authentication parameter](/resources/General.md#authentication-parameter) is calculated by <code>orderId + userId</code>
 
-### URL 
+### URL
 > http://[apidomain]/audiobook/cancel
 
 ### Parameters
@@ -717,7 +712,7 @@ The [authentication parameter](/resources/General.md#authentication-parameter) i
 
 #### CONFIDENTIALITY
 
-This document is the sole and confidential property of Choose Digital, and is being shared with the partner for the purposes of collaboration, or for evaluating a possible collaboration, to provide users of the partner website(s) with access to a Digital Media Music Store, as provided by Choose Digital. 
+This document is the sole and confidential property of Choose Digital, and is being shared with the partner for the purposes of collaboration, or for evaluating a possible collaboration, to provide users of the partner website(s) with access to a Digital Media Music Store, as provided by Choose Digital.
 
 The partner agrees to treat any and all information contained or referenced in this document as confidential, to use it solely for the purpose of the evaluation and definition of a collaboration, to make it accessible only to such employees who have a need to know, not to disclose it to any third party, and not to make it publicly available or accessible in any way, except with the prior written consent of Choose Digital.
 
