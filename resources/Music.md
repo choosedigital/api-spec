@@ -698,7 +698,6 @@ Returns a [Music](/objects.md#music) object
     "releaseType": "TrackRelease",
     "popularity": "0"
 }
-
 ```
 
 ## Reset Download
@@ -808,7 +807,7 @@ A required [authentication parameter](/Authentication.md#authentication-paramete
 		<td><code>customerPostalCode</code></td>
 		<td>Required</td>
 		<td>string</td>
-		<td></td>
+		<td>zip ("12345"), or zip-plus4 ("12345-1234")</td>
 	</tr>
 	<tr>
 		<td><code>customerCountryCode</code></td>
@@ -907,51 +906,13 @@ For an album purchase:
 	"transactionDate":"2014-02-11T16:11:04Z",
 	"downloadInfos":[
 		{
-			"url":"http://delivery-stage.choosedigital.com/user/music/download/ef0adcde74549a1f4d5ef268b769f357f8531316b13899e622fe39a18aa10eba/de1622837443641b6226d0eabaf9047704ae5788/379abae1e2f1dd57e995277355eb6344060caa55/1393989746697/12cc24c7c6d1d4dea5bca4d6d7805fbff078fe50f80d846a39c988376514bfd0/cdp/CPB",
+			"url":"http://delivery-stage.choosedigital.com/user/music/download/ef0...",
 			"title":"Brave",
 			"remaining":"0"
- 		},{
-			"url":"http://delivery-stage.choosedigital.com/user/music/download/ef0adcde74549a1f4d5ef268b769f357f8531316b13899e622fe39a18aa10eba/de1622837443641b6226d0eabaf9047704ae5788/6b86f488f7e71403d54b0cb35e6815c333918ffc/1393989746709/350060f06d8537bc1ffd6b6fab7926b98ba83d4742f73790933f602a5e7bc659/cdp/CPB",
-			"title":"Chasing The Sun",
-			"remaining":"0"
 		 },{
-			 "url":"http://delivery-stage.choosedigital.com/user/music/download/ef0adcde74549a1f4d5ef268b769f357f8531316b13899e622fe39a18aa10eba/de1622837443641b6226d0eabaf9047704ae5788/b8c6a3238b888313f6df0bdfbbe1697b7c045203/1393989746720/f5f438c8d00581a400145164d3f771c1e15c94d2b9859d4d09931d059b52428b/cdp/CPB",
-			"title":"Hercules",
-			"remaining":"0"
+			 ...
 		 },{
-			 "url":"http://delivery-stage.choosedigital.com/user/music/download/ef0adcde74549a1f4d5ef268b769f357f8531316b13899e622fe39a18aa10eba/de1622837443641b6226d0eabaf9047704ae5788/3506bb08dcc46a1c6a840e42205510f3f37ece7a/1393989746731/de5026efaa691c30a587b39cb41d43d1570cef1105f531c24e92c3dac08968d5/cdp/CPB",
-			"title":"Manhattan",
-			"remaining":"0"
-		 },{
-			 "url":"http://delivery-stage.choosedigital.com/user/music/download/ef0adcde74549a1f4d5ef268b769f357f8531316b13899e622fe39a18aa10eba/de1622837443641b6226d0eabaf9047704ae5788/2aaf33a5e766bbb552ffebc0362b26ab4bb7c0a3/1393989746741/42176920a6b0e0ec2f386e32fd1d45de2e93e87dc0a9c7f10846f571db7c5ec8/cdp/CPB",
-			"title":"Satellite Call",
-			"remaining":"0"
-		 },{
-			 "url":"http://delivery-stage.choosedigital.com/user/music/download/ef0adcde74549a1f4d5ef268b769f357f8531316b13899e622fe39a18aa10eba/de1622837443641b6226d0eabaf9047704ae5788/230a58eeb04e4219beb01b9be744ecd8aecc7369/1393989746751/248aa69c316c50b8f078e4d5222b80383fc67e787d5362d1d1bf3437a6358007/cdp/CPB",
-			"title":"Little Black Dress",
-			"remaining":"0"
-		 },{
-			 "url":"http://delivery-stage.choosedigital.com/user/music/download/ef0adcde74549a1f4d5ef268b769f357f8531316b13899e622fe39a18aa10eba/de1622837443641b6226d0eabaf9047704ae5788/454a56068f7569ab4c84e2b9542fe1352838f2f2/1393989746762/f73edfbcbd8f6a49c3673aa1c1d58fd44a5d9f025e869ff1d8bc78c75e68b9a0/cdp/CPB",
-			"title":"Cassiopeia",
-			"remaining":"0"
-		 },{
-			 "url":"http://delivery-stage.choosedigital.com/user/music/download/ef0adcde74549a1f4d5ef268b769f357f8531316b13899e622fe39a18aa10eba/de1622837443641b6226d0eabaf9047704ae5788/ee194788570c46f0eab0295f91e9fb88adda174f/1393989746774/6ac0d2b75ada1ec0092680c0c1a492632f0903ccd13d3b6e20b348a8055ff29e/cdp/CPB",
-			"title":"1000 Times",
-			"remaining":"0"
-		 },{
-		 	"url":"http://delivery-stage.choosedigital.com/user/music/download/ef0adcde74549a1f4d5ef268b769f357f8531316b13899e622fe39a18aa10eba/de1622837443641b6226d0eabaf9047704ae5788/df688d83d160e27d57d3b7ad454f9ea0aa03b68f/1393989746784/f6aa5ae99809466e909229da6b7007db7973344424ca1b09f95b4cf35bc297ae/cdp/CPB",
-			"title":"I Choose You",
-			"remaining":"0"
-		 },{
-			 "url":"http://delivery-stage.choosedigital.com/user/music/download/ef0adcde74549a1f4d5ef268b769f357f8531316b13899e622fe39a18aa10eba/de1622837443641b6226d0eabaf9047704ae5788/fcfd18f4c7cf37d8819e0740086fa56d31689b06/1393989746794/9f4dfb417127971cd8613e7933e9ba0f303aa8e29b28296d029e9c7cc7ce6697/cdp/CPB",
-			"title":"Eden",
-			"remaining":"0"
-		 },{
-			 "url":"http://delivery-stage.choosedigital.com/user/music/download/ef0adcde74549a1f4d5ef268b769f357f8531316b13899e622fe39a18aa10eba/de1622837443641b6226d0eabaf9047704ae5788/dd2fd8dc3f0376f6c5b410f908d87b0e95cd51dd/1393989746805/5d17f4b03b39bc38e70152cbcbd602a6e486b48183c9fd92a63040a5b7ed729e/cdp/CPB",
-			"title":"Islands",
-			"remaining":"0"
-		 },{
-			 "url":"http://delivery-stage.choosedigital.com/user/music/download/ef0adcde74549a1f4d5ef268b769f357f8531316b13899e622fe39a18aa10eba/de1622837443641b6226d0eabaf9047704ae5788/94783d2bef7156b7a0ca2503b2663b6c56105be1/1393989746815/8a38b86a92d8c17f939dc504c5f5833ff3f28c4ab3aa1a6d2a5154d6e02cfd84/cdp/CPB",
+			 "url":"http://delivery-stage.choosedigital.com/user/music/download/ef0...",
 			"title":"December",
 			"remaining":"0"
 		 }],
